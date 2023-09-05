@@ -1,3 +1,15 @@
+{% comment %} <header id="customeHeader">
+<a href="{{ routes.account_url }}" class="sm-max:hidden">
+<span class="sr-only">{{ 'header.general.open_account' | t }}</span>
+
+{%- if section.settings.show_icons -%}
+{%- render 'icon' with 'account', class: 'header__nav-icon' -%}
+{%- else -%}
+<span class="md:hidden">{%- render 'icon' with 'account', class: 'header__nav-icon' -%}</span>
+<span class="h6 link-faded md-max:hidden">{{ 'header.general.account' | t }}</span>
+{%- endif -%}
+</a>
+</header> {% endcomment %}
 <style > :root
 {
   --header-is-sticky: {% if section.settings.enable_sticky %}
@@ -293,7 +305,7 @@
   {%- endif -%}
 </x-header></height-observer><script>
 document.documentElement.style.setProperty('--header-height', `${
-  Math.round(document.getElementById('shopify-section-       {{ section.id }}').clientHeight)
+  Math.round(document.getElementById('shopify-section-      {{ section.id }}').clientHeight)
 }px`);
 </script>{% schema %}
 {
