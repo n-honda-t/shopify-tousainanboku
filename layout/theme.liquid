@@ -68,11 +68,11 @@
       {%- comment -%}On Safari 16.3 and lower, a polyfill is used to load importmap{%- endcomment -%}
       {
       "imports": {
-                                                              "vendor": "{{ 'vendor.min.js' | asset_url }}",
+                                                                    "vendor": "{{ 'vendor.min.js' | asset_url }}",
       "theme": "{{ 'theme.js' | asset_url }}",
       "photoswipe": "{{ 'photoswipe.min.js' | asset_url }}"
       }
-                                                                                                            }
+                                                                                                                  }
     </script>
 
     <script type="module" src="{{ 'vendor.min.js' | asset_url }}"></script>
@@ -102,6 +102,7 @@
 
   <body class="{{ features_class }}">
     <div class="container">
+      {{ template }}
       {%- render 'shadow-dom-templates' -%}
 
       <loading-bar class="loading-bar" aria-hidden="true"></loading-bar>
