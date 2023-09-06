@@ -1,15 +1,15 @@
 {
   "type": "header",
-  "name": "Header group",
+  "name": "Cusotom group",
   "sections": {
     "header": {
-      "type": "header",
+      "type": "custom-header",
       "settings": {
         "logo": "{{ shop.brand.logo }}"
       }
     }
   },
   "order": [
-    "header"
+    "custom-header"
   ]
 }
