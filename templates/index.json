@@ -97,10 +97,39 @@
         "vertical_spacing_factor": 1,
         "subheading": ""
       }
+    },
+    "720f4743-2e6e-425e-999c-754f06565e70": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--20926751113522__720f4743-2e6e-425e-999c-754f06565e70-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "sale",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        }
+      },
+      "block_order": [
+        "template--20926751113522__720f4743-2e6e-425e-999c-754f06565e70-collection-1"
+      ],
+      "settings": {
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": ""
+      }
     }
   },
   "order": [
     "slideshow",
-    "featured-collections"
+    "featured-collections",
+    "720f4743-2e6e-425e-999c-754f06565e70"
   ]
 }
