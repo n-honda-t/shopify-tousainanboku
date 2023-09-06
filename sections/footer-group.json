@@ -2,49 +2,9 @@
   "type": "footer",
   "name": "Footer group",
   "sections": {
-    "text-with-icons": {
-      "type": "text-with-icons",
-      "blocks": {
-        "icon-1": {
-          "type": "item",
-          "settings": {
-            "title": "Free delivery worldwide"
-          }
-        },
-        "icon-2": {
-          "type": "item",
-          "settings": {
-            "title": "Satisfied or refunded"
-          }
-        },
-        "icon-3": {
-          "type": "item",
-          "settings": {
-            "title": "Top-notch support"
-          }
-        },
-        "icon-4": {
-          "type": "item",
-          "settings": {
-            "title": "Secure payments"
-          }
-        }
-      },
-      "block_order": [
-        "icon-1",
-        "icon-2",
-        "icon-3",
-        "icon-4"
-      ],
-      "settings": {}
-    },
     "footer": {
       "type": "footer",
       "blocks": {
-        "newsletter": {
-          "type": "newsletter",
-          "settings": {}
-        },
         "links": {
           "type": "links",
           "settings": {
@@ -52,24 +12,30 @@
             "show_menu_title": true
           }
         },
-        "text": {
-          "type": "text",
+        "ef2e27de-d595-4f9a-9785-acf26e400049": {
+          "type": "links",
           "settings": {
-            "title": "About",
-            "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme editor.<\/p>"
+            "menu": "link-list",
+            "show_menu_title": true
           }
         }
       },
       "block_order": [
-        "newsletter",
         "links",
-        "text"
+        "ef2e27de-d595-4f9a-9785-acf26e400049"
       ],
-      "settings": {}
+      "settings": {
+        "separate_section_with_border": false,
+        "show_social_media": true,
+        "show_payment_icons": true,
+        "show_country_selector": true,
+        "show_country_name": true,
+        "show_country_flag": true,
+        "show_locale_selector": true
+      }
     }
   },
   "order": [
-    "text-with-icons",
     "footer"
   ]
 }
