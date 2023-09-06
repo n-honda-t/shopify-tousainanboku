@@ -1,8 +1,7 @@
-<style>
+ <style>
   @media print {
     /* Hide anything but the main content when printing */
-    *:has(~ #main),
-    #main ~ * {
+    *:has(~ #main), #main ~ * {
       display: none;
     }
   }
@@ -17,13 +16,7 @@
       {%- if image != blank -%}
         {{- image | image_url: width: image.width | image_tag: loading: 'lazy', sizes: '270px', widths: '270,540,810', class: 'gift-card__image' -}}
       {%- else -%}
-        <img
-          src="{{ 'gift-card/card.svg' | shopify_asset_url }}"
-          class="gift-card__image"
-          alt=""
-          width="270"
-          height="180"
-          loading="lazy">
+        <img src="{{ 'gift-card/card.svg' | shopify_asset_url }}" class="gift-card__image" alt="" width="270" height="180" loading="lazy">
       {%- endif -%}
 
       <!-- GIFT CARD INFO -->
@@ -61,25 +54,11 @@
             <div class="v-stack gap-5">
               <p>{{ 'gift_card.issued.redeem_instructions' | t }}</p>
 
-              <input
-                type="text"
-                class="input text-center"
-                value="{{ gift_card.code | format_code }}"
-                readonly
-                aria-label="{{ 'gift_card.issued.code' | t }}"
-                onclick="this.select()">
+              <input type="text" class="input text-center" value="{{ gift_card.code | format_code }}" readonly aria-label="{{ 'gift_card.issued.code' | t }}" onclick="this.select()">
 
               <div class="button-group button-group--same-width justify-center">
-                <button
-                  type="button"
-                  class="button w-full"
-                  onclick="window.print()">{{ 'gift_card.general.print' | t }}</button>
-                <button
-                  type="button"
-                  class="button button--secondary w-full"
-                  is="copy-button"
-                  data-text="{{ gift_card.code | escape }}"
-                  data-success-message="{{ 'gift_card.issued.copied' | t }}">{{ 'gift_card.general.copy' | t }}</button>
+                <button type="button" class="button w-full" onclick="window.print()">{{ 'gift_card.general.print' | t }}</button>
+                <button type="button" class="button button--secondary w-full" is="copy-button" data-text="{{ gift_card.code | escape }}" data-success-message="{{ 'gift_card.issued.copied' | t }}">{{ 'gift_card.general.copy' | t }}</button>
               </div>
             </div>
 
@@ -100,12 +79,7 @@
 
             {%- if gift_card.pass_url -%}
               <a href="{{ gift_card.pass_url }}" class="gift-card__apple-wallet">
-                <img
-                  src="{{ 'gift-card/add-to-apple-wallet.svg' | shopify_asset_url }}"
-                  width="145"
-                  height="45"
-                  alt="{{ 'gift_card.issued.add_to_apple_wallet' | t }}"
-                  loading="lazy">
+                <img src="{{ 'gift-card/add-to-apple-wallet.svg' | shopify_asset_url }}" width="145" height="45" alt="{{ 'gift_card.issued.add_to_apple_wallet' | t }}" loading="lazy">
               </a>
             {%- endif -%}
           </div>
@@ -116,22 +90,23 @@
 </div>
 
 {% schema %}
-  {
-    "name": "t:sections.main_gift_card.name",
-    "class": "shopify-section--main-gift-card",
-    "tag": "section",
-    "settings": [
-      {
-        "type": "image_picker",
-        "id": "image",
-        "label": "t:sections.main_gift_card.gift_card_image",
-        "info": "t:sections.main_gift_card.gift_card_image_info"
-      }, {
-        "type": "checkbox",
-        "id": "show_qr_code",
-        "label": "t:sections.main_gift_card.show_qr_code",
-        "default": true
-      }
-    ]
-  }
+{
+  "name": "t:sections.main_gift_card.name",
+  "class": "shopify-section--main-gift-card",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.main_gift_card.gift_card_image",
+      "info": "t:sections.main_gift_card.gift_card_image_info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_qr_code",
+      "label": "t:sections.main_gift_card.show_qr_code",
+      "default": true
+    }
+  ]
+}
 {% endschema %}
