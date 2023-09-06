@@ -1,0 +1,23 @@
+@media screen and (min-width: 700px) {
+  /* スクリーンサイズが700px以上の場合に適用 */
+  .login_title {
+    width: 100%;
+    font-size: 2.66vw;
+    color: #1f1f1f;
+    text-align: center;
+    font-weight: normal;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  /* スクリーンサイズが699px以下の場合に適用 */
+  .login_title {
+    width: 100%;
+    font-size: 7.47vw;
+    color: #1f1f1f;
+    text-align: center;
+    font-weight: normal;
+    margin: 0;
+  }
+}

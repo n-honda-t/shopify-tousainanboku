@@ -1,0 +1,25 @@
+@media screen and (min-width: 700px) {
+  /* スクリーンサイズが700px以上の場合に適用 */
+  .login_button {
+    width: 31.25vw;
+    height: 5vw;
+    font-size: 1.41vw;
+    background-color: #1f1f1f;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  /* スクリーンサイズが699px以下の場合に適用 */
+  .login_button {
+    width: 90%;
+    height: 17.07vw;
+    font-size: 4.8vw;
+    background-color: #1f1f1f;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+  }
+}
