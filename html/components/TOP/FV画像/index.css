@@ -1,0 +1,23 @@
+@media screen and (min-width: 700px) {
+  /* スクリーンサイズが700px以上の場合に適用 */
+  .top-fv {
+    width: 100vw;
+    background-color: white;
+  }
+  .top-fv img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  /* スクリーンサイズが699px以下の場合に適用 */
+  .top-fv {
+    width: 100vw;
+    background-color: white;
+  }
+  .top-fv img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
