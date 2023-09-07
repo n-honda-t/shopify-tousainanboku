@@ -1,0 +1,41 @@
+@media screen and (min-width: 700px) {
+  /* スクリーンサイズが700px以上の場合に適用 */
+  .back_link {
+    display: flex;
+    align-items: center;
+    gap: 0.63vw;
+  }
+  .back_link_icon {
+    width: 1.11vw;
+  }
+  .back_link_icon > img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .back_link_text {
+    font-size: 1.09vw;
+    color: #1f1f1f;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  /* スクリーンサイズが699px以下の場合に適用 */
+  .back_link {
+    display: flex;
+    align-items: center;
+    gap: 2.13vw;
+  }
+  .back_link_icon {
+    width: 4.27vw;
+  }
+  .back_link_icon > img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .back_link_text {
+    font-size: 3.73vw;
+    color: #1f1f1f;
+    margin: 0;
+  }
+}
