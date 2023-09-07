@@ -1,0 +1,33 @@
+@media screen and (min-width: 700px) {
+  /* スクリーンサイズが700px以上の場合に適用 */
+  .mypage_edit_checkbox_wrap {
+    display: flex;
+    align-items: center;
+    gap: 0.63vw;
+  }
+  .mypage_edit_checkbox {
+    width: 1.56vw;
+    height: 1.56vw;
+    margin: 0;
+  }
+  .mypage_edit_lebel {
+    font-size: 1.09vw;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  /* スクリーンサイズが699px以下の場合に適用 */
+  .mypage_edit_checkbox_wrap {
+    display: flex;
+    align-items: center;
+    gap: 2.13vw;
+  }
+  .mypage_edit_checkbox {
+    width: 5.33vw;
+    height: 5.33vw;
+    margin: 0;
+  }
+  .mypage_edit_lebel {
+    font-size: 3.73vw;
+  }
+}
