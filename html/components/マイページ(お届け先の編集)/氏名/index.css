@@ -1,0 +1,28 @@
+@media screen and (min-width: 700px) {
+  /* スクリーンサイズが700px以上の場合に適用 */
+  .maypage_address_edit_name_box {
+    display: flex;
+    align-items: center;
+    gap: 0.63vw;
+  }
+  .maypage_address_edit_name {
+    font-size: 1.25vw;
+    color: #1f1f1f;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  /* スクリーンサイズが699px以下の場合に適用 */
+  .maypage_address_edit_name_box {
+    display: flex;
+    align-items: center;
+    gap: 2.13vw;
+  }
+
+  .maypage_address_edit_name {
+    font-size: 4.27vw;
+    color: #1f1f1f;
+    margin: 0;
+  }
+}
