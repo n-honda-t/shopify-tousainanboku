@@ -1,6 +1,6 @@
 @media screen and (min-width: 700px) {
   /* スクリーンサイズが700px以上の場合に適用 */
-  .maypage_address_add_button {
+  .mypage_address_add_button {
     background-color: #fff;
     color: #1f1f1f;
     border: solid 1px #1f1f1f;
@@ -13,7 +13,7 @@
 
 @media screen and (max-width: 699px) {
   /* スクリーンサイズが699px以下の場合に適用 */
-  .maypage_address_add_button {
+  .mypage_address_add_button {
     background-color: #fff;
     color: #1f1f1f;
     border: solid 1px #1f1f1f;

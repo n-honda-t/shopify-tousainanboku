@@ -1,0 +1,27 @@
+@media screen and (min-width: 700px) {
+  /* スクリーンサイズが700px以上の場合に適用 */
+  .mypage_address {
+    display: flex;
+    flex-direction: column;
+    gap: 0.94vw;
+    font-size: 1.09vw;
+    color: #6c7480;
+  }
+  .mypage_address_text {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  /* スクリーンサイズが699px以下の場合に適用 */
+  .mypage_address {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2vw;
+    font-size: 3.73vw;
+    color: #6c7480;
+  }
+  .mypage_address_text {
+    margin: 0;
+  }
+}
