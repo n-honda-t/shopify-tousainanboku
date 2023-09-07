@@ -1,0 +1,25 @@
+@media screen and (min-width: 700px) {
+  /* スクリーンサイズが700px以上の場合に適用 */
+  .edit_button {
+    width: 12.5vw;
+    padding: 1.09vw 0;
+    color: #fff;
+    background-color: #1f1f1f;
+    border-radius: 5px;
+    font-size: 1.09vw;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  /* スクリーンサイズが699px以下の場合に適用 */
+  .edit_button {
+    width: 38.13vw;
+    padding: 3.73vw 0;
+    color: #fff;
+    background-color: #1f1f1f;
+    border-radius: 5px;
+    font-size: 3.73vw;
+    border: none;
+  }
+}

@@ -1,0 +1,52 @@
+@media screen and (min-width: 700px) {
+  /* スクリーンサイズが700px以上の場合に適用 */
+  .bottons_wrap {
+    display: flex;
+    align-items: center;
+    gap: 1.88vw;
+    padding: 1.25vw;
+  }
+  .button {
+    width: 12.66vw;
+    padding: 1.09vw 0;
+    font-size: 1.09vw;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  .button.active {
+    border: solid 1px #1f1f1f;
+    color: #1f1f1f;
+  }
+  .button.disabled {
+    border: solid 1px #1f1f1f;
+    color: #1f1f1f;
+    opacity: 0.3;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  /* スクリーンサイズが699px以下の場合に適用 */
+  .bottons_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4.27vw;
+    padding: 4.27vw 4.27vw 8.53vw;
+  }
+  .button {
+    width: 100%;
+    padding: 3.73vw 0;
+    font-size: 3.73vw;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  .button.active {
+    border: solid 1px #1f1f1f;
+    color: #1f1f1f;
+  }
+  .button.disabled {
+    border: solid 1px #1f1f1f;
+    color: #1f1f1f;
+    opacity: 0.3;
+  }
+}

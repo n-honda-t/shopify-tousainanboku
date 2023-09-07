@@ -1,0 +1,33 @@
+@media screen and (min-width: 700px) {
+  /* スクリーンサイズが700px以上の場合に適用 */
+  .mypage_disabled_tab {
+    width: 8.13vw;
+    padding: 0.94vw 1.56vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25vw;
+    background-color: #fcf9f3;
+    border-radius: 4px 20px 0 0;
+    color: #1f1f1f;
+    border: solid 1px #1f1f1f;
+    border-bottom: none;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  /* スクリーンサイズが699px以下の場合に適用 */
+  .mypage_disabled_tab {
+    width: 25.6vw;
+    padding: 3.2vw 4.27vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.27vw;
+    background-color: #fcf9f3;
+    border-radius: 4px 20px 0 0;
+    color: #1f1f1f;
+    border: solid 1px #1f1f1f;
+    border-bottom: none;
+  }
+}

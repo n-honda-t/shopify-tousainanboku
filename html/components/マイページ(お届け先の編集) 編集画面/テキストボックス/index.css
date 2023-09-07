@@ -1,0 +1,20 @@
+@media screen and (min-width: 700px) {
+  /* スクリーンサイズが700px以上の場合に適用 */
+  .mypage_address_edit_text {
+    width: 31.25vw;
+    padding: 1.25vw;
+    color: #1f1f1f;
+    border: solid 1px #e6e6e6;
+    border-radius: 4px;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  /* スクリーンサイズが699px以下の場合に適用 */
+  .mypage_address_edit_text {
+    width: 78.67vw;
+    padding: 4.27vw;
+    border: solid 1px #e6e6e6;
+    border-radius: 4px;
+  }
+}

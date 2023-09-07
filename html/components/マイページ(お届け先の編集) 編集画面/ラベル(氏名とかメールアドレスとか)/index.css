@@ -1,0 +1,19 @@
+@media screen and (min-width: 700px) {
+  /* スクリーンサイズが700px以上の場合に適用 */
+  .mypage_address_edit_lebel {
+    font-size: 1.09vw;
+    font-weight: 400;
+    color: #1f1f1f;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  /* スクリーンサイズが699px以下の場合に適用 */
+  .mypage_address_edit_lebel {
+    font-size: 3.73vw;
+    font-weight: 400;
+    color: #1f1f1f;
+    margin: 0;
+  }
+}
