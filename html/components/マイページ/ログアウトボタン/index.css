@@ -1,0 +1,25 @@
+@media screen and (min-width: 700px) {
+  /* スクリーンサイズが700px以上の場合に適用 */
+  .logout_button {
+    font-size: 1.25vw;
+    font-weight: 500;
+    padding: 0.78vw 2.34vw;
+    background-color: #fff;
+    border: solid 1px #1f1f1f;
+    color: #1f1f1f;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  /* スクリーンサイズが699px以下の場合に適用 */
+  .logout_button {
+    font-size: 4.27vw;
+    font-weight: 500;
+    padding: 2.67vw 8vw;
+    background-color: #fff;
+    border: solid 1px #1f1f1f;
+    color: #1f1f1f;
+    border-radius: 5px;
+  }
+}
