@@ -1,0 +1,17 @@
+@media screen and (min-width: 700px) {
+  /* スクリーンサイズが700px以上の場合に適用 */
+  .mypage_title {
+    font-size: 1.88vw;
+    font-weight: 500;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  /* スクリーンサイズが699px以下の場合に適用 */
+  .mypage_title {
+    font-size: 5.33vw;
+    font-weight: 500;
+    margin: 0;
+  }
+}
