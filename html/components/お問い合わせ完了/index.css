@@ -1,0 +1,37 @@
+@media screen and (min-width: 700px) {
+  /* スクリーンサイズが700px以上の場合に適用 */
+  .contact_complete_text_box {
+    font-size: 1.25vw;
+    margin: 0;
+  }
+  .contact_complete_text {
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+  }
+  .contact_complete_sub_text {
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    margin-top: 1.25vw;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  /* スクリーンサイズが699px以下の場合に適用 */
+  .contact_complete_text_box {
+    font-size: 3.73vw;
+    margin: 0;
+  }
+  .contact_complete_text {
+    font-weight: 700;
+    text-align: left;
+    margin: 0;
+  }
+  .contact_complete_sub_text {
+    font-weight: 400;
+    text-align: left;
+    margin: 0;
+    margin-top: 3.73vw;
+  }
+}
