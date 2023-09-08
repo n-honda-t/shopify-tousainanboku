@@ -1,21 +1,11 @@
 <!doctype html>
 
-<html
-  class="no-js"
-  lang="{{ request.locale.iso_code }}"
-  dir="{% render 'direction' %}">
+<html class="no-js" lang="{{ request.locale.iso_code }}" dir="{% render 'direction' %}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=5.0">
 
-    <title>
-      {% if page_title == blank %}
-        {{ shop.name }}
-      {% else %}
-        {{ page_title }}{% if current_page != 1 %}
-          &ndash; {{ 'general.page' | t: page: current_page }}{% endif %}
-      {% endif %}
-    </title>
+    <title>{% if page_title == blank %}{{ shop.name }}{% else %}{{ page_title }}{% if current_page != 1 %} &ndash; {{ 'general.page' | t: page: current_page }}{% endif %}{% endif %}</title>
 
     {%- if page_description -%}
       <meta name="description" content="{{ page_description | escape }}">
@@ -29,28 +19,15 @@
     {%- endif -%}
 
     {%- comment -%}Few prefetch to increase performance on commonly used third-parties{%- endcomment -%}
-    <link
-      rel="preconnect"
-      href="https://fonts.shopifycdn.com"
-      crossorigin>
+    <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     <link rel="dns-prefetch" href="https://productreviews.shopifycdn.com">
 
     {%- unless settings.heading_font.system? -%}
-      <link
-        rel="preload"
-        href="{{ settings.heading_font | font_url }}"
-        as="font"
-        type="font/woff2"
-        crossorigin>
+      <link rel="preload" href="{{ settings.heading_font | font_url }}" as="font" type="font/woff2" crossorigin>
     {%- endunless -%}
 
     {%- unless settings.text_font.system? -%}
-      <link
-        rel="preload"
-        href="{{ settings.text_font | font_url }}"
-        as="font"
-        type="font/woff2"
-        crossorigin>
+      <link rel="preload" href="{{ settings.text_font | font_url }}" as="font" type="font/woff2" crossorigin>
     {%- endunless -%}
 
     {%- render 'social-meta-tags' -%}
@@ -67,12 +44,21 @@
     <script type="importmap">
       {%- comment -%}On Safari 16.3 and lower, a polyfill is used to load importmap{%- endcomment -%}
       {
+<<<<<<< HEAD
       "imports": {
                                                                                       "vendor": "{{ 'vendor.min.js' | asset_url }}",
       "theme": "{{ 'theme.js' | asset_url }}",
       "photoswipe": "{{ 'photoswipe.min.js' | asset_url }}"
       }
                                                                                                                                     }
+=======
+        "imports": {
+          "vendor": "{{ 'vendor.min.js' | asset_url }}",
+          "theme": "{{ 'theme.js' | asset_url }}",
+          "photoswipe": "{{ 'photoswipe.min.js' | asset_url }}"
+        }
+      }
+>>>>>>> origin
     </script>
 
     <script type="module" src="{{ 'vendor.min.js' | asset_url }}"></script>
@@ -81,7 +67,6 @@
     {{ content_for_header }}
 
     {{- 'theme.css' | asset_url | stylesheet_tag: preload: true -}}
-    {{- 'custom.css' | asset_url | stylesheet_tag: preload: true -}}
   </head>
 
   {% liquid
@@ -101,26 +86,21 @@
   %}
 
   <body class="{{ features_class }}">
-    <div class="container">
-      {{ template }}
-      {%- render 'shadow-dom-templates' -%}
+    {%- render 'shadow-dom-templates' -%}
 
-      <loading-bar class="loading-bar" aria-hidden="true"></loading-bar>
-      <a
-        href="#main"
-        allow-hash-change
-        class="skip-to-content sr-only">{{ 'general.accessibility.skip_to_content' | t }}</a>
+    <loading-bar class="loading-bar" aria-hidden="true"></loading-bar>
+    <a href="#main" allow-hash-change class="skip-to-content sr-only">{{ 'general.accessibility.skip_to_content' | t }}</a>
 
-      {%- if request.page_type != 'password' -%}
-        {%- section 'custom-header' -%}
-        {% comment %} {%- sections 'header-group' -%} {% endcomment %}
-        {%- sections 'overlay-group' -%}
-      {%- endif -%}
+    {%- if request.page_type != 'password' -%}
+      {%- sections 'header-group' -%}
+      {%- sections 'overlay-group' -%}
+    {%- endif -%}
 
-      <main id="main" class="anchor">
-        {{ content_for_layout }}
-      </main>
+    <main id="main" class="anchor">
+      {{ content_for_layout }}
+    </main>
 
+<<<<<<< HEAD
       {%- if request.page_type != 'password' -%}
         {%- sections 'footer-group' -%}
       {%- endif -%}
@@ -129,4 +109,10 @@
 {% include 'swymSnippet' %}
 
 </body>
+=======
+    {%- if request.page_type != 'password' -%}
+      {%- sections 'footer-group' -%}
+    {%- endif -%}
+  </body>
+>>>>>>> origin
 </html>
