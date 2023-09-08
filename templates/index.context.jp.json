@@ -5,11 +5,18 @@
   },
   "sections": {
     "slideshow": {
+      "disabled": false,
       "settings": {
         "allow_transparent_header": false,
         "show_next_section_button": true
       },
       "blocks": {
+        "slide-1": {
+          "settings": {
+            "subheading": "",
+            "title": ""
+          }
+        }
       },
       "block_order": [
         "slide-1"
