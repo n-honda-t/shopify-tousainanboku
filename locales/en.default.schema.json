@@ -662,6 +662,22 @@
         }
       }
     },
+    "featured_collections_brand": {
+      "name": "ブランドコレクション",
+      "blocks": {
+        "collection": {
+          "name": "Collection",
+          "collection": "Collection",
+          "title_info": "Default to collection title",
+          "default_link_url": "Default to collection URL"
+        }
+      },
+      "presets": {
+        "featured_collections": {
+          "name": "Featured collections"
+        }
+      }
+    },
     "featured_product": {
       "name": "あいうえお",
       "product": "Product",
