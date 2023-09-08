@@ -20,7 +20,37 @@
     "text_font": "univers_next_n4",
     "text_font_size_desktop": 14,
     "button_letter_spacing": 18,
-    "heading_color": "#1c1c1c"
+    "show_vendor": true,
+    "show_quick_buy": false,
+    "heading_color": "#1c1c1c",
+    "sections": {
+      "custom-header": {
+        "type": "custom-header",
+        "settings": {
+          "enable_sticky": true,
+          "show_separation_border": true,
+          "reduce_padding": false,
+          "logo_max_width": 140,
+          "logo_mobile_max_width": 100,
+          "menu": "main-menu",
+          "sidebar_menu": "",
+          "menu_open_trigger": "hover",
+          "enable_search": true,
+          "sidebar_text_font": "heading",
+          "sidebar_show_dividers": true,
+          "layout": "logo_left_navigation_inline",
+          "show_icons": true,
+          "show_country_selector": true,
+          "show_country_name": false,
+          "show_country_flag": true,
+          "show_locale_selector": false,
+          "transparent_header_text_color": "#ffffff"
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
   },
   "presets": {
     "Allure": {
