@@ -3,5 +3,36 @@
   "context": {
     "market": "jp"
   },
-  "sections": {}
+  "sections": {
+    "slideshow": {
+      "settings": {
+        "allow_transparent_header": false,
+        "show_next_section_button": true
+      },
+      "blocks": {
+      },
+      "block_order": [
+        "slide-1"
+      ]
+    }
+  },
+  "order": [
+    "slideshow",
+    "featured-collections",
+    "720f4743-2e6e-425e-999c-754f06565e70",
+    "1f641361-e426-405a-b8d2-1f4ad576484a",
+    "c6fe8e21-d956-4c43-a5be-c7ec9e86e78f",
+    "71191f18-2da9-4966-9d0e-dee8575f6345",
+    "9055177f-cc8a-480f-86d8-f2f78468bf12",
+    "dfefd1ae-9578-4476-b965-85c0ec644050",
+    "95685fcb-0095-434b-9e37-0c68e1008713",
+    "e286d967-42e3-44bb-b8c1-957268dc7ab3",
+    "7234d25e-85a9-4f73-859b-626d3fc1c156",
+    "99687f4c-1fc9-4432-a7e5-e7c1ad10b8ca",
+    "b1b0cc85-f286-4d2d-a45d-b5f9005df863",
+    "9fe4c06b-83c1-4f47-bc9e-b8e6eb093e28",
+    "e5211a25-b123-48e4-b8e7-30801a60d787",
+    "1935a85c-573b-405d-8381-8e18a234ca5f",
+    "2a28e9b1-8d54-4e80-8770-2e79c7875f39"
+  ]
 }
