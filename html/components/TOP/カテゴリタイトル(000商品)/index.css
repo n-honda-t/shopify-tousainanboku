@@ -1,0 +1,25 @@
+@media screen and (min-width: 700px) {
+  /* スクリーンサイズが700px以上の場合に適用 */
+  .category-title {
+    font-family: Zen Kaku Gothic New;
+    font-size: 1.25vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.625vw;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  /* スクリーンサイズが699px以下の場合に適用 */
+  .category-title {
+    font-family: Zen Kaku Gothic New;
+    font-size: 4.266vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    border-bottom: 1px solid black;
+    padding-bottom: 2.133vw;
+  }
+}
