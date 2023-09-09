@@ -20,7 +20,7 @@
   <div class="{% unless section.settings.remove_vertical_spacing %}section-spacing{% endunless %}">
     <image-banner class="image-with-text-block {% if section.settings.enable_parallax %}image-with-text-block--parallax {% endif %}content-over-media content-over-media--{{ section.settings.image_size }}">
       {%- if section.settings.image != blank -%}
-        <picture style="border-radius: 200px 0px 0px 0px;">
+        <picture>
           {%- if section.settings.mobile_image != blank -%}
             <source
               media="(max-width: 699px)"
