@@ -156,9 +156,12 @@ may have important consequence on the section itself.
     {%- endif -%}
 
     {%- if section.settings.show_next_section_button -%}
-      <button data-action="navigate-next" class="slideshow__next-section-button circle-button circle-button--lg hover:animate-icon-block">
-        <span class="sr-only">{{ 'general.accessibility.navigate_to_next_section' | t }}</span>
-        {%- render 'icon' with 'arrow-down' -%}
+      <button
+        data-action="navigate-next"
+        class="slideshow__next-section-button circle-button circle-button--lg hover:animate-icon-block top-downArrow"
+      >
+        {% comment %} TODO: レスポンシブが崩れる為修正 {% endcomment %}
+        <img src="{{ 'downArrow.png' | asset_url }}" alt="FV" />
       </button>
     {%- endif -%}
   </slideshow-carousel>
