@@ -32,6 +32,10 @@
     width: 100%;
     object-fit: cover;
   }
+
+  .footer {
+    padding:  6.25vw 3.13vw;
+  }
 }
 
 @media screen and (max-width: 699px) {
@@ -60,5 +64,9 @@
   .top-fv img {
     width: 100%;
     object-fit: cover;
+  }
+
+    .footer {
+    padding:  6.25vw 3.13vw;
   }
 }
