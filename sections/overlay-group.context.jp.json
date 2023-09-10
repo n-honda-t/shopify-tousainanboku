@@ -3,7 +3,8 @@
   "context": {
     "market": "jp"
   },
-  "sections": {},
+  "sections": {
+  },
   "order": [
     "cart-drawer",
     "privacy-banner"
