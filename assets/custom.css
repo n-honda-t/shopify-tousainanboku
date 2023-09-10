@@ -36,6 +36,9 @@
   .footer {
     padding:  6.25vw 3.13vw;
   }
+  .footer__block-list  {
+    justify-content: start;
+  }
 }
 
 @media screen and (max-width: 699px) {
