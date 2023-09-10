@@ -5,21 +5,31 @@
   width: 100%;
 }
 
-.top-downArrow {
-  background: transparent;
-  box-shadow: none;
-}
 @media screen and (min-width: 700px) {
   /* スクリーンサイズが700px以上の場合に適用 */
   .top-downArrow {
     height: 3.75vw;
     width: 3.75vw;
     transition: transform 1s ease;
+    background: transparent;
+    box-shadow: none;
   }
+
   .top-downArrow :hover {
     transform: scale(1.2);
   }
+
   .top-downArrow img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .top-fv {
+    width: 100vw;
+    border-radius: 200px 0px 0px 0px;
+  }
+
+  .top-fv img {
     width: 100%;
     object-fit: cover;
   }
@@ -30,11 +40,25 @@
   .top-downArrow {
     height: 3.75vw;
     width: 3.75vw;
+    background: transparent;
+    box-shadow: none;
   }
+
   .top-downArrow :hover {
     transform: scale(1.2);
   }
+
   .top-downArrow img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .top-fv {
+    width: 100vw;
+    border-radius: 50px 0px 0px 0px;
+  }
+
+  .top-fv img {
     width: 100%;
     object-fit: cover;
   }
