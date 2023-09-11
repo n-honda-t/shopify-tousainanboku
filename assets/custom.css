@@ -44,7 +44,9 @@
     text-align: left;
    margin-bottom: 0.94vw;
   }
-
+  .login_label.mt {
+    margin-top: 1.88vw;
+  }
 
   .top-fv img {
     width: 100%;
@@ -94,6 +96,11 @@
       text-align: left;
       margin-bottom: 3.2vw;
   }
+
+  .login_label.mt {
+    margin-top: 6.4vwvw;
+  }
+
   .top-fv {
     width: 100vw;
     border-radius: 50px 0px 0px 0px;
