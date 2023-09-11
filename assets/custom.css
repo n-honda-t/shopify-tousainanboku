@@ -31,6 +31,9 @@
   .button_wrap > button {
     width: 100%;
   }
+  .text_wrap {
+    display: flex;
+  }
   .top-fv {
     width: 100vw;
     border-radius: 200px 0px 0px 0px;
@@ -67,12 +70,16 @@
     object-fit: cover;
   }
 
-    .button_wrap {
+  /* login */
+  .button_wrap {
     width: 90vw;
     margin:0 auto;
   }
   .button_wrap > button {
     width: 100%;
+  }
+  .text_wrap {
+    display: flex;
   }
   .top-fv {
     width: 100vw;
