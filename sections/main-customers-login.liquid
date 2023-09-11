@@ -49,7 +49,8 @@
                     {%- render 'input', type: 'email', name: 'customer[email]', label: 'xxxxxxxx@gmail.com', autocomplete: 'email', required: true -%}
 
                     <div class="relative ">
-                      {%- assign password_label = 'customer.login.password' | t -%}
+                      <p class="login_label">{{ 'customer.login.password' | t }}</p>
+                      <!-- {%- assign password_label = 'customer.login.password' | t -%} -->
                       {%- render 'input', type: 'password', name: 'customer[password]', label: password_label, autocomplete: 'current-password', required: true -%}
 
                       
