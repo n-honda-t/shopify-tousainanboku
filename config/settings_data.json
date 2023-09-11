@@ -23,7 +23,7 @@
     "button_letter_spacing": 18,
     "currency_code_enabled": false,
     "stagger_products_apparition": false,
-    "round_color_swatches": true,
+    "round_color_swatches": false,
     "color_swatch_config": "",
     "product_image_aspect_ratio": "natural",
     "show_vendor": true,
