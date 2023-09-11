@@ -44,8 +44,8 @@
                       {{- form_recover_status -}}
                     {%- endif -%}
 
-                    {%- assign email_label = 'customer.login.email' | t -%}
-                    {%- render 'input', type: 'email', name: 'customer[email]', label: email_label, autocomplete: 'email', required: true -%}
+                    <!-- {%- assign email_label = 'customer.login.email' | t -%} -->
+                    {%- render 'input', type: 'email', name: 'customer[email]', label: 'xxxxxxxx@gmail.com', autocomplete: 'email', required: true -%}
 
                     <div class="relative ">
                       {%- assign password_label = 'customer.login.password' | t -%}
