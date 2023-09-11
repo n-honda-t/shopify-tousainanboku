@@ -238,7 +238,7 @@
     },
     "recover_password": {
       "title": "パスワードの再設定",
-      "instructions": "メールアドレスを入力してパスワードを回復してください:",
+      "instructions": "パスワードをリセットするためのメールをお送りします。",
       "remember_password": "パスワードを記憶しますか？",
       "email": "メールアドレス",
       "submit": "復元",
