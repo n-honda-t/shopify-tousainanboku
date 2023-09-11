@@ -34,7 +34,7 @@
 
                 {%- form 'customer_login', class: 'form' -%}
                   <input type="hidden" name="checkout_url" value="{{ block.settings.return_to | default: routes.account_url }}">
-                  <p class="login_label">{{ 'customer.recover_password.email' | t }}</p>
+
                   <div class="fieldset button_wrap">
                     {%- if form.errors -%}
                       {%- render 'banner', status: 'error', content: form.errors.messages['form'] -%}
@@ -45,6 +45,7 @@
                     {%- endif -%}
 
                     <!-- {%- assign email_label = 'customer.login.email' | t -%} -->
+                    <p class="login_label">{{ 'customer.recover_password.email' | t }}</p>
                     {%- render 'input', type: 'email', name: 'customer[email]', label: 'xxxxxxxx@gmail.com', autocomplete: 'email', required: true -%}
 
                     <div class="relative ">
