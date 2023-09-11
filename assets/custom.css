@@ -34,10 +34,6 @@
   .text_wrap {
     display: flex;
   }
-  .top-fv {
-    width: 100vw;
-    border-radius: 200px 0px 0px 0px;
-  }
 
   .login_label {
      width: 31.25vw;
@@ -48,6 +44,16 @@
     margin-top: 1.88vw;
   }
 
+  /* register */
+  .register_wrap {
+    width: 31.25vw;
+    margin:0 auto;
+  }
+  .top-fv {
+    width: 100vw;
+    border-radius: 200px 0px 0px 0px;
+  }
+  
   .top-fv img {
     width: 100%;
     object-fit: cover;
