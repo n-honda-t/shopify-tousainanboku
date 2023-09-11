@@ -78,7 +78,7 @@
         <div class="v-stack gap-4">
           <h1 class="h3">{{ 'customer.recover_password.title' | t }}</h1>
           <p>{{ 'customer.recover_password.instructions' | t }}</p>
-          <p　class="login_label">メールアドレス</p>
+          <p　class="login_label">{{ customer.recover_password.email }}</p>
         </div>
 
         {%- form 'recover_customer_password', class: 'form' -%}
