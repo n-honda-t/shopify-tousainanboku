@@ -67,6 +67,13 @@
     object-fit: cover;
   }
 
+    .button_wrap {
+    width: 90vw;
+    margin:0 auto;
+  }
+  .button_wrap > button {
+    width: 100%;
+  }
   .top-fv {
     width: 100vw;
     border-radius: 50px 0px 0px 0px;
