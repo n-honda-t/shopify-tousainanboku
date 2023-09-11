@@ -254,7 +254,7 @@
       "email": "メールアドレス",
       "password": "パスワード",
       "accepts_marketing": "メールマガジンに登録する",
-      "submit": "アカウントを作成する",
+      "submit": "登録する",
       "login": "ログイン"
     },
     "activate_account": {
