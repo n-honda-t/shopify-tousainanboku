@@ -91,8 +91,10 @@
           </div>
 
           {%- unless form.posted_successfully? -%}
+            <div class="button_wrap">
             {%- assign submit_label = 'customer.recover_password.submit' | t -%}
             {%- render 'button', content: submit_label, type: 'submit' -%}
+            </div>
           {%- endunless -%}
 
           <div>
