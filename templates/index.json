@@ -54,7 +54,7 @@
             "products_count": 8,
             "title": "",
             "link_url": "",
-            "link_text": "View all"
+            "link_text": ""
           }
         }
       },
@@ -62,10 +62,10 @@
         "collection-1"
       ],
       "settings": {
-        "separate_section_with_border": true,
+        "separate_section_with_border": false,
         "hide_product_information": false,
         "stack_products": false,
-        "products_per_row_mobile": "2",
+        "products_per_row_mobile": "1",
         "products_per_row_desktop": 5,
         "horizontal_spacing_factor": 1,
         "vertical_spacing_factor": 1,
@@ -79,10 +79,10 @@
           "type": "collection",
           "settings": {
             "collection": "sale",
-            "products_count": 8,
+            "products_count": 5,
             "title": "",
             "link_url": "",
-            "link_text": "View all"
+            "link_text": ""
           }
         }
       },
@@ -90,10 +90,10 @@
         "template--20926751113522__720f4743-2e6e-425e-999c-754f06565e70-collection-1"
       ],
       "settings": {
-        "separate_section_with_border": true,
+        "separate_section_with_border": false,
         "hide_product_information": false,
         "stack_products": false,
-        "products_per_row_mobile": "2",
+        "products_per_row_mobile": "1",
         "products_per_row_desktop": 4,
         "horizontal_spacing_factor": 1,
         "vertical_spacing_factor": 1,
