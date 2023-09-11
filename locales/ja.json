@@ -237,7 +237,7 @@
       "sign_up": "新規会員登録する"
     },
     "recover_password": {
-      "title": "パスワードの復元",
+      "title": "パスワードの再設定",
       "instructions": "メールアドレスを入力してパスワードを回復してください:",
       "remember_password": "パスワードを記憶しますか？",
       "email": "メールアドレス",
