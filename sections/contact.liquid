@@ -47,6 +47,7 @@
           {%- assign label = 'contact.form.message' | t -%}
           {%- render 'input', name: 'contact[body]', label: label, multiline: 4, required: true -%}
           </div>
+        <a href="#login" allow-hash-change class="link-faded">{{ 'customer.recover_password.back_to_login' | t }}</a>
         </div>
         <div class="button_wrap">
         {%- assign button_content = 'contact.form.submit' | t -%}
