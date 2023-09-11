@@ -40,7 +40,7 @@
   .login_label {
      width: 31.25vw;
     text-align: left;
-   margin-bottom: 0.94vw;
+   margin-bottom: 12px;
   }
   .login_label.mt {
     margin-top: 1.88vw;
