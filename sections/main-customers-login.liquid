@@ -58,7 +58,9 @@
                   </div>
 
                   {%- assign submit_label = 'customer.login.submit' | t -%}
+                  <div class="button_wrap">
                   {%- render 'button', content: submit_label, type: 'submit', size: 'sm'  -%}
+                  </div>
 
                   <div>
                     <span class="text-subdued">{{ 'customer.login.no_account' | t }}</span>
