@@ -266,11 +266,11 @@
       "cancel": "キャンセル"
     },
     "reset_password": {
-      "title": "パスワードをリセットする",
+      "title": "パスワードの再設定",
       "instructions": "半角英数字5文字以上のパスワードを入力してください。",
       "password": "パスワード",
       "password_confirmation": "パスワードの確認",
-      "submit": "リセット"
+      "submit": "パスワードの再設定"
     },
     "order": {
       "order": "注文内容",
