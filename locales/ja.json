@@ -234,7 +234,7 @@
       "password": "パスワード",
       "submit": "ログイン",
       "forgot_password": "パスワードをお忘れですか？",
-      "sign_up": "登録する"
+      "sign_up": "新規会員登録する"
     },
     "recover_password": {
       "title": "パスワードの復元",
