@@ -23,6 +23,7 @@
               <div {{ block.shopify_attributes }}>
                 {%- form 'create_customer', class: 'form' -%}
                   <div class="fieldset register_wrap">
+                     <p>hoge</p>
                     {% liquid
                       if form.errors
                         assign form_errors = form.errors | default_errors
@@ -30,6 +31,7 @@
                       endif
 
                       if request.locale.iso_code == 'ja'
+                       
                         assign last_name_label = 'customer.register.last_name' | t
                         render 'input', name: 'customer[last_name]', label: last_name_label, autocomplete: 'family-name', required: true
 
