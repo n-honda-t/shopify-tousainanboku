@@ -4,5 +4,12 @@
     "market": "jp"
   },
   "sections": {
+    "1f641361-e426-405a-b8d2-1f4ad576484a": {
+      "settings": {
+        "separate_section_with_border": false
+      },
+      "blocks": {
+      }
+    }
   }
 }
