@@ -51,7 +51,7 @@
           "type": "collection",
           "settings": {
             "collection": "new-collection",
-            "products_count": 8,
+            "products_count": 50,
             "title": "",
             "link_url": "",
             "link_text": ""
@@ -110,7 +110,7 @@
             "products_count": 8,
             "title": "",
             "link_url": "",
-            "link_text": "View all"
+            "link_text": ""
           }
         }
       },
