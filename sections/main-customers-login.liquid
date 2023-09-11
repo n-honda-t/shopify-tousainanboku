@@ -81,7 +81,7 @@
         </div>
 
         {%- form 'recover_customer_password', class: 'form' -%}
-          <div class="fieldset button_wrap">
+          <div class="button_wrap">
             {%- if form.errors -%}
               {%- render 'banner', status: 'error', content: form.errors.messages['form'] -%}
             {%- endif -%}
