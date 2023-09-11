@@ -41,7 +41,7 @@
 
   .login_label {
      width: 31.25vw;
-    text-align: center;
+    text-align: left;
   }
 
 
@@ -90,7 +90,7 @@
 
   .login_label {
       width: 90vw;
-      text-align: center;
+      text-align: left;
   }
   .top-fv {
     width: 100vw;
