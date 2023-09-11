@@ -4,13 +4,5 @@
     "market": "jp"
   },
   "sections": {
-    "footer": {
-      "settings": {
-        "show_payment_icons": false,
-        "show_social_media": true
-      },
-      "blocks": {
-      }
-    }
   }
 }
