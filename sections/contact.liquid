@@ -52,7 +52,9 @@
         {%- assign button_content = 'contact.form.submit' | t -%}
         {%- render 'button', content: button_content, type: 'submit' -%}
         </div>
+      <div class="button_wrap">
       <a href="#login" allow-hash-change class="link-faded">{{ 'customer.recover_password.back_to_login' | t }}</a>
+      </div>
       {%- endform -%}
     </div>
   </div>
