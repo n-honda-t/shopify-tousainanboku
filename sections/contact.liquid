@@ -15,7 +15,7 @@
         {%- endif -%}
 
         <div class="fieldset">
-          <div class="register_wrap">
+          <div class="register_wrap contact">
             {%- assign label  = 'contact.form.name' | t -%}
             {%- render 'input', type: 'text', name: 'contact[name]', label: label, value: customer.name, required: true, autocomplete: 'name' -%}
 
