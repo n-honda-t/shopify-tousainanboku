@@ -55,6 +55,7 @@
   .register_caution {
     text-align: left;
     margin:  12px 0 40px;
+   font-size: 12px;
   }
   .top-fv {
     width: 100vw;
@@ -124,7 +125,8 @@
 
    .register_caution {
      text-align: left;
-    margin:  12px 0 40px;
+      margin:  12px 0 40px;
+     font-size: 12px;
   }
 
   
