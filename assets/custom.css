@@ -39,6 +39,12 @@
     border-radius: 200px 0px 0px 0px;
   }
 
+  .login_label {
+         width: 31.25vw;
+        text-align: center;
+  }
+
+
   .top-fv img {
     width: 100%;
     object-fit: cover;
@@ -80,6 +86,11 @@
   }
   .text_wrap {
     display: flex;
+  }
+
+    .login_label {
+          width: 90vw;
+        text-align: center;
   }
   .top-fv {
     width: 100vw;
