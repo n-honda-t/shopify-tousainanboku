@@ -45,6 +45,7 @@
                     {%- endif -%}
 
                     <!-- {%- assign email_label = 'customer.login.email' | t -%} -->
+                  <p class="login_label">{{ 'customer.recover_password.email' | t }}</p>
                     {%- render 'input', type: 'email', name: 'customer[email]', label: 'xxxxxxxx@gmail.com', autocomplete: 'email', required: true -%}
 
                     <div class="relative ">
