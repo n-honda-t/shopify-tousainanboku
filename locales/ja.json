@@ -233,7 +233,7 @@
       "email": "メールアドレス",
       "password": "パスワード",
       "submit": "ログイン",
-      "forgot_password": "パスワードをお忘れですか？",
+      "forgot_password": "パスワードをお忘れの方はこちら",
       "sign_up": "新規会員登録する"
     },
     "recover_password": {
