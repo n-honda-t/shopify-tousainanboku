@@ -241,12 +241,12 @@
       "instructions": "パスワードをリセットするためのメールをお送りします。",
       "remember_password": "パスワードを記憶しますか？",
       "email": "メールアドレス",
-      "submit": "送信",
+      "submit": "送信する",
       "back_to_login": "キャンセル",
       "success_message": "あなたのメールアドレスに、パスワードを復元するための手順を記載したメールを送信しました。"
     },
     "register": {
-      "title": "登録",
+      "title": "新規会員登録",
       "instructions": "以下に情報を入力してください:",
       "already_have_account": "すでにアカウントをお持ちですか？",
       "first_name": "名",
