@@ -40,8 +40,8 @@
   }
 
   .login_label {
-         width: 31.25vw;
-        text-align: center;
+     width: 31.25vw;
+    text-align: center;
   }
 
 
@@ -88,9 +88,9 @@
     display: flex;
   }
 
-    .login_label {
-          width: 90vw;
-        text-align: center;
+  .login_label {
+      width: 90vw;
+      text-align: center;
   }
   .top-fv {
     width: 100vw;
