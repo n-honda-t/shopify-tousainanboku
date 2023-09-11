@@ -78,7 +78,6 @@
         <div class="v-stack gap-4">
           <h1 class="h3">{{ 'customer.recover_password.title' | t }}</h1>
           <p>{{ 'customer.recover_password.instructions' | t }}</p>
-          <p class="login_label">{{ 'customer.recover_password.email' | t }}</p>
         </div>
 
         {%- form 'recover_customer_password', class: 'form' -%}
@@ -87,7 +86,7 @@
               {%- render 'banner', status: 'error', content: form.errors.messages['form'] -%}
             {%- endif -%}
 
-            
+            <p class="login_label">{{ 'customer.recover_password.email' | t }}</p>
             {%- assign email_label = 'customer.recover_password.email' | t -%}
             {%- render 'input', type: 'email', name: 'email', label: email_label, autocomplete: 'email', required: true -%}
           </div>
