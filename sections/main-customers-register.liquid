@@ -22,7 +22,7 @@
             {%- when 'fields' -%}
               <div {{ block.shopify_attributes }}>
                 {%- form 'create_customer', class: 'form' -%}
-                  <div class="fieldset">
+                  <div class="fieldset register_wrap">
                     {% liquid
                       if form.errors
                         assign form_errors = form.errors | default_errors
