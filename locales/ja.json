@@ -267,7 +267,7 @@
     },
     "reset_password": {
       "title": "パスワードをリセットする",
-      "instructions": "新しいパスワードを入力してください:",
+      "instructions": "半角英数字5文字以上のパスワードを入力してください。",
       "password": "パスワード",
       "password_confirmation": "パスワードの確認",
       "submit": "リセット"
