@@ -27,12 +27,31 @@
     "show_vendor": true,
     "product_title_max_lines": 0,
     "product_color_display": "swatch",
-    "show_quick_buy": false,
+    "show_quick_buy": true,
+    "show_discount": true,
     "cart_icon": "shopping_cart",
     "heading_color": "#1c1c1c",
     "sections": {
       "custom-header": {
         "type": "custom-header",
+        "blocks": {
+          "385d2d45-eedc-42d5-954d-394b33b7be9a": {
+            "type": "mega_menu",
+            "settings": {
+              "menu_item": "",
+              "images_position": "right",
+              "image_1_heading": "",
+              "image_1_text": "",
+              "image_1_link": "",
+              "image_2_heading": "",
+              "image_2_text": "",
+              "image_2_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "385d2d45-eedc-42d5-954d-394b33b7be9a"
+        ],
         "settings": {
           "enable_sticky": true,
           "show_separation_border": true,
