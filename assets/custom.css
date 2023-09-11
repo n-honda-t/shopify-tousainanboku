@@ -24,11 +24,13 @@
   }
 
   /* login */
-  .button_wrap {
+  .button_wrap,
+  .register_wrap{
     width: 31.25vw;
     margin:0 auto;
   }
-  .button_wrap > button {
+  .button_wrap > button,
+  .register_wrap > button{
     width: 100%;
   }
   .text_wrap {
@@ -86,11 +88,13 @@
   }
 
   /* login */
-  .button_wrap {
+  .button_wrap,
+  .register_wrap{
     width: 90vw;
     margin:0 auto;
   }
-  .button_wrap > button {
+  .button_wrap > button,
+  .register_wrap > button{
     width: 100%;
   }
   .text_wrap {
