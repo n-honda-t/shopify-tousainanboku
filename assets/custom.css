@@ -168,6 +168,11 @@
     padding: 0 4.27vw;
   }
 
+  .mypage-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .logout_button {
     font-size: 4.27vw;
     font-weight: 500;
