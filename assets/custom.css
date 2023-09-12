@@ -79,7 +79,16 @@
     justify-content: space-between;
     align-items: center;
   }
-  
+
+  .logout_button {
+    font-size: 1.25vw;
+    font-weight: 500;
+    padding: 0.78vw 2.34vw;
+    background-color: #fff;
+    border: solid 1px #1f1f1f;
+    color: #1f1f1f;
+    border-radius: 5px;
+  }
   .top-fv img {
     width: 100%;
     object-fit: cover;
@@ -159,7 +168,15 @@
     padding: 0 4.27vw;
   }
 
-  
+  .logout_button {
+    font-size: 4.27vw;
+    font-weight: 500;
+    padding: 2.67vw 8vw;
+    background-color: #fff;
+    border: solid 1px #1f1f1f;
+    color: #1f1f1f;
+    border-radius: 5px;
+  }
   .top-fv {
     width: 100vw;
     border-radius: 50px 0px 0px 0px;
