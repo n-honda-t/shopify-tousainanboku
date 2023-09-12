@@ -124,7 +124,6 @@
     width: 100%;
   }
   /* top-collection-title.liquid end*/
-
 }
 
 @media screen and (max-width: 699px) {
@@ -195,7 +194,7 @@
     padding:  6.25vw 3.13vw;
   }
 
-  /* スクリーンサイズが699px以下の場合に適用 */
+  /* top-collection-title.liquid srart*/
   .sectionSecond-title {
     width: 100vw;
     position: relative;
@@ -242,4 +241,5 @@
   .arrow-img {
     width: 100%;
   }
+  /* top-collection-title.liquid end*/
 }
