@@ -131,6 +131,8 @@
     "94d183e0-d262-4747-95f2-318d02a12b44": {
       "type": "top-collection-title",
       "settings": {
+        "title": "CATEGORY",
+        "link_url": "shopify:\/\/collections\/category"
       }
     },
     "e286d967-42e3-44bb-b8c1-957268dc7ab3": {
