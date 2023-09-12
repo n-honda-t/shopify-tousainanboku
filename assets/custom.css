@@ -74,6 +74,11 @@
     padding: 0 3.13vw;
   }
 
+  .mypage-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   
   .top-fv img {
     width: 100%;
