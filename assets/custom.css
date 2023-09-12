@@ -73,6 +73,55 @@
   .footer__block-list  {
     justify-content: start;
   }
+
+  .sectionSecond-title {
+    width: 100vw;
+    height: 21.25vw;
+    position: relative;
+  }
+
+  .whiteVar {
+    height: 12.5vw;
+    width: 81.25vw;
+    border: solid 1px;
+    border-radius: 100px 0px 0px 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+  }
+
+  .blackVar {
+    width: 96.875vw;
+    border-radius: 0px 100px 0px 0px;
+    position: absolute;
+    top: 5.31vw;
+    background-color: black;
+  }
+
+  .sectionSecond-text {
+    display: flex;
+    color: white;
+    margin: 5.3125vw 0 3.671vw 3.125vw;
+    font-family: Roboto;
+    font-size: 2.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    gap: 1.875vw;
+  }
+
+  .arrow {
+    width: 1.25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .arrow-img {
+    /* margin-left: 1.875vw; */
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 699px) {
