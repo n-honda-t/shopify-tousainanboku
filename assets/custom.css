@@ -74,7 +74,7 @@
     justify-content: start;
   }
 
-  /* top-collection-title.liquid */
+  /* top-collection-title.liquid srart*/
   .sectionSecond-title {
     width: 100vw;
     height: 21.25vw;
@@ -123,6 +123,8 @@
     /* margin-left: 1.875vw; */
     width: 100%;
   }
+  /* top-collection-title.liquid end*/
+
 }
 
 @media screen and (max-width: 699px) {
