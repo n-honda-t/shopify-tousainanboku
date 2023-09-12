@@ -129,7 +129,6 @@
     font-size: 12px;
   }
 
-
   .top-fv {
     width: 100vw;
     border-radius: 50px 0px 0px 0px;
@@ -140,7 +139,51 @@
     object-fit: cover;
   }
 
-    .footer {
+  .footer {
     padding:  6.25vw 3.13vw;
   }
+
+      /* スクリーンサイズが699px以下の場合に適用 */
+    .sectionSecond-title {
+      width: 100vw;
+      position: relative;
+    }
+    .whiteVar {
+      height: 18.66vw;
+      width: 89.33vw;
+      border: solid 1px;
+      border-radius: 100px 0px 0px 0px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: white;
+    }
+    .blackVar {
+      height: 18.66vw;
+      width: 100vw;
+      border-radius: 0px 100px 0px 0px;
+      position: absolute;
+      top: 13.6vw;
+      background-color: black;
+    }
+    .sectionSecond-text {
+      display: flex;
+      color: white;
+      margin: 4.66vw 0 4.66vw 4.26vw;
+      font-family: Roboto;
+      font-size: 6.4vw;
+      font-style: normal;
+      font-weight: 400;
+      gap: 3.2vw;
+    }
+    .arrow {
+      width: 4.266vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .arrow-img {
+      width: 100%;
+    }
+
 }
