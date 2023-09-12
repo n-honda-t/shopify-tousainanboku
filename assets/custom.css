@@ -68,6 +68,12 @@
     width: 100vw;
     border-radius: 200px 0px 0px 0px;
   }
+
+  /* マイページ */
+  .mypage-container {
+    padding: 0 3.13vw;
+  }
+
   
   .top-fv img {
     width: 100%;
@@ -142,6 +148,12 @@
     flex-direction: column;
     gap: 40px;
   }
+
+  /* マイページ */
+  .mypage-container {
+    padding: 0 4.27vw;
+  }
+
   
   .top-fv {
     width: 100vw;
