@@ -217,7 +217,7 @@
   },
   "customer": {
     "account": {
-      "title": "マイページ",
+      "title": "あなたのアカウント",
       "primary_address": "プライマリ住所",
       "manage_addresses": "管理",
       "tagline": "注文と個人情報",
