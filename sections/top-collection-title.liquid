@@ -2,7 +2,7 @@
   <div class="whiteVar"></div>
   <div class="blackVar">
     <div class="sectionSecond-text">
-      <div>CATEGORY</div>
+      <div>{{- section.settings.title -}}</div>
       <div class="arrow">
         <img class="arrow-img" src="{{ 'rightArrow.png' | asset_url }}" />
       </div>
@@ -14,11 +14,11 @@
   {
     "name": "Top-collection-name",
     "settings": [
-          {
-      "type": "text",
-      "id": "title",
-      "label": "Slideshow"
-    }
+        {
+          "type": "text",
+          "id": "title",
+          "label": "タイトルを入力する"
+        }
     ],
     "presets": [
       {
