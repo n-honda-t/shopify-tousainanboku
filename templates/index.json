@@ -359,6 +359,13 @@
         "subheading": ""
       }
     },
+    "e6e5f5c8-4455-43c6-828e-072799c66281": {
+      "type": "top-collection-title",
+      "settings": {
+        "title": "BRAND",
+        "link_url": "shopify:\/\/collections\/brand"
+      }
+    },
     "c6fe8e21-d956-4c43-a5be-c7ec9e86e78f": {
       "type": "featured-collections",
       "blocks": {
@@ -514,6 +521,7 @@
     "e5211a25-b123-48e4-b8e7-30801a60d787",
     "1935a85c-573b-405d-8381-8e18a234ca5f",
     "2a28e9b1-8d54-4e80-8770-2e79c7875f39",
+    "e6e5f5c8-4455-43c6-828e-072799c66281",
     "c6fe8e21-d956-4c43-a5be-c7ec9e86e78f",
     "71191f18-2da9-4966-9d0e-dee8575f6345",
     "9055177f-cc8a-480f-86d8-f2f78468bf12",
