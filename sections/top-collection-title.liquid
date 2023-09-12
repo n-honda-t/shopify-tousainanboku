@@ -2,11 +2,11 @@
   <div class="whiteVar"></div>
   <div class="blackVar">
     <div class="sectionSecond-text">
-      <a>
-      <div>{{- section.settings.title -}}</div>
-      <div class="arrow">
-        <img class="arrow-img" src="{{ 'rightArrow.png' | asset_url }}" />
-      </div>
+      <a href="">
+        <div>{{- section.settings.title -}}</div>
+        <div class="arrow">
+          <img class="arrow-img" src="{{ 'rightArrow.png' | asset_url }}" />
+        </div>
       </a>
     </div>
   </div>
@@ -16,11 +16,17 @@
   {
     "name": "Top-collection-name",
     "settings": [
-        {
-          "type": "text",
-          "id": "title",
-          "label": "タイトルを入力する"
-        }
+      {
+        "type": "text",
+        "id": "title",
+        "label": "タイトルを入力する"
+      },
+      {
+          "type": "url",
+          "id": "link_url",
+          "label": "t:global.text.link_url",
+          "info": "t:sections.featured_collections.blocks.collection.default_link_url"
+      }
     ],
     "presets": [
       {
