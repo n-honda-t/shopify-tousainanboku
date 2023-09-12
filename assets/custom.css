@@ -148,6 +148,7 @@
     width: 100vw;
     position: relative;
   }
+
   .whiteVar {
     height: 18.66vw;
     width: 89.33vw;
@@ -158,6 +159,7 @@
     right: 0;
     background-color: white;
   }
+
   .blackVar {
     height: 18.66vw;
     width: 100vw;
@@ -166,6 +168,7 @@
     top: 13.6vw;
     background-color: black;
   }
+
   .sectionSecond-text {
     display: flex;
     color: white;
@@ -176,6 +179,7 @@
     font-weight: 400;
     gap: 3.2vw;
   }
+
   .arrow {
     width: 4.266vw;
     display: flex;
