@@ -128,6 +128,11 @@
         "subheading": ""
       }
     },
+    "94d183e0-d262-4747-95f2-318d02a12b44": {
+      "type": "top-collection-title",
+      "settings": {
+      }
+    },
     "e286d967-42e3-44bb-b8c1-957268dc7ab3": {
       "type": "featured-collections",
       "blocks": {
@@ -498,6 +503,7 @@
     "featured-collections",
     "720f4743-2e6e-425e-999c-754f06565e70",
     "1f641361-e426-405a-b8d2-1f4ad576484a",
+    "94d183e0-d262-4747-95f2-318d02a12b44",
     "e286d967-42e3-44bb-b8c1-957268dc7ab3",
     "7234d25e-85a9-4f73-859b-626d3fc1c156",
     "99687f4c-1fc9-4432-a7e5-e7c1ad10b8ca",
