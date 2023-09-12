@@ -138,6 +138,7 @@
       "blocks": {
         "template--20926751113522__e286d967-42e3-44bb-b8c1-957268dc7ab3-collection-1": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "ハンドバッグ",
             "products_count": 8,
@@ -150,6 +151,7 @@
       "block_order": [
         "template--20926751113522__e286d967-42e3-44bb-b8c1-957268dc7ab3-collection-1"
       ],
+      "disabled": true,
       "settings": {
         "separate_section_with_border": false,
         "hide_product_information": false,
