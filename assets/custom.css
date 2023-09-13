@@ -110,6 +110,7 @@
     width: 3.75vw;
     background: transparent;
     box-shadow: none;
+    display: none;
   }
 
   .top-downArrow :hover {
