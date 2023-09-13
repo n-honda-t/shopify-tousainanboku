@@ -1,0 +1,25 @@
+@media screen and (min-width: 700px) {
+  /* スクリーンサイズが700px以上の場合に適用 */
+  .category-img {
+    width: 50vw;
+    border-radius: 0 0 7.81vw 0;
+    background-color: white;
+  }
+  .category-img img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  /* スクリーンサイズが699px以下の場合に適用 */
+  .category-img {
+    width: 94.66vw;
+    border-radius: 0 0 26.66vw 0;
+    background-color: white;
+  }
+  .category-img img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
