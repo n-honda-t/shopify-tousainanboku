@@ -90,10 +90,6 @@
     border-radius: 5px;
   }
 
-  /* カート */
-  .cart-container {
-    background-color: #FCF9F3;
-  }
   .top-fv img {
     width: 100%;
     object-fit: cover;
@@ -188,10 +184,6 @@
     border-radius: 5px;
   }
 
-  /* カート */
-  .cart-container {
-    background-color: #FCF9F3;
-  }
   .top-fv {
     width: 100vw;
     border-radius: 50px 0px 0px 0px;
