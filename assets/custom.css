@@ -151,6 +151,19 @@
     width: 100%;
   }
   /* top-collection-title.liquid end*/
+
+  /* トップ画面のfeatured-collectionのview allボタン*/
+  .top-view-all-button > .button {
+    height: 4.375vw;
+    width: 21.875vw;
+    border-radius: 0.390625vw 2.34375vw;
+    padding: 1.406vw 0;
+    font-family: Roboto;
+    font-size: 1.25vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+  }
 }
 
 @media screen and (max-width: 699px) {
@@ -296,4 +309,17 @@
     width: 100%;
   }
   /* top-collection-title.liquid end*/
+
+  /* トップ画面のfeatured-collectionのview allボタン*/
+  .top-view-all-button > .button {
+    height: 14.933vw;
+    width: 74.66vw;
+    border-radius: 1.066vw 8vw;
+    padding: 4.8vw 0;
+    font-family: Roboto;
+    font-size: 4.2666vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+  }
 }
