@@ -301,7 +301,7 @@
     "addresses": {
       "title": "お届け先住所",
       "no_addresses": "あなたはまだ住所を保存していません",
-      "add_address": "新規住所の追加",
+      "add_address": "新しい住所を追加",
       "edit_address": "編集",
       "save_address": "保存",
       "edit": "編集",
