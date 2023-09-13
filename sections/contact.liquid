@@ -1,7 +1,7 @@
 <div class="section-spacing {% if section.settings.separate_section_with_border %}bordered-section{% endif %}">
   <div class="container container--xs">
     <div class="section-stack text-center">
-      {%- render 'section-header', subheading: section.settings.subheading, heading: section.settings.title, content: section.settings.content, text_alignment: 'center' -%}
+      {%- render 'section-header', subheading: section.settings.subheading, heading: 'お問い合わせ', content: section.settings.content, text_alignment: 'center' -%}
 
       {%- form 'contact', class: 'form' -%}
         {%- if form.posted_successfully? -%}
@@ -14,8 +14,8 @@
           {%- render 'banner', status: 'error', content: content -%}
         {%- endif -%}
 
-        <div class="fieldset">
-          <div class="fieldset-row">
+        <div class="contact_wrap">
+          <div class="register_wrap contact_wrap">
             {%- assign label  = 'contact.form.name' | t -%}
             {%- render 'input', type: 'text', name: 'contact[name]', label: label, value: customer.name, required: true, autocomplete: 'name' -%}
 
@@ -43,13 +43,18 @@
               {%- render 'select', option_values: values, show_empty_value: true, name: name, label: block.settings.title, required: true -%}
             {%- endif -%}
           {%- endfor -%}
-
+          <div class="button_wrap">
           {%- assign label = 'contact.form.message' | t -%}
           {%- render 'input', name: 'contact[body]', label: label, multiline: 4, required: true -%}
+          </div>
         </div>
-
+        <div class="button_wrap">
         {%- assign button_content = 'contact.form.submit' | t -%}
         {%- render 'button', content: button_content, type: 'submit' -%}
+        </div>
+      <div class="button_wrap">
+        <a href="/" allow-hash-change class="link-faded">{{ 'customer.recover_password.back_to_login' | t }}</a>
+      </div>
       {%- endform -%}
     </div>
   </div>

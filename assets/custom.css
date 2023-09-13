@@ -25,12 +25,12 @@
 
   /* login */
   .button_wrap,
-  .register_wrap{
+  .register_wrap {
     width: 31.25vw;
-    margin:0 auto;
+    margin: 0 auto;
   }
   .button_wrap > button,
-  .register_wrap > button{
+  .register_wrap > button {
     width: 100%;
   }
   .text_wrap {
@@ -49,28 +49,55 @@
   /* register */
   .register_wrap {
     width: 31.25vw;
-    margin:0 auto;
+    margin: 0 auto;
   }
 
   .register_caution {
     text-align: left;
-    margin:  12px 0 40px;
+    margin: 12px 0 40px;
     font-size: 12px;
+  }
+
+  /* contact */
+  .contact_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
   }
   .top-fv {
     width: 100vw;
     border-radius: 200px 0px 0px 0px;
   }
 
+  /* マイページ */
+  .mypage-container {
+    padding: 0 3.13vw;
+  }
+
+  .mypage-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logout_button {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 2.34vw;
+    background-color: #fff;
+    border: solid 1px #1f1f1f;
+    color: #1f1f1f;
+    border-radius: 5px;
+  }
   .top-fv img {
     width: 100%;
     object-fit: cover;
   }
 
   .footer {
-    padding:  6.25vw 3.13vw;
+    padding: 6.25vw 3.13vw;
   }
-  .footer__block-list  {
+  .footer__block-list {
     justify-content: start;
   }
 
@@ -146,12 +173,12 @@
 
   /* login */
   .button_wrap,
-  .register_wrap{
+  .register_wrap {
     width: 90vw;
-    margin:0 auto;
+    margin: 0 auto;
   }
   .button_wrap > button,
-  .register_wrap > button{
+  .register_wrap > button {
     width: 100%;
   }
   .text_wrap {
@@ -159,9 +186,9 @@
   }
 
   .login_label {
-      width: 90vw;
-      text-align: left;
-      margin-bottom: 12px;
+    width: 90vw;
+    text-align: left;
+    margin-bottom: 12px;
   }
 
   .login_label.mt {
@@ -171,15 +198,41 @@
   /* register */
   .register_wrap {
     width: 90vw;
-    margin:0 auto;
+    margin: 0 auto;
   }
 
   .register_caution {
     text-align: left;
-      margin:  12px 0 40px;
+    margin: 12px 0 40px;
     font-size: 12px;
   }
 
+  /* contact */
+  .contact_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  /* マイページ */
+  .mypage-container {
+    padding: 0 4.27vw;
+  }
+
+  .mypage-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logout_button {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 8vw;
+    background-color: #fff;
+    border: solid 1px #1f1f1f;
+    color: #1f1f1f;
+    border-radius: 5px;
+  }
   .top-fv {
     width: 100vw;
     border-radius: 50px 0px 0px 0px;
@@ -191,7 +244,7 @@
   }
 
   .footer {
-    padding:  6.25vw 3.13vw;
+    padding: 6.25vw 3.13vw;
   }
 
   /* top-collection-title.liquid srart*/
