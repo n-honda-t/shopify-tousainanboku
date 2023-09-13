@@ -72,34 +72,6 @@
         "subheading": ""
       }
     },
-    "720f4743-2e6e-425e-999c-754f06565e70": {
-      "type": "featured-collections",
-      "blocks": {
-        "template--20926751113522__720f4743-2e6e-425e-999c-754f06565e70-collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "sale",
-            "products_count": 5,
-            "title": "",
-            "link_url": "",
-            "link_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--20926751113522__720f4743-2e6e-425e-999c-754f06565e70-collection-1"
-      ],
-      "settings": {
-        "separate_section_with_border": false,
-        "hide_product_information": false,
-        "stack_products": false,
-        "products_per_row_mobile": "1",
-        "products_per_row_desktop": 5,
-        "horizontal_spacing_factor": 1,
-        "vertical_spacing_factor": 1,
-        "subheading": ""
-      }
-    },
     "1f641361-e426-405a-b8d2-1f4ad576484a": {
       "type": "featured-collections",
       "blocks": {
@@ -122,6 +94,34 @@
         "hide_product_information": false,
         "stack_products": false,
         "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": ""
+      }
+    },
+    "720f4743-2e6e-425e-999c-754f06565e70": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--20926751113522__720f4743-2e6e-425e-999c-754f06565e70-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "sale",
+            "products_count": 5,
+            "title": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20926751113522__720f4743-2e6e-425e-999c-754f06565e70-collection-1"
+      ],
+      "settings": {
+        "separate_section_with_border": false,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_per_row_mobile": "1",
         "products_per_row_desktop": 5,
         "horizontal_spacing_factor": 1,
         "vertical_spacing_factor": 1,
@@ -510,8 +510,8 @@
   "order": [
     "slideshow",
     "featured-collections",
-    "720f4743-2e6e-425e-999c-754f06565e70",
     "1f641361-e426-405a-b8d2-1f4ad576484a",
+    "720f4743-2e6e-425e-999c-754f06565e70",
     "94d183e0-d262-4747-95f2-318d02a12b44",
     "e286d967-42e3-44bb-b8c1-957268dc7ab3",
     "7234d25e-85a9-4f73-859b-626d3fc1c156",

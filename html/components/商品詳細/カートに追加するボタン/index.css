@@ -1,0 +1,35 @@
+@media screen and (min-width: 700px) {
+  /* スクリーンサイズが700px以上の場合に適用 */
+  .cart-button {
+    height: 5vw;
+    width: 31.87vw;
+    border-radius: 0.390625vw 2.34375vw;
+    padding: 1.64vw 0 1.406vw 0;
+    color: white;
+    background-color: #1f1f1f;
+    border: none;
+    font-family: Roboto;
+    font-size: 1.406vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  /* スクリーンサイズが699px以下の場合に適用 */
+  .cart-button {
+    height: 17.06vw;
+    width: 70.13vw;
+    border-radius: 1.33vw 8vw;
+    padding: 5.6vw 0 4.8vw 0;
+    color: white;
+    background-color: #1f1f1f;
+    border: none;
+    font-family: Roboto;
+    font-size: 4.8vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+  }
+}
