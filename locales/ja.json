@@ -277,7 +277,7 @@
       "order_name": "注文 {{name}}",
       "created_at": "{{created_at}}に注文しました",
       "view_details": "詳細表示",
-      "back": "注文一覧へ戻る",
+      "back": "マイページへ戻る",
       "date": "日付",
       "payment_status": "お支払い状況",
       "fulfillment_status": "ご注文商品の状況",
