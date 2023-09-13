@@ -299,7 +299,7 @@
       "billing_address": "請求先住所"
     },
     "addresses": {
-      "title": "住所",
+      "title": "お届け先住所",
       "no_addresses": "あなたはまだ住所を保存していません",
       "add_address": "新規住所の追加",
       "edit_address": "編集",
