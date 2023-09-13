@@ -1,0 +1,35 @@
+<div class="sectionSecond-title">
+  <div class="whiteVar"></div>
+  <div class="blackVar">
+    <a href="{{- section.settings.link_url -}}" class="sectionSecond-text">
+      <div>{{- section.settings.title -}}</div>
+      <div class="arrow">
+        <img class="arrow-img" src="{{ 'rightArrow.png' | asset_url }}" />
+      </div>
+    </a>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Top-collection-title",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "タイトルを入力する"
+      },
+      {
+        "type": "url",
+        "id": "link_url",
+        "label": "t:global.text.link_url",
+        "info": "遷移先リンク"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Top-collection-title"
+      }
+    ]
+  }
+{% endschema %}
