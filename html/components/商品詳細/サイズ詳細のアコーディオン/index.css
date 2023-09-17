@@ -1,0 +1,114 @@
+@media screen and (min-width: 700px) {
+  /* スクリーンサイズが700px以上の場合に適用 */
+  .Label {
+    width: 42.18vw;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.25vw;
+    padding: 2.031vw 1.5625vw;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  .title {
+    width: 39.06vw;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 1.5625vw;
+  }
+  .content-text {
+    padding: 2.031vw 0;
+    font-size: 1.5625vw;
+  }
+  .question_plus_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .question_minus_icon {
+    margin: auto 0;
+  }
+  .question_plus_icon img,
+  .question_minus_icon img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .question_inner_box .content {
+    display: none;
+  }
+  input.toggle {
+    display: none; /* 初期は非表示 */
+  }
+  .question_inner_box .question_minus_icon {
+    display: none;
+  }
+
+  .question_inner_box input.toggle:checked + label .question_plus_icon {
+    display: none;
+  }
+
+  .question_inner_box input.toggle:checked + label .question_minus_icon {
+    display: block;
+  }
+
+  .question_inner_box input.toggle:checked ~ .content {
+    display: block;
+  }
+}
+@media screen and (max-width: 699px) {
+  /* スクリーンサイズが699px以下の場合に適用 */
+  .Label {
+    width: 91.46vw;
+    display: flex;
+    justify-content: space-between;
+    gap: 4.266vw;
+    padding: 4.266vw 5.333vw;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  .title {
+    width: 86.79vw;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 3.733vw;
+  }
+  .content-text {
+    padding: 4.266vw 0;
+    font-size: 3.733vw;
+  }
+  .question_plus_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .question_minus_icon {
+    margin: auto 0;
+  }
+  .question_plus_icon img,
+  .question_minus_icon img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .question_inner_box .content {
+    display: none;
+  }
+  input.toggle {
+    display: none; /* 初期は非表示 */
+  }
+  .question_inner_box .question_minus_icon {
+    display: none;
+  }
+
+  .question_inner_box input.toggle:checked + label .question_plus_icon {
+    display: none;
+  }
+
+  .question_inner_box input.toggle:checked + label .question_minus_icon {
+    display: block;
+  }
+
+  .question_inner_box input.toggle:checked ~ .content {
+    display: block;
+  }
+}

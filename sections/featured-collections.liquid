@@ -102,7 +102,7 @@
               {%- if block.settings.link_text != blank -%}
                 {%- assign button_link = block.settings.link_url | default: block.settings.collection.url | default: '#' -%}
 
-                <div class="justify-self-center hoge">
+                <div class="justify-self-center top-view-all-button">
                   {%- render 'button', href: button_link, content: block.settings.link_text -%}
                 </div>
               {%- endif -%}
