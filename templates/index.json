@@ -73,9 +73,38 @@
         "circle_button_background": "#ffffff",
         "circle_button_text_color": "#1c1c1c"
       }
+    },
+    "dcadd4b3-3d32-427d-89bf-ed4f0da6c75e": {
+      "type": "featured-collections",
+      "blocks": {
+        "db2fe6e6-6974-4b3b-87e3-38fdf59c46d2": {
+          "type": "collection",
+          "settings": {
+            "collection": "new-collection",
+            "products_count": 8,
+            "title": "",
+            "link_url": "shopify:\/\/collections\/new-collection",
+            "link_text": "View all"
+          }
+        }
+      },
+      "block_order": [
+        "db2fe6e6-6974-4b3b-87e3-38fdf59c46d2"
+      ],
+      "settings": {
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": "Featured collection"
+      }
     }
   },
   "order": [
-    "4c8b1cc8-3570-4109-aa10-55557ada616b"
+    "4c8b1cc8-3570-4109-aa10-55557ada616b",
+    "dcadd4b3-3d32-427d-89bf-ed4f0da6c75e"
   ]
 }
