@@ -1,5 +1,49 @@
 {
   "sections": {
+    "e1d2256e-2d05-4ec0-81c2-afff2f804f47": {
+      "type": "slideshow",
+      "blocks": {
+        "template--21094896369970__e1d2256e-2d05-4ec0-81c2-afff2f804f47-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/arno-senoner-ooj5VfXq5o8-unsplash_2_2.png",
+            "subheading": "",
+            "title": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "content_max_width": 780,
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_style": "solid",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#000000",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "",
+            "background_opacity": 50,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21094896369970__e1d2256e-2d05-4ec0-81c2-afff2f804f47-image-1"
+      ],
+      "settings": {
+        "allow_transparent_header": false,
+        "show_next_section_button": true,
+        "media_size": "auto",
+        "autoplay": true,
+        "autoplay_pause_on_video": true,
+        "cycle_speed": 5,
+        "background": "#ffffff",
+        "controls_color": "#ffffff"
+      }
+    },
     "dcadd4b3-3d32-427d-89bf-ed4f0da6c75e": {
       "type": "featured-collections",
       "blocks": {
@@ -25,7 +69,7 @@
         "products_per_row_desktop": 5,
         "horizontal_spacing_factor": 1,
         "vertical_spacing_factor": 1,
-        "subheading": ""
+        "subheading": "Featured collection"
       }
     },
     "0a2a7a5b-f88d-442b-8e90-99401ac7abd0": {
@@ -53,7 +97,7 @@
         "products_per_row_desktop": 5,
         "horizontal_spacing_factor": 1,
         "vertical_spacing_factor": 1,
-        "subheading": ""
+        "subheading": "Featured collection"
       }
     },
     "8c192459-93ee-4b08-83bf-9426f11728a2": {
@@ -81,7 +125,7 @@
         "products_per_row_desktop": 5,
         "horizontal_spacing_factor": 1,
         "vertical_spacing_factor": 1,
-        "subheading": ""
+        "subheading": "Featured collection"
       }
     },
     "e2d9c873-902b-4e26-935c-6d9d3ed03f3f": {
@@ -436,6 +480,7 @@
     }
   },
   "order": [
+    "e1d2256e-2d05-4ec0-81c2-afff2f804f47",
     "dcadd4b3-3d32-427d-89bf-ed4f0da6c75e",
     "0a2a7a5b-f88d-442b-8e90-99401ac7abd0",
     "8c192459-93ee-4b08-83bf-9426f11728a2",
