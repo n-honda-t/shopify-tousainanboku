@@ -1,531 +1,81 @@
 {
   "sections": {
-    "slideshow": {
-      "type": "slideshow",
+    "4c8b1cc8-3570-4109-aa10-55557ada616b": {
+      "type": "collection-list",
       "blocks": {
-        "slide-1": {
-          "type": "image",
+        "template--21094896369970__4c8b1cc8-3570-4109-aa10-55557ada616b-collection-1": {
+          "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/arno-senoner-ooj5VfXq5o8-unsplash_2_2.png",
+            "collection": "",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
             "subheading": "",
             "title": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "content_max_width": 780,
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_style": "solid",
-            "button_1_background": "#ffffff",
-            "button_1_text_color": "#000000",
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_style": "outline",
-            "button_2_background": "#ffffff",
-            "button_2_text_color": "#000000",
-            "background": "",
-            "background_opacity": 50,
+            "button_text": "View products",
+            "button_link": "",
             "text_color": "#ffffff",
-            "border_color": "",
-            "gradient_overlay": ""
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "button_background": "",
+            "button_text_color": ""
           }
-        }
-      },
-      "block_order": [
-        "slide-1"
-      ],
-      "settings": {
-        "allow_transparent_header": false,
-        "show_next_section_button": true,
-        "media_size": "auto",
-        "autoplay": true,
-        "autoplay_pause_on_video": true,
-        "cycle_speed": 5,
-        "background": "#ffffff",
-        "controls_color": "#ffffff"
-      }
-    },
-    "featured-collections": {
-      "type": "featured-collections",
-      "blocks": {
-        "collection-1": {
+        },
+        "template--21094896369970__4c8b1cc8-3570-4109-aa10-55557ada616b-collection-2": {
           "type": "collection",
           "settings": {
-            "collection": "new-collection",
-            "products_count": 50,
+            "collection": "",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
             "title": "",
-            "link_url": "",
-            "link_text": ""
+            "button_text": "View products",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "button_background": "",
+            "button_text_color": ""
           }
-        }
-      },
-      "block_order": [
-        "collection-1"
-      ],
-      "settings": {
-        "separate_section_with_border": false,
-        "hide_product_information": false,
-        "stack_products": false,
-        "products_per_row_mobile": "1",
-        "products_per_row_desktop": 5,
-        "horizontal_spacing_factor": 1,
-        "vertical_spacing_factor": 1,
-        "subheading": ""
-      }
-    },
-    "1f641361-e426-405a-b8d2-1f4ad576484a": {
-      "type": "featured-collections",
-      "blocks": {
-        "template--20926751113522__1f641361-e426-405a-b8d2-1f4ad576484a-collection-1": {
+        },
+        "template--21094896369970__4c8b1cc8-3570-4109-aa10-55557ada616b-collection-3": {
           "type": "collection",
           "settings": {
-            "collection": "ranking",
-            "products_count": 8,
+            "collection": "",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
             "title": "",
-            "link_url": "",
-            "link_text": ""
+            "button_text": "View products",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "button_background": "",
+            "button_text_color": ""
           }
         }
       },
       "block_order": [
-        "template--20926751113522__1f641361-e426-405a-b8d2-1f4ad576484a-collection-1"
+        "template--21094896369970__4c8b1cc8-3570-4109-aa10-55557ada616b-collection-1",
+        "template--21094896369970__4c8b1cc8-3570-4109-aa10-55557ada616b-collection-2",
+        "template--21094896369970__4c8b1cc8-3570-4109-aa10-55557ada616b-collection-3"
       ],
       "settings": {
-        "separate_section_with_border": false,
-        "hide_product_information": false,
-        "stack_products": false,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 5,
-        "horizontal_spacing_factor": 1,
-        "vertical_spacing_factor": 1,
-        "subheading": ""
-      }
-    },
-    "720f4743-2e6e-425e-999c-754f06565e70": {
-      "type": "featured-collections",
-      "blocks": {
-        "template--20926751113522__720f4743-2e6e-425e-999c-754f06565e70-collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "sale",
-            "products_count": 5,
-            "title": "",
-            "link_url": "",
-            "link_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--20926751113522__720f4743-2e6e-425e-999c-754f06565e70-collection-1"
-      ],
-      "settings": {
-        "separate_section_with_border": false,
-        "hide_product_information": false,
-        "stack_products": false,
-        "products_per_row_mobile": "1",
-        "products_per_row_desktop": 5,
-        "horizontal_spacing_factor": 1,
-        "vertical_spacing_factor": 1,
-        "subheading": ""
-      }
-    },
-    "94d183e0-d262-4747-95f2-318d02a12b44": {
-      "type": "top-collection-title",
-      "settings": {
-        "title": "CATEGORY",
-        "link_url": "shopify:\/\/collections\/category"
-      }
-    },
-    "e286d967-42e3-44bb-b8c1-957268dc7ab3": {
-      "type": "featured-collections",
-      "blocks": {
-        "template--20926751113522__e286d967-42e3-44bb-b8c1-957268dc7ab3-collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "ハンドバッグ",
-            "products_count": 8,
-            "title": "",
-            "link_url": "",
-            "link_text": "ハンドバッグのテキスト"
-          }
-        }
-      },
-      "block_order": [
-        "template--20926751113522__e286d967-42e3-44bb-b8c1-957268dc7ab3-collection-1"
-      ],
-      "settings": {
-        "separate_section_with_border": false,
-        "hide_product_information": false,
-        "stack_products": false,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 5,
-        "horizontal_spacing_factor": 1,
-        "vertical_spacing_factor": 1,
-        "subheading": ""
-      }
-    },
-    "7234d25e-85a9-4f73-859b-626d3fc1c156": {
-      "type": "featured-collections",
-      "blocks": {
-        "template--20926751113522__7234d25e-85a9-4f73-859b-626d3fc1c156-collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "ショルダーバッグ",
-            "products_count": 8,
-            "title": "",
-            "link_url": "",
-            "link_text": "View all"
-          }
-        }
-      },
-      "block_order": [
-        "template--20926751113522__7234d25e-85a9-4f73-859b-626d3fc1c156-collection-1"
-      ],
-      "settings": {
-        "separate_section_with_border": false,
-        "hide_product_information": false,
-        "stack_products": false,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 5,
-        "horizontal_spacing_factor": 1,
-        "vertical_spacing_factor": 1,
-        "subheading": ""
-      }
-    },
-    "99687f4c-1fc9-4432-a7e5-e7c1ad10b8ca": {
-      "type": "featured-collections",
-      "blocks": {
-        "template--20926751113522__99687f4c-1fc9-4432-a7e5-e7c1ad10b8ca-collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "トートバッグ",
-            "products_count": 8,
-            "title": "",
-            "link_url": "",
-            "link_text": "View all"
-          }
-        }
-      },
-      "block_order": [
-        "template--20926751113522__99687f4c-1fc9-4432-a7e5-e7c1ad10b8ca-collection-1"
-      ],
-      "settings": {
-        "separate_section_with_border": false,
-        "hide_product_information": false,
-        "stack_products": false,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 5,
-        "horizontal_spacing_factor": 1,
-        "vertical_spacing_factor": 1,
-        "subheading": ""
-      }
-    },
-    "b1b0cc85-f286-4d2d-a45d-b5f9005df863": {
-      "type": "featured-collections",
-      "blocks": {
-        "template--20926751113522__b1b0cc85-f286-4d2d-a45d-b5f9005df863-collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "クラッチバッグ",
-            "products_count": 8,
-            "title": "",
-            "link_url": "",
-            "link_text": "View all"
-          }
-        }
-      },
-      "block_order": [
-        "template--20926751113522__b1b0cc85-f286-4d2d-a45d-b5f9005df863-collection-1"
-      ],
-      "settings": {
-        "separate_section_with_border": false,
-        "hide_product_information": false,
-        "stack_products": false,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 5,
-        "horizontal_spacing_factor": 1,
-        "vertical_spacing_factor": 1,
-        "subheading": ""
-      }
-    },
-    "9fe4c06b-83c1-4f47-bc9e-b8e6eb093e28": {
-      "type": "featured-collections",
-      "blocks": {
-        "template--20926751113522__9fe4c06b-83c1-4f47-bc9e-b8e6eb093e28-collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "ボストンバッグ",
-            "products_count": 8,
-            "title": "",
-            "link_url": "",
-            "link_text": "View all"
-          }
-        }
-      },
-      "block_order": [
-        "template--20926751113522__9fe4c06b-83c1-4f47-bc9e-b8e6eb093e28-collection-1"
-      ],
-      "settings": {
-        "separate_section_with_border": false,
-        "hide_product_information": false,
-        "stack_products": false,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 5,
-        "horizontal_spacing_factor": 1,
-        "vertical_spacing_factor": 1,
-        "subheading": ""
-      }
-    },
-    "e5211a25-b123-48e4-b8e7-30801a60d787": {
-      "type": "featured-collections",
-      "blocks": {
-        "template--20926751113522__e5211a25-b123-48e4-b8e7-30801a60d787-collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "リュックサック",
-            "products_count": 8,
-            "title": "",
-            "link_url": "",
-            "link_text": "View all"
-          }
-        }
-      },
-      "block_order": [
-        "template--20926751113522__e5211a25-b123-48e4-b8e7-30801a60d787-collection-1"
-      ],
-      "settings": {
-        "separate_section_with_border": false,
-        "hide_product_information": false,
-        "stack_products": false,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 5,
-        "horizontal_spacing_factor": 1,
-        "vertical_spacing_factor": 1,
-        "subheading": ""
-      }
-    },
-    "1935a85c-573b-405d-8381-8e18a234ca5f": {
-      "type": "featured-collections",
-      "blocks": {
-        "template--20926751113522__1935a85c-573b-405d-8381-8e18a234ca5f-collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "財布-小物",
-            "products_count": 8,
-            "title": "",
-            "link_url": "",
-            "link_text": "View all"
-          }
-        }
-      },
-      "block_order": [
-        "template--20926751113522__1935a85c-573b-405d-8381-8e18a234ca5f-collection-1"
-      ],
-      "settings": {
-        "separate_section_with_border": false,
-        "hide_product_information": false,
-        "stack_products": false,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 5,
-        "horizontal_spacing_factor": 1,
-        "vertical_spacing_factor": 1,
-        "subheading": ""
-      }
-    },
-    "2a28e9b1-8d54-4e80-8770-2e79c7875f39": {
-      "type": "featured-collections",
-      "blocks": {
-        "template--20926751113522__2a28e9b1-8d54-4e80-8770-2e79c7875f39-collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "その他",
-            "products_count": 8,
-            "title": "",
-            "link_url": "",
-            "link_text": "View all"
-          }
-        }
-      },
-      "block_order": [
-        "template--20926751113522__2a28e9b1-8d54-4e80-8770-2e79c7875f39-collection-1"
-      ],
-      "settings": {
-        "separate_section_with_border": false,
-        "hide_product_information": false,
-        "stack_products": false,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 5,
-        "horizontal_spacing_factor": 1,
-        "vertical_spacing_factor": 1,
-        "subheading": ""
-      }
-    },
-    "e6e5f5c8-4455-43c6-828e-072799c66281": {
-      "type": "top-collection-title",
-      "settings": {
-        "title": "BRAND",
-        "link_url": "shopify:\/\/collections\/brand"
-      }
-    },
-    "c6fe8e21-d956-4c43-a5be-c7ec9e86e78f": {
-      "type": "featured-collections",
-      "blocks": {
-        "template--20926751113522__c6fe8e21-d956-4c43-a5be-c7ec9e86e78f-collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "brand1",
-            "products_count": 8,
-            "title": "",
-            "link_url": "",
-            "link_text": "View all"
-          }
-        }
-      },
-      "block_order": [
-        "template--20926751113522__c6fe8e21-d956-4c43-a5be-c7ec9e86e78f-collection-1"
-      ],
-      "settings": {
-        "separate_section_with_border": false,
-        "hide_product_information": false,
-        "stack_products": false,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 5,
-        "horizontal_spacing_factor": 1,
-        "vertical_spacing_factor": 1,
-        "subheading": ""
-      }
-    },
-    "71191f18-2da9-4966-9d0e-dee8575f6345": {
-      "type": "featured-collections",
-      "blocks": {
-        "template--20926751113522__71191f18-2da9-4966-9d0e-dee8575f6345-collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "brand2",
-            "products_count": 8,
-            "title": "",
-            "link_url": "",
-            "link_text": "View all"
-          }
-        }
-      },
-      "block_order": [
-        "template--20926751113522__71191f18-2da9-4966-9d0e-dee8575f6345-collection-1"
-      ],
-      "settings": {
-        "separate_section_with_border": false,
-        "hide_product_information": false,
-        "stack_products": false,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 5,
-        "horizontal_spacing_factor": 1,
-        "vertical_spacing_factor": 1,
-        "subheading": ""
-      }
-    },
-    "9055177f-cc8a-480f-86d8-f2f78468bf12": {
-      "type": "featured-collections",
-      "blocks": {
-        "template--20926751113522__9055177f-cc8a-480f-86d8-f2f78468bf12-collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "brand3",
-            "products_count": 8,
-            "title": "",
-            "link_url": "",
-            "link_text": "View all"
-          }
-        }
-      },
-      "block_order": [
-        "template--20926751113522__9055177f-cc8a-480f-86d8-f2f78468bf12-collection-1"
-      ],
-      "settings": {
-        "separate_section_with_border": false,
-        "hide_product_information": false,
-        "stack_products": false,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 5,
-        "horizontal_spacing_factor": 1,
-        "vertical_spacing_factor": 1,
-        "subheading": ""
-      }
-    },
-    "dfefd1ae-9578-4476-b965-85c0ec644050": {
-      "type": "featured-collections",
-      "blocks": {
-        "f3c4804f-c9d4-4896-9247-68cf4ebbb4ad": {
-          "type": "collection",
-          "settings": {
-            "collection": "brand4",
-            "products_count": 8,
-            "title": "",
-            "link_url": "",
-            "link_text": "View all"
-          }
-        }
-      },
-      "block_order": [
-        "f3c4804f-c9d4-4896-9247-68cf4ebbb4ad"
-      ],
-      "settings": {
-        "separate_section_with_border": false,
-        "hide_product_information": false,
-        "stack_products": false,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 5,
-        "horizontal_spacing_factor": 1,
-        "vertical_spacing_factor": 1,
-        "subheading": ""
-      }
-    },
-    "95685fcb-0095-434b-9e37-0c68e1008713": {
-      "type": "featured-collections",
-      "blocks": {
-        "template--20926751113522__95685fcb-0095-434b-9e37-0c68e1008713-collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "brand4-1",
-            "products_count": 8,
-            "title": "",
-            "link_url": "",
-            "link_text": "View all"
-          }
-        }
-      },
-      "block_order": [
-        "template--20926751113522__95685fcb-0095-434b-9e37-0c68e1008713-collection-1"
-      ],
-      "settings": {
-        "separate_section_with_border": false,
-        "hide_product_information": false,
-        "stack_products": false,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 5,
-        "horizontal_spacing_factor": 1,
-        "vertical_spacing_factor": 1,
-        "subheading": ""
+        "separate_section_with_border": true,
+        "image_size": "auto",
+        "show_text_outside": false,
+        "space_items": true,
+        "stack_collections": true,
+        "collections_per_row_desktop": 3,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "circle_button_background": "#ffffff",
+        "circle_button_text_color": "#1c1c1c"
       }
     }
   },
   "order": [
-    "slideshow",
-    "featured-collections",
-    "1f641361-e426-405a-b8d2-1f4ad576484a",
-    "720f4743-2e6e-425e-999c-754f06565e70",
-    "94d183e0-d262-4747-95f2-318d02a12b44",
-    "e286d967-42e3-44bb-b8c1-957268dc7ab3",
-    "7234d25e-85a9-4f73-859b-626d3fc1c156",
-    "99687f4c-1fc9-4432-a7e5-e7c1ad10b8ca",
-    "b1b0cc85-f286-4d2d-a45d-b5f9005df863",
-    "9fe4c06b-83c1-4f47-bc9e-b8e6eb093e28",
-    "e5211a25-b123-48e4-b8e7-30801a60d787",
-    "1935a85c-573b-405d-8381-8e18a234ca5f",
-    "2a28e9b1-8d54-4e80-8770-2e79c7875f39",
-    "e6e5f5c8-4455-43c6-828e-072799c66281",
-    "c6fe8e21-d956-4c43-a5be-c7ec9e86e78f",
-    "71191f18-2da9-4966-9d0e-dee8575f6345",
-    "9055177f-cc8a-480f-86d8-f2f78468bf12",
-    "dfefd1ae-9578-4476-b965-85c0ec644050",
-    "95685fcb-0095-434b-9e37-0c68e1008713"
+    "4c8b1cc8-3570-4109-aa10-55557ada616b"
   ]
 }
