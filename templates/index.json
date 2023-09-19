@@ -118,6 +118,34 @@
         "vertical_spacing_factor": 1,
         "subheading": "Featured collection"
       }
+    },
+    "4bc993a3-d53a-470a-af59-be0f9477100e": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--21094896369970__4bc993a3-d53a-470a-af59-be0f9477100e-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "ショルダーバッグ",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        }
+      },
+      "block_order": [
+        "template--21094896369970__4bc993a3-d53a-470a-af59-be0f9477100e-collection-1"
+      ],
+      "settings": {
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": "Featured collection"
+      }
     }
   },
   "order": [
@@ -125,6 +153,7 @@
     "0a2a7a5b-f88d-442b-8e90-99401ac7abd0",
     "8c192459-93ee-4b08-83bf-9426f11728a2",
     "e2d9c873-902b-4e26-935c-6d9d3ed03f3f",
-    "4c85e43e-c607-4e98-a96a-27c32cd8508e"
+    "4c85e43e-c607-4e98-a96a-27c32cd8508e",
+    "4bc993a3-d53a-470a-af59-be0f9477100e"
   ]
 }
