@@ -55,10 +55,76 @@
         "vertical_spacing_factor": 1,
         "subheading": "Featured collection"
       }
+    },
+    "8c192459-93ee-4b08-83bf-9426f11728a2": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--21094896369970__8c192459-93ee-4b08-83bf-9426f11728a2-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "ranking",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21094896369970__8c192459-93ee-4b08-83bf-9426f11728a2-collection-1"
+      ],
+      "settings": {
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": "Featured collection"
+      }
+    },
+    "e2d9c873-902b-4e26-935c-6d9d3ed03f3f": {
+      "type": "top-collection-title",
+      "settings": {
+        "title": "CATEGORY",
+        "link_url": "shopify:\/\/collections\/category"
+      }
+    },
+    "4c85e43e-c607-4e98-a96a-27c32cd8508e": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--21094896369970__4c85e43e-c607-4e98-a96a-27c32cd8508e-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "brand1",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        }
+      },
+      "block_order": [
+        "template--21094896369970__4c85e43e-c607-4e98-a96a-27c32cd8508e-collection-1"
+      ],
+      "settings": {
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": "Featured collection"
+      }
     }
   },
   "order": [
     "dcadd4b3-3d32-427d-89bf-ed4f0da6c75e",
-    "0a2a7a5b-f88d-442b-8e90-99401ac7abd0"
+    "0a2a7a5b-f88d-442b-8e90-99401ac7abd0",
+    "8c192459-93ee-4b08-83bf-9426f11728a2",
+    "e2d9c873-902b-4e26-935c-6d9d3ed03f3f",
+    "4c85e43e-c607-4e98-a96a-27c32cd8508e"
   ]
 }
