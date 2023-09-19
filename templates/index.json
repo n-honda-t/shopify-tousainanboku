@@ -119,6 +119,13 @@
         "subheading": "Featured collection"
       }
     },
+    "75412394-9d9f-4bb8-9b6a-af42d392708e": {
+      "type": "top-collection-title",
+      "settings": {
+        "title": "CATEGORY",
+        "link_url": "shopify:\/\/collections\/category"
+      }
+    },
     "4bc993a3-d53a-470a-af59-be0f9477100e": {
       "type": "featured-collections",
       "blocks": {
@@ -154,6 +161,7 @@
     "8c192459-93ee-4b08-83bf-9426f11728a2",
     "e2d9c873-902b-4e26-935c-6d9d3ed03f3f",
     "4c85e43e-c607-4e98-a96a-27c32cd8508e",
+    "75412394-9d9f-4bb8-9b6a-af42d392708e",
     "4bc993a3-d53a-470a-af59-be0f9477100e"
   ]
 }
