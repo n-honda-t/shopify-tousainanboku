@@ -10,7 +10,7 @@
   </ul>
   {% assign unko = section.settings.collection.title %}
   <h1>うんこ出力するよ{{ unko }}</h1>
-  <input></input>
+  <input type="hidden" value="{{ unko }}" id="ora" />
 </section>
 {% schema %}
   {
@@ -34,7 +34,9 @@
 {% endstylesheet %}
 
 {% javascript %}
-  var a = {{  unko }}
+  // var a = {{  unko }}
   console.log('hogehoge');
-  console.log(a);
+  var b = document.getElementById('ora');
+  console.log(b.value);
+  // console.log(a);
 {% endjavascript %}
