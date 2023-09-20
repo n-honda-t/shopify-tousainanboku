@@ -1,7 +1,15 @@
+<section class="lesson-section">
+  {%- render 'button', type: 'submit', content: save_button, size: 'xl' -%}
+</section>
 {% schema %}
   {
     "name": "Section name",
-    "settings": []
+    "settings": [],
+     "presets": [
+      {
+        "name": "Top-collection-title"
+      }
+    ]
   }
 {% endschema %}
 
