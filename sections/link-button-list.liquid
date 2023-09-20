@@ -2,7 +2,7 @@
   <h1>{{  section.settings.collection.title }}</h1>
   <pre>{{ section.settings.collection | json }}</pre>
     <ul>
-    {% assign unko = collection%}
+    {% assign unko = collections%}
     {% for collection in collections %}
       <li>{{ collection.title }}</li>
       <pre>{{ collection | json }}</pre>
@@ -32,7 +32,7 @@
 {% endstylesheet %}
 
 {% javascript %}
-  // var a = {{  unko }}
+  var a = {{  unko }}
   console.log('hogehoge');
-  // console.log(a);
+  console.log(a);
 {% endjavascript %}
