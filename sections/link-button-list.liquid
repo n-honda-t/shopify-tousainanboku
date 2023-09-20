@@ -11,7 +11,7 @@
   {% assign unko = section.settings.collection.title %}
   <h1>うんこ出力するよ{{ unko }}</h1>
   <input type="hidden" value="{{ unko }}" id="ora" />
-  <input type="hidden" value="{{ collections }}" id="c" />
+  <input type="hidden" value="{{ collections | json }}" id="c" />
 </section>
 {% schema %}
   {
