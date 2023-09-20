@@ -10,9 +10,10 @@
   </ul>
   {% assign unko = section.settings.collection.title %}
   <h1>うんこ出力するよ{{ unko }}</h1>
-  <h1>{{ collections[0] | json }}</h1>
+  {% assign firstCollection = collections.first %}
+  <h1>{{ firstCollection | json }}</h1>
   <input type="hidden" value="{{ unko }}" id="ora" />
-  <input type="hidden" value="{{ collections[0] | json }}" id="c" />
+  <input type="hidden" value="{{ firstCollection | json }}" id="c" />
 </section>
 {% schema %}
   {
