@@ -2,7 +2,7 @@
   <h1>{{  section.settings.collection.title }}</h1>
   <pre>{{ section.settings.collection | json }}</pre>
     <ul>
-    {% assign unko = collections%}
+    {% assign unko = section.settings.collection.title %}
     {% for collection in collections %}
       <li>{{ collection.title }}</li>
       <pre>{{ collection | json }}</pre>
