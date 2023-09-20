@@ -1,12 +1,10 @@
 <section class="lesson-section">
   <h1>{{  section.settings.collection.title }}</h1>
   <pre>{{ section.settings.collection | json }}</pre>
-  <pre>{{ section.settings.collection.filters | json }}</pre>
     <ul>
     {% for collection in collections %}
-        <li>{{ collection.title }}</li>
-      <li>{{ collection.handle }}</li>
-      <li>{{ collection.all_vendors |json}}</li>
+      <li>{{ collection.title }}</li>
+      <pre>{{ collection | json }}</pre>
     {% endfor %}
   </ul>
 </section>
