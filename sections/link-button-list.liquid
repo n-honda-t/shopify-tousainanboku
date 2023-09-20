@@ -2,6 +2,7 @@
   <h1>{{  section.settings.collection.title }}</h1>
   <pre>{{ section.settings.collection | json }}</pre>
     <ul>
+    {% assign unko = collection%}
     {% for collection in collections %}
       <li>{{ collection.title }}</li>
       <pre>{{ collection | json }}</pre>
@@ -31,4 +32,6 @@
 {% endstylesheet %}
 
 {% javascript %}
+  var a = {{  unko }}
+  console.log(a);
 {% endjavascript %}
