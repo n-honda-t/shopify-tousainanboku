@@ -6,6 +6,7 @@
     {% for collection in collections %}
         <li>{{ collection.title }}</li>
       <li>{{ collection.handle }}</li>
+      <li>{{ collection.all_vendors |json}}</li>
     {% endfor %}
   </ul>
 </section>
