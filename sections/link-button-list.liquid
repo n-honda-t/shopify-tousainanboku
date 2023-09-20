@@ -2,13 +2,14 @@
   <h1>{{  section.settings.collection.title }}</h1>
   <pre>{{ section.settings.collection | json }}</pre>
     <ul>
-    {% assign unko = section.settings.collection.title %}
     {% for collection in collections %}
       <li>{{ collection.title }}</li>
       <pre>{{ collection | json }}</pre>
       <li>hoge</li>
     {% endfor %}
   </ul>
+  {% assign unko = section.settings.collection.title %}
+  <h1>うんこ出力するよ{{ unko }}</h1>
 </section>
 {% schema %}
   {
