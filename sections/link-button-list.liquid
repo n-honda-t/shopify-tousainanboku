@@ -10,6 +10,7 @@
   </ul>
   {% assign unko = section.settings.collection.title %}
   <h1>うんこ出力するよ{{ unko }}</h1>
+  <h1>{{ collections[0] | json }}</h1>
   <input type="hidden" value="{{ unko }}" id="ora" />
   <input type="hidden" value="{{ collections[0] | json }}" id="c" />
 </section>
@@ -36,10 +37,10 @@
 
 {% javascript %}
   // var a = {{  unko }}
+  // console.log(a);
   console.log('hogehoge');
   var b = document.getElementById('ora');
   console.log(b.value);
   var c = document.getElementById('c');
   console.log(c.value);
-  // console.log(a);
 {% endjavascript %}
