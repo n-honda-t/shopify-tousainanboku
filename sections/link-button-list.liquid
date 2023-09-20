@@ -11,6 +11,7 @@
   {% assign unko = section.settings.collection.title %}
   <h1>うんこ出力するよ{{ unko }}</h1>
   <input type="hidden" value="{{ unko }}" id="ora" />
+  <input type="hidden" value="{{ collections }}" id="c" />
 </section>
 {% schema %}
   {
@@ -38,5 +39,7 @@
   console.log('hogehoge');
   var b = document.getElementById('ora');
   console.log(b.value);
+  var c = document.getElementById('c');
+  console.log(c.value);
   // console.log(a);
 {% endjavascript %}
