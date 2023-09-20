@@ -1,11 +1,18 @@
 <section class="lesson-section">
-  {%- render 'button', type: 'submit', content: save_button, size: 'xl' -%}
+  {section.settings.collection.name}
+  <!-- {%- render  button', type: 'submit', content: save_button, size: 'xl' -%} -->
 </section>
 {% schema %}
   {
     "name": "Link-button-list",
-    "settings": [],
-     "presets": [
+    "settings": [
+      {
+            "type": "collection",
+            "id": "collection",
+            "label": "t:sections.featured_collections.blocks.collection.collection"
+      }
+    ],
+    "presets": [
       {
         "name": "Link-button-list"
       }
