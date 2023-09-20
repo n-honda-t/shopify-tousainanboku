@@ -4,9 +4,8 @@
   <pre>{{ section.settings.collection.filters | json }}</pre>
     <ul>
     {% for collection in collections %}
-        {% if collection.metafields.global.vendor == '条件に合う販売元' %}
         <li>{{ collection.title }}</li>
-      {% endif %}
+      <li>{{ collection.handle }}</li>
     {% endfor %}
   </ul>
 </section>
