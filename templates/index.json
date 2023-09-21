@@ -477,12 +477,6 @@
         "vertical_spacing_factor": 1,
         "subheading": ""
       }
-    },
-    "17dee272-5e82-4221-84b5-c09b7af81371": {
-      "type": "link-button-list",
-      "settings": {
-        "collection": "brand"
-      }
     }
   },
   "order": [
@@ -503,7 +497,6 @@
     "8ce16895-2155-4dee-addc-3bef2e458a7a",
     "eaf53ddb-1acc-4309-8748-84ae23121852",
     "1cdfad95-5d8f-4b5e-8bda-ee4b554e1e1f",
-    "4889806f-01e5-4044-888f-c3cefcab78ad",
-    "17dee272-5e82-4221-84b5-c09b7af81371"
+    "4889806f-01e5-4044-888f-c3cefcab78ad"
   ]
 }
