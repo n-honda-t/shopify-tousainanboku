@@ -3,6 +3,12 @@
   <pre>{{ section.settings.collection | json }}</pre>
   <pre>{{ section.settings.collection.rules | json }}</pre>
   <pre>{{ section.settings.collection.rules | json }}</pre>
+  <pre>{{ section.settings.collection.rules | json }}</pre>
+  <ul>
+  {% for keyValue in section.settings.collection %}
+    <li>Key: {{ keyValue[0] }}, Value: {{ keyValue[1] }}</li>
+{% endfor %}
+  </ul>
    <!-- {% for collection in section.settings.collection.rules %}
       <li>{{ collection.title }}</li>
       <pre>{{ collection | json }}</pre>
