@@ -8,12 +8,6 @@
       <li>hoge</li>
     {% endfor %}
   </ul>
-  {% assign unko = section.settings.collection.title %}
-  <h1>うんこ出力するよ{{ unko }}</h1>
-  {% assign firstCollection = collections.first %}
-  <h1>{{ firstCollection | json }}</h1>
-  <input type="hidden" value="{{ unko }}" id="ora" />
-  <input type="hidden" value='{{ firstCollection | json }}' id="c" />
 </section>
 {% schema %}
   {
@@ -37,14 +31,5 @@
 {% endstylesheet %}
 
 {% javascript %}
-  // var a = {{  unko }}
-  // console.log(a);
-  console.log('hogehoge');
-  var b = document.getElementById('ora');
-  console.log(b.value);
-  var c = document.getElementById('c');
-  var cValue = JSON.parse(c.value)
-  console.log(cValue);
-  console.log(cValue.updated_at);
   
 {% endjavascript %}
