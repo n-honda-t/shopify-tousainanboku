@@ -14,6 +14,8 @@
       <li>hoge</li>
     {% endfor %}
   </ul> -->
+
+  <input id='test' type='hidden' value='{{ section.settings.collection | json }}' />
 </section>
 {% schema %}
   {
@@ -37,5 +39,8 @@
 {% endstylesheet %}
 
 {% javascript %}
+  console.log('動いてはいるよ')
+  const value = JSON.parse(getElementById('test').value)
+  console.log(value)
   
 {% endjavascript %}
