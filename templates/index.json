@@ -481,15 +481,22 @@
     "0849f738-b511-4e02-8a37-02c8eb294fdb": {
       "type": "link-list",
       "blocks": {
-        "template--21130466558258__0849f738-b511-4e02-8a37-02c8eb294fdb-collection-1": {
+        "dc8eaa6f-28e0-491e-abe9-c80636f3f25a": {
           "type": "collection",
           "settings": {
-            "collection": ""
+            "collection": "ハンドバッグ"
+          }
+        },
+        "4f7a113f-f39e-47e4-b9aa-1adec2e58331": {
+          "type": "collection",
+          "settings": {
+            "collection": "トートバッグ"
           }
         }
       },
       "block_order": [
-        "template--21130466558258__0849f738-b511-4e02-8a37-02c8eb294fdb-collection-1"
+        "dc8eaa6f-28e0-491e-abe9-c80636f3f25a",
+        "4f7a113f-f39e-47e4-b9aa-1adec2e58331"
       ],
       "settings": {
       }
