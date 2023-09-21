@@ -15,7 +15,7 @@
     {% endfor %}
   </ul> -->
 
-  <input id='test' type='hidden' value='{{ section.settings.collection | json }}' />
+  <input id='test' type='hidden' value='{{ section.settings.collection.all_vendors | json }}' />
 </section>
 {% schema %}
   {
