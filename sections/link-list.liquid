@@ -1,4 +1,12 @@
 <h1>Link-list ora</h1>
+{%- if section.blocks.size > 0 -%}
+  <ul>
+    {%- for block in section.blocks -%}
+        <li>{{  block.settings.collection.title }}</li>
+        <li>{{  block.settings.collection.url }}</li>
+    {%- endfor -%}
+  </ul>
+{%  endif %}}
 {% schema %}
   {
     "name": "Link-list",
