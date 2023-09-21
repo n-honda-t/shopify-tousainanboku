@@ -1,13 +1,19 @@
 <section class="lesson-section">
   <h1>{{  section.settings.collection.title }}</h1>
   <pre>{{ section.settings.collection | json }}</pre>
-    <ul>
+  <pre>{{ section.settings.collection.rules | json }}</pre>
+   <!-- {% for collection in section.settings.collection.rules %}
+      <li>{{ collection.title }}</li>
+      <pre>{{ collection | json }}</pre>
+      <li>hoge</li>
+  {% endfor %} -->
+    <!-- <ul>
     {% for collection in collections %}
       <li>{{ collection.title }}</li>
       <pre>{{ collection | json }}</pre>
       <li>hoge</li>
     {% endfor %}
-  </ul>
+  </ul> -->
 </section>
 {% schema %}
   {
