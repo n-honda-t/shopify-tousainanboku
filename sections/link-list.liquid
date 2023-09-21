@@ -1,7 +1,29 @@
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Link-list",
+    "blocks": [
+      {
+        "type": "collection",
+        "name": "t:sections.featured_collections.blocks.collection.name",
+        "settings": [
+          {
+            "type": "collection",
+            "id": "collection",
+            "label": "t:sections.featured_collections.blocks.collection.collection"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Link-list",
+        "blocks": [
+          {
+            "type": "collection"
+          }
+        ]
+      }
+    ]
   }
 {% endschema %}
 
