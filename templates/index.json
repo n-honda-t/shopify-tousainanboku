@@ -477,6 +477,22 @@
         "vertical_spacing_factor": 1,
         "subheading": ""
       }
+    },
+    "0849f738-b511-4e02-8a37-02c8eb294fdb": {
+      "type": "link-list",
+      "blocks": {
+        "template--21130466558258__0849f738-b511-4e02-8a37-02c8eb294fdb-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21130466558258__0849f738-b511-4e02-8a37-02c8eb294fdb-collection-1"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -497,6 +513,7 @@
     "8ce16895-2155-4dee-addc-3bef2e458a7a",
     "eaf53ddb-1acc-4309-8748-84ae23121852",
     "1cdfad95-5d8f-4b5e-8bda-ee4b554e1e1f",
-    "4889806f-01e5-4044-888f-c3cefcab78ad"
+    "4889806f-01e5-4044-888f-c3cefcab78ad",
+    "0849f738-b511-4e02-8a37-02c8eb294fdb"
   ]
 }
