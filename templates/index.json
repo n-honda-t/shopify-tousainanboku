@@ -487,16 +487,58 @@
             "collection": "ハンドバッグ"
           }
         },
+        "f1742831-31c0-4f41-a547-015b4c5e09b0": {
+          "type": "collection",
+          "settings": {
+            "collection": "リュックサック"
+          }
+        },
         "4f7a113f-f39e-47e4-b9aa-1adec2e58331": {
           "type": "collection",
           "settings": {
             "collection": "トートバッグ"
           }
+        },
+        "766fb195-d4e4-4a36-903e-149c67696ab6": {
+          "type": "collection",
+          "settings": {
+            "collection": "ショルダーバッグ"
+          }
+        },
+        "9901f04c-3d8c-408b-8c5e-788c322471bd": {
+          "type": "collection",
+          "settings": {
+            "collection": "クラッチバッグ"
+          }
+        },
+        "dcf6bad8-c061-4f1f-b965-2487cc7babe8": {
+          "type": "collection",
+          "settings": {
+            "collection": "その他"
+          }
+        },
+        "f6ff3804-c113-4ee3-b646-f1213ebbed56": {
+          "type": "collection",
+          "settings": {
+            "collection": "ボストンバッグ"
+          }
+        },
+        "48d57f78-a9e9-4961-aeb6-3196d018d8cf": {
+          "type": "collection",
+          "settings": {
+            "collection": "財布-小物"
+          }
         }
       },
       "block_order": [
         "dc8eaa6f-28e0-491e-abe9-c80636f3f25a",
-        "4f7a113f-f39e-47e4-b9aa-1adec2e58331"
+        "f1742831-31c0-4f41-a547-015b4c5e09b0",
+        "4f7a113f-f39e-47e4-b9aa-1adec2e58331",
+        "766fb195-d4e4-4a36-903e-149c67696ab6",
+        "9901f04c-3d8c-408b-8c5e-788c322471bd",
+        "dcf6bad8-c061-4f1f-b965-2487cc7babe8",
+        "f6ff3804-c113-4ee3-b646-f1213ebbed56",
+        "48d57f78-a9e9-4961-aeb6-3196d018d8cf"
       ],
       "settings": {
       }
