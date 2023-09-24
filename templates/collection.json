@@ -1,22 +1,5 @@
 {
   "sections": {
-    "353067cf-ee9a-4441-9974-cbb53876cdd4": {
-      "type": "link-list",
-      "blocks": {
-        "template--21130466459954__353067cf-ee9a-4441-9974-cbb53876cdd4-collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--21130466459954__353067cf-ee9a-4441-9974-cbb53876cdd4-collection-1"
-      ],
-      "settings": {
-        "title": ""
-      }
-    },
     "collection-banner": {
       "type": "collection-banner",
       "settings": {
@@ -58,7 +41,6 @@
     }
   },
   "order": [
-    "353067cf-ee9a-4441-9974-cbb53876cdd4",
     "collection-banner",
     "main"
   ]
