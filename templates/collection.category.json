@@ -1,0 +1,113 @@
+{
+  "sections": {
+    "collection-banner": {
+      "type": "collection-banner",
+      "settings": {
+        "image_size": "auto",
+        "allow_transparent_header": true,
+        "reveal": true,
+        "enable_parallax": true,
+        "show_collection_title": true,
+        "show_collection_description": true,
+        "show_breadcrumb": true,
+        "content_width": "xs",
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "cf3e6797-09a4-4a13-85d0-7ea26cd0cbb3": {
+      "type": "link-list-detail",
+      "blocks": {
+        "template--21205328724274__cf3e6797-09a4-4a13-85d0-7ea26cd0cbb3-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "財布-小物"
+          }
+        },
+        "b2ab1f91-5359-4a61-85ac-e2ef310a1bcd": {
+          "type": "collection",
+          "settings": {
+            "collection": "リュックサック"
+          }
+        },
+        "6f0a255d-7d3c-4301-b960-9a419e1f0afe": {
+          "type": "collection",
+          "settings": {
+            "collection": "ボストンバッグ"
+          }
+        },
+        "2908a34d-083a-4e7c-938b-88f33b859e8f": {
+          "type": "collection",
+          "settings": {
+            "collection": "ハンドバッグ"
+          }
+        },
+        "a37e562a-1b4c-44de-8734-e084a29f2837": {
+          "type": "collection",
+          "settings": {
+            "collection": "トートバッグ"
+          }
+        },
+        "d6394af9-0fe7-4b0b-90c0-9c85000d7081": {
+          "type": "collection",
+          "settings": {
+            "collection": "ショルダーバッグ"
+          }
+        },
+        "4f6263b5-965c-4e86-b097-1c1a5c0d2069": {
+          "type": "collection",
+          "settings": {
+            "collection": "クラッチバッグ"
+          }
+        },
+        "357cac09-0efb-430e-8978-63eb63cdbc30": {
+          "type": "collection",
+          "settings": {
+            "collection": "その他"
+          }
+        }
+      },
+      "block_order": [
+        "template--21205328724274__cf3e6797-09a4-4a13-85d0-7ea26cd0cbb3-collection-1",
+        "b2ab1f91-5359-4a61-85ac-e2ef310a1bcd",
+        "6f0a255d-7d3c-4301-b960-9a419e1f0afe",
+        "2908a34d-083a-4e7c-938b-88f33b859e8f",
+        "a37e562a-1b4c-44de-8734-e084a29f2837",
+        "d6394af9-0fe7-4b0b-90c0-9c85000d7081",
+        "4f6263b5-965c-4e86-b097-1c1a5c0d2069",
+        "357cac09-0efb-430e-8978-63eb63cdbc30"
+      ],
+      "settings": {
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "hide_product_information": false,
+        "products_per_page": 48,
+        "products_per_row_mobile": "2",
+        "products_size_desktop": "medium",
+        "show_grid_mode_selector": true,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "filter_layout": "sidebar",
+        "quick_links_menu": "",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_results_count": true,
+        "show_filter_group_name": false,
+        "show_empty_filter_values": false,
+        "show_filter_values_count": true,
+        "show_color_swatch": true,
+        "open_filters_by_default": false
+      }
+    }
+  },
+  "order": [
+    "collection-banner",
+    "cf3e6797-09a4-4a13-85d0-7ea26cd0cbb3",
+    "main"
+  ]
+}
