@@ -41,7 +41,7 @@
   /* brand/category top */
   .common_top_wrap {
     position: relative;
-    background-color: #fff;
+    background-color: #fff !important;
   }
   
   /* login */
