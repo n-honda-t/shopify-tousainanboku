@@ -26,6 +26,10 @@
 
   .brand_list_wrap {
     display: flex;
+    flex-wrap: wrap;
+  }
+  .brand_list_wrap  > div {
+    width: 21.8vw;
   }
   /* login */
   .button_wrap,
