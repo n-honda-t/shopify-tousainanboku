@@ -37,6 +37,25 @@
   .brand_list_wrap  > div {
     width: 20.8vw;
   }
+
+  /* brand/category top */
+  .common_top_wrap {
+    position: relative;
+    background-color: #fff !important;
+  }
+   .common_top_image_wrap {
+      width: 100%;
+      height: 32.81vw;
+      margin-left: 11.72vw;
+      border-radius: 0 0 0 200px;
+    }
+    .common_top_title {
+      position: absolute;
+      bottom: 80px;
+      left: 40px;
+      color: #1f1f1f;
+      font-size: 2.5vw;
+    }
   /* login */
   .button_wrap,
   .register_wrap {
@@ -247,6 +266,25 @@
   .brand_list_wrap  > div > a {
     width: 100% !important;
   }
+
+   /* brand/category top */
+  .common_top_wrap {
+    position: relative;
+    background-color: #fff !important;
+  }
+   .common_top_image_wrap {
+      width: 100%;
+      height: 56vw;
+      margin-left: 12.27vw;
+      border-radius: 0 0 0 100px;
+    }
+    .common_top_title {
+      position: absolute;
+      bottom: 40px;
+      left: 16px;
+      color: #1f1f1f;
+      font-size: 2.5vw;
+    }
   /* login */
   .button_wrap,
   .register_wrap {

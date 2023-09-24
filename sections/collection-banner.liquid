@@ -6,7 +6,8 @@
 
 {%- capture collection_breadcrumb -%}
   {%- if section.settings.show_breadcrumb -%}
-    <nav class="breadcrumb breadcrumb--floating" aria-label="{{ 'general.breadcrumb.label' | t | escape }}">
+    <!-- パンくず  -->
+    <!-- <nav class="breadcrumb breadcrumb--floating" aria-label="{{ 'general.breadcrumb.label' | t | escape }}">
       <ol class="breadcrumb__list unstyled-list">
         <li class="breadcrumb__list-item">
           <a href="{{ routes.root_url }}" class="smallcaps {% unless show_image %}link-faded{% endunless %}">{{ 'general.breadcrumb.home' | t }}</a>
@@ -20,7 +21,7 @@
           <a href="{{ collection.url }}" aria-current="page" class="smallcaps {% unless show_image %}link-faded{% endunless %}">{{ collection.title }}</a>
         </li>
       </ol>
-    </nav>
+    </nav> -->
   {%- endif -%}
 {%- endcapture -%}
 
@@ -41,15 +42,17 @@
     #shopify-section-{{ section.id }} {
       --content-over-media-overlay: {{ section.settings.overlay_color.rgb }} / {{ section.settings.overlay_opacity | divided_by: 100.0 }};
       --content-over-media-content-max-width: var(--container-{{ section.settings.content_width }}-max-width);
+      position: relative;
     }
   </style>
 
-  <collection-banner {% if section.settings.reveal %}reveal-on-scroll="true"{% endif %} class="collection-banner" {% if section.settings.allow_transparent_header %}allow-transparent-header{% endif %} style="{% render 'surface', background: section.settings.background, text_color: section.settings.text_color %}">
+  <collection-banner {% if section.settings.reveal %}reveal-on-scroll="true"{% endif %} class="collection-banner common_top_wrap" {% if section.settings.allow_transparent_header %}allow-transparent-header{% endif %} style="{% render 'surface', background: section.settings.background, text_color: section.settings.text_color %}">
     {%- unless section.settings.allow_transparent_header -%}
       {{- collection_breadcrumb -}}
     {%- endunless -%}
 
-    <div class="content-over-media content-over-media--{{ section.settings.image_size }}">
+
+    <div class="common_top_image_wrap content-over-media content-over-media--{{ section.settings.image_size }}">
       <picture>
         {%- if section.settings.enable_parallax -%}
           {%- assign is_attribute = 'image-parallax' -%}
@@ -68,11 +71,13 @@
         {{- image | image_url: width: image.width | image_tag: loading: 'lazy', is: is_attribute, widths: '300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200' -}}
       </picture>
 
-      <div class="prose text-center">
-        {{ collection_content }}
-      </div>
+      
     </div>
+
   </collection-banner>
+  <div class="prose text-center common_top_title">
+        {{ collection_content }}
+  </div>
 {%- elsif collection_content != blank -%}
   <div class="relative section-spacing section-spacing--tight">
     <div class="container container--{{ section.settings.content_width }}">
