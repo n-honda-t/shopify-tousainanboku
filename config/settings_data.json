@@ -36,6 +36,7 @@
     "discount_mode": "percentage",
     "cart_icon": "shopping_cart",
     "checkout_accent_color": "#1c1c1c",
+    "checkout_button_color": "#1c1c1c",
     "heading_color": "#1c1c1c",
     "sections": {
       "custom-header": {
