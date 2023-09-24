@@ -2,6 +2,7 @@
   <div>
     {% comment %} TODO: あとでcss指定 {% endcomment %}
     <p class="h2">{{ section.settings.title | default: 'タイトル' }}</p>
+    <div>
     {%- for block in section.blocks -%}
       <div class="justify-self-center top-link-button-list">
         {%-
@@ -11,6 +12,7 @@
         -%}
       </div>
     {%- endfor -%}
+    </div>
   </div>
 {% endif %}
 
