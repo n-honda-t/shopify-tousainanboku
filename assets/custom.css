@@ -43,7 +43,19 @@
     position: relative;
     background-color: #fff !important;
   }
-  
+   .common_top_image_wrap {
+      width: 100%;
+      height: 32.81vw;
+      margin-left: 11.72vw;
+      border-radius: 0 0 0 200px;
+    }
+    .common_top_title {
+      position: absolute;
+      bottom: 80px;
+      left: 40px;
+      color: #1f1f1f;
+      font-size: 2.5vw;
+    }
   /* login */
   .button_wrap,
   .register_wrap {
