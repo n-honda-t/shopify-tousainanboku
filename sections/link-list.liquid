@@ -1,14 +1,18 @@
 {%- if section.blocks.size > 0 -%}
-  <p class="h2">{{ section.settings.title | default: 'タイトル' }}</p>
-  {%- for block in section.blocks -%}
-    <div class="justify-self-center top-view-all-button">
-      {%-
-        render 'button',
-        href: block.settings.collection.url,
-        content: block.settings.collection.title
-      -%}
-    </div>
-  {%- endfor -%}
+  <div class="section-stack">
+    <div class="v-stack justify-self-center gap-4 text-center sm:gap-5">
+      <p class="h2">{{ section.settings.title | default: 'タイトル' }}</p>
+      {%- for block in section.blocks -%}
+        <div class="justify-self-center top-view-all-button">
+          {%-
+            render 'button',
+            href: block.settings.collection.url,
+            content: block.settings.collection.title
+          -%}
+        </div>
+      {%- endfor -%}
+    <div>
+  <div>
 {% endif %}
 
 {%- schema -%}
