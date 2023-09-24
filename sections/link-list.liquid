@@ -1,5 +1,4 @@
 {%- if section.blocks.size > 0 -%}
-  <h1>反映はされてるぜ</h1>
   <div class="section-stack">
     <div class="v-stack justify-self-center gap-4 text-center sm:gap-5">
       <p class="h2">{{ section.settings.title | default: 'タイトル' }}</p>
@@ -9,7 +8,6 @@
             render 'button',
             href: block.settings.collection.url,
             content: block.settings.collection.title,
-            style_attribute: "background-color: #FFFFFF; color: #1f1f1f;"
           -%}
         </div>
       {%- endfor -%}
