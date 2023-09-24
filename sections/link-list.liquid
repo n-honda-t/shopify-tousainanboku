@@ -2,8 +2,13 @@
 {%- if section.blocks.size > 0 -%}
   <ul>
     {%- for block in section.blocks -%}
-        <li>{{  block.settings.collection.title }}</li>
-        <li>{{  block.settings.collection.url }}</li>
+      <div class="justify-self-center top-view-all-button">
+        {%-
+          render 'button',
+          href: block.settings.collection.url,
+          content: block.settings.collection.title
+        -%}
+      </div>
     {%- endfor -%}
   </ul>
 {% endif %}
