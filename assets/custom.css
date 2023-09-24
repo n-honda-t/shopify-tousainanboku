@@ -165,7 +165,7 @@
     line-height: 140%;
   }
 
-  .top-link-button-list .link-button {
+  .top-link-button-list .button {
     background-color: #FFFFFF;
     color: #1f1f1f;
   }
@@ -326,5 +326,10 @@
     font-style: normal;
     font-weight: 300;
     line-height: 140%;
+  }
+
+  .top-link-button-list .button {
+    background-color: #FFFFFF;
+    color: #1f1f1f;
   }
 }
