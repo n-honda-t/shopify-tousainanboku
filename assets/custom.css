@@ -343,7 +343,8 @@
     padding: 2.571429vw 2.285714vw;
   }
 
-  .top-link-button-list .button {
+  /* todo: あとで修正 */
+  .detail-link-button-list .button {
     background-image: none;
     background-color: #FFFFFF;
     color: #1f1f1f;
