@@ -1,0 +1,46 @@
+{%- if section.blocks.size > 0 -%}
+  <div>
+    {% comment %} TODO: あとでcss指定 {% endcomment %}
+    {%- for block in section.blocks -%}
+      <div class="justify-self-center detail-link-button-list">
+        {%-
+          render 'button',
+          href: block.settings.collection.url,
+          content: block.settings.collection.title,
+        -%}
+      </div>
+    {%- endfor -%}
+  </div>
+{% endif %}
+
+{%- schema -%}
+  {
+    "name": "Link-list-detail",
+    "blocks": [
+      {
+        "type": "collection",
+        "name": "t:sections.featured_collections.blocks.collection.name",
+        "settings": [
+          {
+            "type": "collection",
+            "id": "collection",
+            "label": "t:sections.featured_collections.blocks.collection.collection"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Link-list-detail",
+        "blocks": [
+          {
+            "type": "collection"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
