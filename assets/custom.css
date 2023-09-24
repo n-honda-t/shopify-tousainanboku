@@ -165,9 +165,9 @@
     line-height: 140%;
   }
 
-  .top-link-button-list .button {
+  .top-link-button-list .link-button {
     background-color: #FFFFFF;
-    color: #1f1f1f
+    color: #1f1f1f;
   }
 }
 
