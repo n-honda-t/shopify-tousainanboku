@@ -43,12 +43,7 @@
     position: relative;
     background: #fff;
   }
-  .common_top_image_wrap {
-    width: 100%;
-    height: 32.81vw;
-    margin-left: 11.72vw;
-    border-radius: 0 0 0 200px;
-  }
+  
   /* login */
   .button_wrap,
   .register_wrap {

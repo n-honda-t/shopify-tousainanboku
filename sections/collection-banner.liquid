@@ -49,8 +49,8 @@
       {{- collection_breadcrumb -}}
     {%- endunless -%}
 
-    <div class="common_top_image_wrap">
-    <div class="content-over-media content-over-media--{{ section.settings.image_size }}">
+
+    <div class="common_top_image_wrap content-over-media content-over-media--{{ section.settings.image_size }}">
       <picture>
         {%- if section.settings.enable_parallax -%}
           {%- assign is_attribute = 'image-parallax' -%}
@@ -71,7 +71,7 @@
 
       
     </div>
-    </div>
+
   </collection-banner>
   <div class="prose text-center">
         {{ collection_content }}
