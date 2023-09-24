@@ -338,4 +338,14 @@
     background-color: #FFFFFF;
     color: #1f1f1f;
   }
+
+  .top-link-button-list .button {
+    background-image: none;
+    background-color: #FFFFFF;
+    color: #1f1f1f;
+    width: 21vw;
+    height: 4.5vw;
+    border-radius: 0.390625vw 2.34375vw;
+    padding: 1.40635vw 1.25vw;
+  }
 }
