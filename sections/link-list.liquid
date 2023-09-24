@@ -3,7 +3,7 @@
     <div class="v-stack justify-self-center gap-4 text-center sm:gap-5">
       <p class="h2">{{ section.settings.title | default: 'タイトル' }}</p>
       {%- for block in section.blocks -%}
-        <div class="justify-self-center .top-link-button-list">
+        <div class="justify-self-center top-link-button-list">
           {%-
             render 'button',
             href: block.settings.collection.url,
