@@ -238,7 +238,10 @@
     margin:  5vw 3.13vw;
   }
   .brand_list_wrap  > div {
-    width: 20.8vw;
+    width: 48%;
+  }
+  .brand_list_wrap  > div > a {
+    width: 100%;
   }
   /* login */
   .button_wrap,
