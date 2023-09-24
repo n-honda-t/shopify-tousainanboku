@@ -25,7 +25,7 @@
   }
 
   .top-secsion_title {
-    text-align: center;
+    
   }
   .brand_list_wrap {
     display: flex;
@@ -231,9 +231,6 @@
     object-fit: cover;
   }
 
-  .top-secsion_title {
-    text-align: center;
-  }
   .brand_list_wrap {
     display: flex;
     flex-wrap: wrap;
