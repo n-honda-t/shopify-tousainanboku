@@ -241,7 +241,7 @@
     width: 48%;
   }
   .brand_list_wrap  > div > a {
-    width: 100%;
+    width: 100% !important;
   }
   /* login */
   .button_wrap,
