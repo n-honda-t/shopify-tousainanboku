@@ -13,7 +13,7 @@
     "footer_text_color": "#ffffff",
     "primary_button_background": "#1c1c1c",
     "primary_button_text_color": "#ffffff",
-    "modal_background": "#ffffff",
+    "modal_background": "#fcf9f3",
     "modal_text_color": "#1c1c1c",
     "product_rating_color": "#1c1c1c",
     "heading_font": "univers_next_n4",
@@ -35,6 +35,7 @@
     "show_discount": true,
     "discount_mode": "percentage",
     "cart_icon": "shopping_cart",
+    "checkout_sidebar_background_color": "#fcf9f3",
     "checkout_accent_color": "#1c1c1c",
     "checkout_button_color": "#1c1c1c",
     "heading_color": "#1c1c1c",
@@ -81,9 +82,7 @@
         }
       }
     },
-    "content_for_index": [
-
-    ]
+    "content_for_index": []
   },
   "presets": {
     "Allure": {
