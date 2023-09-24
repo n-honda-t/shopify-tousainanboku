@@ -6,6 +6,7 @@
 
 @media screen and (min-width: 700px) {
   /* スクリーンサイズが700px以上の場合に適用 */
+  /* TOP */
   .top-downArrow {
     height: 3.75vw;
     width: 3.75vw;
@@ -23,6 +24,19 @@
     object-fit: cover;
   }
 
+  .top-secsion_title {
+    text-align: center;
+  }
+  .brand_list_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3.13vw;
+    margin:  5vw 3.13vw;
+  }
+  .brand_list_wrap  > div {
+    width: 20.8vw;
+  }
   /* login */
   .button_wrap,
   .register_wrap {
@@ -54,6 +68,15 @@
 
   .register_caution {
     text-align: left;
+    margin: 12px 0 40px;
+    font-size: 12px;
+  }
+
+  /* contact */
+  .contact_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     margin: 12px 0 40px;
     font-size: 12px;
   }
@@ -117,6 +140,7 @@
     top: 0;
     right: 0;
     background-color: white;
+    border-right: none;
   }
 
   .blackVar {
@@ -195,6 +219,7 @@
     width: 3.75vw;
     background: transparent;
     box-shadow: none;
+    display: none;
   }
 
   .top-downArrow :hover {
@@ -206,6 +231,22 @@
     object-fit: cover;
   }
 
+  .top-secsion_title {
+    text-align: center;
+  }
+  .brand_list_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 4.27vw;
+    margin:  8.53vw 4.27vw;
+  }
+  .brand_list_wrap  > div {
+    width: 47%;
+  }
+  .brand_list_wrap  > div > a {
+    width: 100% !important;
+  }
   /* login */
   .button_wrap,
   .register_wrap {
@@ -227,7 +268,7 @@
   }
 
   .login_label.mt {
-    margin-top: 6.4vw;
+    margin-top: 6.4vwvw;
   }
 
   /* register */
@@ -240,6 +281,33 @@
     text-align: left;
     margin: 12px 0 40px;
     font-size: 12px;
+  }
+
+  /* contact */
+  .contact_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  /* マイページ */
+  .mypage-container {
+    padding: 0 4.27vw;
+  }
+
+  .mypage-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logout_button {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 8vw;
+    background-color: #fff;
+    border: solid 1px #1f1f1f;
+    color: #1f1f1f;
+    border-radius: 5px;
   }
 
   /* contact */
@@ -298,6 +366,7 @@
     top: 0;
     right: 0;
     background-color: white;
+    border-right: none;
   }
 
   .blackVar {

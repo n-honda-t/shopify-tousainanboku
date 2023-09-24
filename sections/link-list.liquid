@@ -1,7 +1,8 @@
 {%- if section.blocks.size > 0 -%}
-  <div>
+  <div class="top-secsion_title">
     {% comment %} TODO: あとでcss指定 {% endcomment %}
     <p class="h2">{{ section.settings.title | default: 'タイトル' }}</p>
+    <div class="brand_list_wrap">
     {%- for block in section.blocks -%}
       <div class="justify-self-center top-link-button-list">
         {%-
@@ -11,6 +12,7 @@
         -%}
       </div>
     {%- endfor -%}
+    </div>
   </div>
 {% endif %}
 
