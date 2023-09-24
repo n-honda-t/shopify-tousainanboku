@@ -24,6 +24,9 @@
     object-fit: cover;
   }
 
+  .top-secsion_title {
+    
+  }
   .brand_list_wrap {
     display: flex;
     flex-wrap: wrap;
@@ -227,6 +230,16 @@
     object-fit: cover;
   }
 
+  .brand_list_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3.13vw;
+    margin:  5vw 3.13vw;
+  }
+  .brand_list_wrap  > div {
+    width: 20.8vw;
+  }
   /* login */
   .button_wrap,
   .register_wrap {
