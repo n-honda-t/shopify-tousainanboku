@@ -6,6 +6,7 @@
 
 @media screen and (min-width: 700px) {
   /* スクリーンサイズが700px以上の場合に適用 */
+  /* TOP */
   .top-downArrow {
     height: 3.75vw;
     width: 3.75vw;
@@ -23,6 +24,9 @@
     object-fit: cover;
   }
 
+  .brand_list_wrap {
+    display: flex;
+  }
   /* login */
   .button_wrap,
   .register_wrap {
