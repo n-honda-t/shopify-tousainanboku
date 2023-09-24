@@ -27,6 +27,8 @@
   .brand_list_wrap {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3.13vw;
   }
   .brand_list_wrap  > div {
     width: 21.8vw;
