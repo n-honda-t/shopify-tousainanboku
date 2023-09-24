@@ -45,11 +45,14 @@
       position: relative;
     }
     .common_top_image_wrap {
-    width: 100%;
-    height: 32.81vw;
-    margin-left: 11.72vw;
-    border-radius: 0 0 0 200px;
-  }
+      width: 100%;
+      height: 32.81vw;
+      margin-left: 11.72vw;
+      border-radius: 0 0 0 200px;
+    }
+    .common_top_title {
+      position: absolute;
+    }
   </style>
 
   <collection-banner {% if section.settings.reveal %}reveal-on-scroll="true"{% endif %} class="collection-banner common_top_wrap" {% if section.settings.allow_transparent_header %}allow-transparent-header{% endif %} style="{% render 'surface', background: section.settings.background, text_color: section.settings.text_color %}">
