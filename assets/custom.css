@@ -29,7 +29,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 3.13vw;
-    margin:  5vw 3.13vw 0;
+    margin:  5vw 3.13vw;
   }
   .brand_list_wrap  > div {
     width: 21.8vw;
