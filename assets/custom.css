@@ -175,6 +175,17 @@
     border-radius: 0.390625vw 2.34375vw;
     padding: 1.40625vw 1.25vw;
   }
+
+  /* todo: あとで修正 */
+  .detail-link-button-list .button {
+    background-image: none;
+    background-color: #FFFFFF;
+    color: #1f1f1f;
+    width: 21.09375vw;
+    /* height: 4.53125vw; */
+    border-radius: 0.390625vw 2.34375vw;
+    padding: 1.40625vw 1.25vw;
+  }
 }
 
 @media screen and (max-width: 699px) {
