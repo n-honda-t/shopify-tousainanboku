@@ -333,6 +333,16 @@
     line-height: 140%;
   }
 
+  /* todo: あとで修正 */
+  .top-link-button-list .button {
+    background-image: none;
+    background-color: #FFFFFF;
+    color: #1f1f1f;
+    width: 23.428571vw;
+    border-radius: 1.066vw 8vw;
+    padding: 2.571429vw 2.285714vw;
+  }
+
   .top-link-button-list .button {
     background-image: none;
     background-color: #FFFFFF;
