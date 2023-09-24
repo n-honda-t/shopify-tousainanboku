@@ -1,6 +1,7 @@
 {%- if section.blocks.size > 0 -%}
   <div>
     {% comment %} TODO: あとでcss指定 {% endcomment %}
+  <div class="brand_list_wrap">
     {%- for block in section.blocks -%}
       <div class="justify-self-center detail-link-button-list">
         {%-
@@ -10,6 +11,7 @@
         -%}
       </div>
     {%- endfor -%}
+  </div>
   </div>
 {% endif %}
 
