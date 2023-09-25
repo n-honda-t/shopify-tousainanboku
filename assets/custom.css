@@ -93,10 +93,11 @@
 
   /* contact */
   .contact_wrap {
+    width: 31.25vw;
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin: 12px 0 40px;
+    margin: 12px auto 40px;
     font-size: 12px;
   }
 
