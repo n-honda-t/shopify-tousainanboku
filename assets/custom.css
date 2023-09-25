@@ -337,13 +337,6 @@
     font-size: 12px;
   }
 
-  /* contact */
-  .contact_wrap {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
-
   /* マイページ */
   .mypage-container {
     padding: 0 4.27vw;
