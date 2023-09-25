@@ -361,6 +361,7 @@
   .contact_wrap {
     display: flex;
     flex-direction: column;
+    margin-bottom: 40px;
   }
    .contact_label {
     font-size: 14px;
