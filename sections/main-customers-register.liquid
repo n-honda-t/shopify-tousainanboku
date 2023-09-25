@@ -34,7 +34,7 @@
                         assign last_name_label = 'customer.register.last_name' | t
                         render 'input', name: 'customer[last_name]', label: last_name_label, autocomplete: 'family-name', required: true
 
-                        render 'label', class: 'password_reset_label', text: '名'
+                        render 'label', class: 'password_reset_label mt', text: '名'
                         assign first_name_label = 'customer.register.first_name' | t
                         render 'input', name: 'customer[first_name]', label: first_name_label, autocomplete: 'given-name', required: true
                       else
@@ -45,11 +45,11 @@
                         render 'input', name: 'customer[last_name]', label: last_name_label, autocomplete: 'family-name', required: true
                       endif
 
-                      render 'label', class: 'password_reset_label', text: 'メールアドレス'
+                      render 'label', class: 'password_reset_label mt', text: 'メールアドレス'
                       assign email_label = 'customer.register.email' | t
                       render 'input', type: 'email', name: 'customer[email]', label: email_label, autocomplete: 'email', required: true
 
-                      render 'label', class: 'password_reset_label', text: 'パスワード'
+                      render 'label', class: 'password_reset_label mt', text: 'パスワード'
                       assign password_label = 'customer.register.password' | t
                       render 'input', type: 'password', name: 'customer[password]', label: password_label, minlength: 5, autocomplete: 'new-password', required: true
 
