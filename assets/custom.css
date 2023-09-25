@@ -100,6 +100,10 @@
     font-size: 12px;
   }
 
+  .contact_label {
+    font-size: 14px;
+    text-align: left;
+  }
   .top-fv {
     width: 100vw;
     border-radius: 200px 0px 0px 0px;
