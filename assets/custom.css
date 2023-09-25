@@ -175,6 +175,8 @@
   .mypage_tab.unactive {
     background-color: #fff;
     color: #1F1F1F;
+     border: solid 1px  #1F1F1F;
+    border-bottom: none;
   }
   .top-fv img {
     width: 100%;
