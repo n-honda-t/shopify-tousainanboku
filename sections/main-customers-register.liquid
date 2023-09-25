@@ -30,7 +30,7 @@
                       endif
 
                       if request.locale.iso_code == 'ja'
-                        render 'label', class: 'password_reset_label', text: '性'
+                        render 'label', class: 'password_reset_label', text: '姓'
                         assign last_name_label = 'customer.register.last_name' | t
                         render 'input', name: 'customer[last_name]', label: last_name_label, autocomplete: 'family-name', required: true
 
