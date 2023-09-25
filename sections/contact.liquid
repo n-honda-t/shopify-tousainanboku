@@ -30,7 +30,7 @@
             {%- assign label  = 'contact.form.email' | t -%}
             {%- render 'input', type: 'email', name: 'contact[email]', label: label, value: customer.email, required: true, autocomplete: 'email' -%}
           </div>
-          <div class="contact_label_wrap">
+          <div class="contact_label_wrap mt">
               {%- render 'label', class: 'contact_label', text: 'お問い合わせ内容' -%}
               {%- render 'require_label' -%}
             </div>
