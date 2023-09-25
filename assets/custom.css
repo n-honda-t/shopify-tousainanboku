@@ -103,13 +103,13 @@
   .contact_label {
     font-size: 14px;
     text-align: left;
-    margin-bottom: 14px;
   }
 
   .contact_label_wrap {
     display: flex;
     align-items: center;
     gap: 12px;
+    margin-bottom: 14px;
   }
   
   .top-fv {
