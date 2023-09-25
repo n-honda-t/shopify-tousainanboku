@@ -32,7 +32,7 @@
     "product_color_display": "swatch",
     "show_product_rating": false,
     "show_product_rating_if_empty": false,
-    "show_quick_buy": true,
+    "show_quick_buy": false,
     "show_discount": false,
     "discount_mode": "saving",
     "cart_icon": "shopping_cart",
