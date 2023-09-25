@@ -157,6 +157,10 @@
     border-radius: 5px;
   }
 
+  .mypage_tab_wrap {
+    display: flex;
+    border-bottom: solid 1px  #1F1F1F;
+  }
   .mypage_tab {
     padding: 12px 20px;
     display: flex;
