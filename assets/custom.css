@@ -376,10 +376,11 @@
   }
 
   .contact_label_wrap {
+    width: 90vw;
+    margin: 0 auto 12px;
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 12px;
     line-height: 1.5;
   }
   .contact_label_wrap.mt{
