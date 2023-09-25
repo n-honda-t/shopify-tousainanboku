@@ -173,9 +173,9 @@
     max-width: 120px;
   }
   .mypage_tab.unactive {
-    background-color: #fff;
+    background-color: #FCF9F3;
     color: #1F1F1F;
-     border: solid 1px  #1F1F1F;
+    border: solid 1px  #1F1F1F;
     border-bottom: none;
   }
   .top-fv img {
