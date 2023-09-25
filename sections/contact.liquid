@@ -23,6 +23,10 @@
             {%- assign label  = 'contact.form.name' | t -%}
             {%- render 'input', type: 'text', name: 'contact[name]', label: label, value: customer.name, required: true, autocomplete: 'name' -%}
 
+            <div class="contact_label_wrap">
+              {%- render 'label', class: 'contact_label', text: 'メールアドレス' -%}
+              {%- render 'require_label' -%}
+            </div>
             {%- assign label  = 'contact.form.email' | t -%}
             {%- render 'input', type: 'email', name: 'contact[email]', label: label, value: customer.email, required: true, autocomplete: 'email' -%}
           </div>
