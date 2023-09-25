@@ -37,10 +37,7 @@
             {%- if field_title == blank -%}
               {%- capture field_title -%}Custom field {% increment custom_field %}{%- endcapture -%}
             {%- endif -%}
-<div class="contact_label_wrap">
-              {%- render 'label', class: 'contact_label', text: 'お問い合わせ内容' -%}
-              {%- render 'require_label' -%}
-            </div>
+            
             {%- capture name -%}contact[{{ field_title | escape }}]{%- endcapture -%}
 
             {%- if block.type == 'text' -%}
