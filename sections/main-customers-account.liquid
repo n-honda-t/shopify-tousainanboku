@@ -31,7 +31,9 @@
                 <!-- CUSTOMER ORDERS -->
                 <div class="v-stack gap-6 sm:gap-8">
                   {%- if customer.orders.size == 0 -%}
-                    <p class="customer-account-category h6 text-subdued">{{ 'customer.account.orders' | t }}</p>
+                    <!--
+                      <p class="customer-account-category h6 text-subdued">{{ 'customer.account.orders' | t }}</p>
+                    -->
 
                     <div class="prose">
                       <p>{{ 'customer.account.no_orders' | t }}</p>
@@ -73,7 +75,11 @@
                                 </div>
 
                                 {%- capture button_label -%}{{ 'customer.order.view_details' | t }}{%- endcapture -%}
-                                {%- render 'button', href: order.customer_url, content: button_label, style: 'outline' -%}
+                                {%- render 'button',
+                                  href: order.customer_url,
+                                  content: button_label,
+                                  style: 'outline'
+                                -%}
                               </div>
                             </div>
                           {%- endfor -%}
@@ -82,13 +88,13 @@
 
                       <table class="table table--reduce-border table--lg hidden md:table">
                         <thead>
-                        <tr>
-                          <th>{{ 'customer.order.order' | t }}</th>
-                          <th>{{ 'customer.order.date' | t }}</th>
-                          <th>{{ 'customer.order.payment_status' | t }}</th>
-                          <th>{{ 'customer.order.fulfillment_status' | t }}</th>
-                          <th class="text-end">{{ 'customer.order.total' | t }}</th>
-                        </tr>
+                          <tr>
+                            <th>{{ 'customer.order.order' | t }}</th>
+                            <th>{{ 'customer.order.date' | t }}</th>
+                            <th>{{ 'customer.order.payment_status' | t }}</th>
+                            <th>{{ 'customer.order.fulfillment_status' | t }}</th>
+                            <th class="text-end">{{ 'customer.order.total' | t }}</th>
+                          </tr>
                         </thead>
 
                         <tbody>
