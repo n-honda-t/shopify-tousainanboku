@@ -165,6 +165,8 @@
     border-radius: 4px 20px 0 0;
     background-color: #1F1F1F;
     color: #fff;
+    min-width: 104px;
+    max-width: 120px;
   }
   .top-fv img {
     width: 100%;
