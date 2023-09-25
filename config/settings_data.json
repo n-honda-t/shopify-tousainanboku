@@ -26,6 +26,7 @@
     "round_color_swatches": true,
     "color_swatch_config": "白:#ffffff\n黒:#000000\n赤:#ff0000",
     "product_image_aspect_ratio": "natural",
+    "show_secondary_image": false,
     "show_vendor": true,
     "product_title_max_lines": 0,
     "product_color_display": "swatch",
