@@ -91,6 +91,15 @@
     font-size: 12px;
   }
 
+  /* password reset */
+  .password_reset_label {
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 12px;
+  }
+  .password_reset_label.mt {
+    margin-top: 24px;
+  }
   /* contact */
   .contact_wrap {
     width: 31.25vw;
