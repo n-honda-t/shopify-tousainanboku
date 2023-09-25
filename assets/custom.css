@@ -172,6 +172,10 @@
     min-width: 104px;
     max-width: 120px;
   }
+  .mypage_tab.unactive {
+    background-color: #fff;
+    color: #1F1F1F;
+  }
   .top-fv img {
     width: 100%;
     object-fit: cover;
