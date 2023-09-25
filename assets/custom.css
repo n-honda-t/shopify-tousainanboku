@@ -370,6 +370,28 @@
     flex-direction: column;
     gap: 40px;
   }
+   .contact_label {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .contact_label_wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+  }
+  .contact_label_wrap.mt{
+    margin-top: 40px;
+  }
+  .require_label {
+    font-size: 12px;
+    padding: 2px 8px;
+    text-align: center;
+    background-color: #FFE8E8;
+    color: #BF0000;
+  }
 
   /* マイページ */
   .mypage-container {
