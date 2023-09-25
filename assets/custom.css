@@ -115,6 +115,8 @@
     font-size: 12px;
     padding: 2px 8px;
     text-align: center;
+    background-color: #FFE8E8;
+    color: #BF0000;
   }
   .top-fv {
     width: 100vw;
