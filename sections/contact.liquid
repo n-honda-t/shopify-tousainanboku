@@ -40,6 +40,10 @@
 
             {%- capture name -%}contact[{{ field_title | escape }}]{%- endcapture -%}
 
+            <div class="contact_label_wrap">
+              {%- render 'label', class: 'contact_label', text: 'お問い合わせ内容' -%}
+              {%- render 'require_label' -%}
+            </div>
             {%- if block.type == 'text' -%}
               {%- if block.settings.use_long_text -%}
                 {%- render 'input', name: name, label: block.settings.title, required: block.settings.required, multiline: 4 -%}
