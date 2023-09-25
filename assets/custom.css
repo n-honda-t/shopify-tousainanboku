@@ -111,7 +111,11 @@
     gap: 12px;
     margin-bottom: 14px;
   }
-  
+  .require_label {
+    font-size: 12px;
+    padding: 2px 8px;
+    text-align: center;
+  }
   .top-fv {
     width: 100vw;
     border-radius: 200px 0px 0px 0px;
