@@ -96,17 +96,10 @@
     width: 31.25vw;
     display: flex;
     flex-direction: column;
-    gap: 40px;
     margin: 12px auto 40px;
     font-size: 12px;
   }
 
-  /* contact */
-  .contact_wrap {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
   .top-fv {
     width: 100vw;
     border-radius: 200px 0px 0px 0px;
