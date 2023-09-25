@@ -16,9 +16,7 @@
 
         <div class="contact_wrap">
           <div class="register_wrap contact_wrap">
-            <div class="contact_label_wrap">
-              {%- render 'label', class: 'contact_label', text: '氏名' -%}
-            </div>
+            {%- render 'label', class: 'contact_label', text: '氏名' -%}
             {%- assign label  = 'contact.form.name' | t -%}
             {%- render 'input', type: 'text', name: 'contact[name]', label: label, value: customer.name, required: true, autocomplete: 'name' -%}
 
