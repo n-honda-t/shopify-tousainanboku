@@ -280,6 +280,7 @@
 
 @media screen and (max-width: 699px) {
   /* スクリーンサイズが699px以下の場合に適用 */
+  /* TOP */
   .top-downArrow {
     height: 3.75vw;
     width: 3.75vw;
@@ -299,6 +300,16 @@
 
   .top-secsion_title {
     text-align: center;
+  }
+
+  .top-fv {
+    width: 100vw;
+    border-radius: 50px 0px 0px 0px;
+  }
+
+  .top-fv img {
+    width: 100%;
+    object-fit: cover;
   }
   .brand_list_wrap {
     display: flex;
@@ -466,15 +477,6 @@
     color: #1F1F1F;
     border: solid 1px  #1F1F1F;
     border-bottom: none;
-  }
-  .top-fv {
-    width: 100vw;
-    border-radius: 50px 0px 0px 0px;
-  }
-
-  .top-fv img {
-    width: 100%;
-    object-fit: cover;
   }
 
   .footer {
