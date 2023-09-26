@@ -25,15 +25,16 @@
     "stagger_products_apparition": false,
     "round_color_swatches": true,
     "color_swatch_config": "白:#ffffff\n黒:#000000\n赤:#ff0000",
-    "product_image_aspect_ratio": "natural",
-    "show_vendor": true,
+    "product_image_aspect_ratio": "short_crop",
+    "show_secondary_image": false,
+    "show_vendor": false,
     "product_title_max_lines": 0,
     "product_color_display": "swatch",
     "show_product_rating": false,
     "show_product_rating_if_empty": false,
-    "show_quick_buy": true,
-    "show_discount": true,
-    "discount_mode": "percentage",
+    "show_quick_buy": false,
+    "show_discount": false,
+    "discount_mode": "saving",
     "cart_icon": "shopping_cart",
     "checkout_sidebar_background_color": "#fcf9f3",
     "checkout_accent_color": "#1c1c1c",
@@ -82,7 +83,9 @@
         }
       }
     },
-    "content_for_index": []
+    "content_for_index": [
+
+    ]
   },
   "presets": {
     "Allure": {
