@@ -197,7 +197,8 @@
     color: #B7413C;
     background-color: #F2F2F2 !important;
   }
-  .mypage_order_image {
+  .mypage_order_image,
+  .mypage_order_number{
      padding: 16px;
   }
   .top-fv img {
