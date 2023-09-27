@@ -253,7 +253,13 @@
 
     {%- comment -%}お気に入りリンク{%- endcomment -%}
     {% if customer %}
-      <a>{{ customer.first_name }}さん！ログインしています。</a>
+      <a href="#swym-wishlist" class="swym-wishlist">
+        <i
+          aria-hidden="true"
+          focusable="false"
+          role="presentation"
+          class="fa fa-heart"></i>
+      </a>
     {% else %}
       <a>ログインしていません。</a>
     {% endif %}
@@ -312,7 +318,7 @@
   {%- endif -%}
 </x-header></height-observer><script>
 document.documentElement.style.setProperty('--header-height', `${
-  Math.round(document.getElementById('shopify-section-           {{ section.id }}').clientHeight)
+  Math.round(document.getElementById('shopify-section-            {{ section.id }}').clientHeight)
 }px`);
 </script>{% schema %}
 {
