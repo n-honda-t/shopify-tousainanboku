@@ -204,6 +204,12 @@
     align-items: center;
     gap: 92PX;
   }
+  .mypage_order_date {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .top-fv img {
     width: 100%;
     object-fit: cover;
