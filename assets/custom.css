@@ -205,7 +205,8 @@
     gap: 92PX;
   }
   .mypage_order_date,
-  .mypage_order_payment_status{
+  .mypage_order_payment_status,
+  .mypage_order_fulfillment_status{
     padding: 16px;
     display: flex;
     justify-content: space-between;
