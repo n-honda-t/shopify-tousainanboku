@@ -265,11 +265,6 @@
       </a>
     {%- endif -%}
 
-    <a href="{{ routes.cart_url }}" class="relative">
-
-      私だよ
-    </a>
-
     <a
       href="{{ routes.cart_url }}"
       class="relative"
@@ -298,7 +293,7 @@
   {%- endif -%}
 </x-header></height-observer><script>
 document.documentElement.style.setProperty('--header-height', `${
-  Math.round(document.getElementById('shopify-section-          {{ section.id }}').clientHeight)
+  Math.round(document.getElementById('shopify-section-       {{ section.id }}').clientHeight)
 }px`);
 </script>{% schema %}
 {
