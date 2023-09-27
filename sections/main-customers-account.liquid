@@ -147,6 +147,10 @@
                             <p>発送ステータス</p>
                             <p>{{ order.fulfillment_status_label }}</p>
                           </div>
+                          <div class="mypage_order_total">
+                            <p>合計</p>
+                            <p>{{ order.shipping_price }}</p>
+                          </div>
                           <div>
                             <span class="no-js:hidden">{{ order.name }}</span>
                             <noscript>
