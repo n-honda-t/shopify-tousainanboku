@@ -185,6 +185,11 @@
     border: solid 1px #E6E6E6;
   }
 
+  .mypage_order_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
   .mypage_order_container {
     border: solid 1px #E6E6E6;
     background-color: #fff;
