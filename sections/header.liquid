@@ -82,7 +82,7 @@
       {%- capture widths -%}
         {{ section.settings.logo_max_width | times: 2 | at_most: section.settings.logo.width }}, {{ section.settings.logo_max_width | times: 3 | at_most: section.settings.logo.width }}{%- endcapture -%}
 
-      <span class="sr-only">{{ shop.name }}</span>
+      <span class="sr-only">あらいい</span>
       {{- section.settings.logo | image_url: width: section.settings.logo.width | image_tag: sizes: sizes, widths: widths, class: 'header__logo-image' -}}
 
       {%- if section.settings.transparent_logo -%}
@@ -295,7 +295,7 @@
   {%- endif -%}
 </x-header></height-observer><script>
 document.documentElement.style.setProperty('--header-height', `${
-  Math.round(document.getElementById('shopify-section-           {{ section.id }}').clientHeight)
+  Math.round(document.getElementById('shopify-section-            {{ section.id }}').clientHeight)
 }px`);
 </script>{% schema %}
 {
