@@ -200,6 +200,9 @@
   .mypage_order_image,
   .mypage_order_number{
      padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 92PX;
   }
   .top-fv img {
     width: 100%;
