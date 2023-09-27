@@ -259,8 +259,6 @@
           role="presentation"
           class="icon icon-swym-wishlist"></i>
       </a>
-    {% else %}
-      <a>ログインしていません。</a>
     {% endif %}
 
     {%- if shop.customer_accounts_enabled -%}
@@ -317,7 +315,7 @@
   {%- endif -%}
 </x-header></height-observer><script>
 document.documentElement.style.setProperty('--header-height', `${
-  Math.round(document.getElementById('shopify-section-              {{ section.id }}').clientHeight)
+  Math.round(document.getElementById('shopify-section-                {{ section.id }}').clientHeight)
 }px`);
 </script>{% schema %}
 {
