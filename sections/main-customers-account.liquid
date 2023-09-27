@@ -127,7 +127,9 @@
                             <p>{{ order.created_at | date: format: 'date' }}</p>
                           </div>
                           <div class="mypage_order_image">
-                            <img src="{{order.image.src  }}">
+                            {%- for line_item in order.line_items -%}
+                              {%- render 'line-item', line_item: line_item -%}
+                            {%- endfor -%}
                           </div>
                           <div>
                             <span class="no-js:hidden">{{ order.name }}</span>
