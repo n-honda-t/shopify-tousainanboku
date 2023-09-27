@@ -178,6 +178,11 @@
     border: solid 1px  #1F1F1F;
     border-bottom: none;
   }
+
+  .mypage_info {
+    background-color: #fff;
+    padding: 16PX;
+  }
   .top-fv img {
     width: 100%;
     object-fit: cover;
