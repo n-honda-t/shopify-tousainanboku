@@ -31,9 +31,6 @@
                 <!-- CUSTOMER ORDERS -->
                 <div class="v-stack gap-6 sm:gap-8">
                   {%- if customer.orders.size == 0 -%}
-                    <!--
-                      <p class="customer-account-category h6 text-subdued">{{ 'customer.account.orders' | t }}</p>
-                    -->
                     <div class="mypage_tab_wrap">
                       <div class="mypage_tab">注文履歴</div>
 
@@ -48,6 +45,11 @@
                     </div>
                   {%- else -%}
                     {%- paginate customer.orders by 16 -%}
+                      <div class="mypage_tab_wrap">
+                        <div class="mypage_tab">注文履歴</div>
+
+                        <div class="mypage_tab unactive">お気に入り</div>
+                      </div>
                       <div class="v-stack gap-6 md:hidden">
                         <p class="customer-account-category h6 text-subdued">{{ 'customer.account.orders' | t }}</p>
 
