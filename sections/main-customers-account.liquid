@@ -140,8 +140,12 @@
                             <p>{{ order.created_at | date: format: 'date' }}</p>
                           </div>
                           <div class="mypage_order_payment_status">
-                            <p>注文日</p>
-                            <p>{{ order.created_at | date: format: 'date' }}</p>
+                            <p>決済ステータス</p>
+                            <p>{{ order.financial_status_label }}</p>
+                          </div>
+                          <div class="mypage_order_fulfillment_status">
+                            <p>発送ステータス</p>
+                            <p>{{ order.fulfillment_status_label }}</p>
                           </div>
                           <div>
                             <span class="no-js:hidden">{{ order.name }}</span>
