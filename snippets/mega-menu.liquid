@@ -11,7 +11,7 @@ Supported variables
 ********************************************
 
 * link: the link from which we need to render the mega-menu. The link must always be a second level link, but it can
-        also be empty (no links), which is the case if the merchant only want to show images, for instance.
+also be empty (no links), which is the case if the merchant only want to show images, for instance.
 * block: the block containing all the information about the menu to render
 {%- endcomment -%}
 
@@ -20,7 +20,8 @@ Supported variables
     <ul class="mega-menu__linklist unstyled-list">
       {%- for sub_link in link.links -%}
         <li class="v-stack justify-items-start gap-5">
-          <a href="{{ sub_link.url }}" class="h6">{{ sub_link.title }}</a>
+          {% comment %} <a href="{{ sub_link.url }}" class="h6">{{ sub_link.title }}</a> {% endcomment %}
+          <a href="{{ sub_link.url }}" class="h6">ここ</a>
 
           {%- if sub_link.links.size > 0 -%}
             <ul class="v-stack gap-2.5 unstyled-list">
