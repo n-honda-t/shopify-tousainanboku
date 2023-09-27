@@ -131,7 +131,10 @@
                               {%- render 'line-item', line_item: line_item -%}
                             {%- endfor -%}
                           </div>
-                          <div class="mypage_order_number"></div>
+                          <div class="mypage_order_number">
+                            <p>注文番号</p>
+                            <p>{{ order.name }}</p>
+                          </div>
                           <div>
                             <span class="no-js:hidden">{{ order.name }}</span>
                             <noscript>
