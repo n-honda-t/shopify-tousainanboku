@@ -251,6 +251,13 @@
       {%- endif -%}
     {%- endfor -%}
 
+    {%- comment -%}お気に入りリンク{%- endcomment -%}
+    {% if customer %}
+      <a>{{ customer.first_name }}さん！ログインしています。</a>
+    {% else %}
+      <a>ログインしていません。</a>
+    {% endif %}
+
     {%- if shop.customer_accounts_enabled -%}
       <a href="{{ routes.account_url }}" class="sm-max:hidden">
         <span class="sr-only">{{ 'header.general.open_account' | t }}</span>
@@ -305,7 +312,7 @@
   {%- endif -%}
 </x-header></height-observer><script>
 document.documentElement.style.setProperty('--header-height', `${
-  Math.round(document.getElementById('shopify-section-         {{ section.id }}').clientHeight)
+  Math.round(document.getElementById('shopify-section-           {{ section.id }}').clientHeight)
 }px`);
 </script>{% schema %}
 {
