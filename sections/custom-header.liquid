@@ -251,14 +251,13 @@
       {%- endif -%}
     {%- endfor -%}
 
-    {%- comment -%}お気に入りリンク{%- endcomment -%}
     {% if customer %}
       <a href="#swym-wishlist" class="swym-wishlist">
         <i
           aria-hidden="true"
           focusable="false"
           role="presentation"
-          class="fa fa-heart"></i>
+          class="icon icon-swym-wishlist"></i>
       </a>
     {% else %}
       <a>ログインしていません。</a>
@@ -318,7 +317,7 @@
   {%- endif -%}
 </x-header></height-observer><script>
 document.documentElement.style.setProperty('--header-height', `${
-  Math.round(document.getElementById('shopify-section-            {{ section.id }}').clientHeight)
+  Math.round(document.getElementById('shopify-section-              {{ section.id }}').clientHeight)
 }px`);
 </script>{% schema %}
 {
