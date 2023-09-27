@@ -213,6 +213,9 @@
     justify-content: space-between;
     align-items: center;
   }
+  .mypage_order_container:not(:last-child) {
+    border-bottom: solid 1px #E6E6E6;
+}
   .top-fv img {
     width: 100%;
     object-fit: cover;
