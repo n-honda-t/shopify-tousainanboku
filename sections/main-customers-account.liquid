@@ -31,7 +31,11 @@
                 <!-- CUSTOMER ORDERS -->
                 <div class="v-stack gap-6 sm:gap-8">
                   {%- if customer.orders.size == 0 -%}
-                    <p class="customer-account-category h6 text-subdued">{{ 'customer.account.orders' | t }}</p>
+                    <div class="mypage_tab_wrap">
+                      <div class="mypage_tab">注文履歴</div>
+
+                      <div class="mypage_tab unactive">お気に入り</div>
+                    </div>
 
                     <div class="prose">
                       <p>{{ 'customer.account.no_orders' | t }}</p>
@@ -41,6 +45,11 @@
                     </div>
                   {%- else -%}
                     {%- paginate customer.orders by 16 -%}
+                      <div class="mypage_tab_wrap">
+                        <div class="mypage_tab">注文履歴</div>
+
+                        <div class="mypage_tab unactive">お気に入り</div>
+                      </div>
                       <div class="v-stack gap-6 md:hidden">
                         <p class="customer-account-category h6 text-subdued">{{ 'customer.account.orders' | t }}</p>
 
@@ -73,42 +82,60 @@
                                 </div>
 
                                 {%- capture button_label -%}{{ 'customer.order.view_details' | t }}{%- endcapture -%}
-                                {%- render 'button', href: order.customer_url, content: button_label, style: 'outline' -%}
+                                {%- render 'button',
+                                  href: order.customer_url,
+                                  content: button_label,
+                                  style: 'outline'
+                                -%}
                               </div>
                             </div>
                           {%- endfor -%}
                         </div>
                       </div>
 
-                      <table class="table table--reduce-border table--lg hidden md:table">
-                        <thead>
-                        <tr>
-                          <th>{{ 'customer.order.order' | t }}</th>
-                          <th>{{ 'customer.order.date' | t }}</th>
-                          <th>{{ 'customer.order.payment_status' | t }}</th>
-                          <th>{{ 'customer.order.fulfillment_status' | t }}</th>
-                          <th class="text-end">{{ 'customer.order.total' | t }}</th>
-                        </tr>
-                        </thead>
-
-                        <tbody>
-                          {%- for order in customer.orders -%}
-                            <tr onclick="window.location.href = '{{ order.customer_url }}'">
-                              <td>
-                                <span class="no-js:hidden">{{ order.name }}</span>
-                                <noscript>
-                                  <a href="{{ order.customer_url }}" class="link">{{ order.name }}</a>
-                                </noscript>
-                              </td>
-                              <td>{{ order.created_at | date: format: 'date' }}</td>
-                              <td>{{ order.financial_status_label }}</td>
-                              <td>{{ order.fulfillment_status_label }}</td>
-                              <td class="text-end">{{ order.total_net_amount | money }}</td>
-                            </tr>
-                          {%- endfor -%}
-                        </tbody>
-                      </table>
-
+                      {%- for order in customer.orders -%}
+                        <div class="mypage_order_wrap">
+                          <div class="mypage_order_container">
+                            <div class="mypage_order_header">
+                              <p>発送日：</p>
+                              <p>{{ order.created_at | date: format: 'date' }}</p>
+                            </div>
+                            <div class="mypage_order_image">
+                              {%- for line_item in order.line_items -%}
+                                {%- render 'line-item', line_item: line_item -%}
+                              {%- endfor -%}
+                            </div>
+                            <div class="mypage_order_number">
+                              <p>注文番号</p>
+                              <p>{{ order.name }}</p>
+                            </div>
+                            <div class="mypage_order_date">
+                              <p>注文日</p>
+                              <p>{{ order.created_at | date: format: 'date' }}</p>
+                            </div>
+                            <div class="mypage_order_payment_status">
+                              <p>決済ステータス</p>
+                              <p>{{ order.financial_status_label }}</p>
+                            </div>
+                            <div class="mypage_order_fulfillment_status">
+                              <p>発送ステータス</p>
+                              <p>{{ order.fulfillment_status_label }}</p>
+                            </div>
+                            <div class="mypage_order_total">
+                              <p>合計</p>
+                              <p>{{ order.total_net_amount | money }}</p>
+                            </div>
+                            <div class="mypage_order_buttons">
+                              <button
+                                class="mypage_order_button"
+                                onclick="window.location.href = '{{ order.customer_url }}'"
+                              >
+                                注文状況ページ
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      {%- endfor -%}
                       {%- render 'pagination', paginate: paginate -%}
                     {%- endpaginate -%}
                   {%- endif -%}
@@ -116,9 +143,11 @@
 
                 <!-- CUSTOMER PRIMARY ADDRESS -->
                 <div class="v-stack gap-6 sm:gap-8">
-                  <p class="customer-account-category h6 text-subdued">{{ 'customer.account.primary_address' | t }}</p>
+                  <div class="mypage_tab_wrap">
+                    <div class="mypage_tab">会員情報</div>
+                  </div>
 
-                  <div class="prose">
+                  <div class="mypage_info">
                     {%- if customer.addresses_count == 0 -%}
                       <p>{{ 'customer.addresses.no_addresses' | t }}</p>
                     {%- else -%}

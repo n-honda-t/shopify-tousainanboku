@@ -16,20 +16,31 @@
 
         <div class="contact_wrap">
           <div class="register_wrap contact_wrap">
+            <div class="contact_label_wrap">
+              {%- render 'label', class: 'contact_label', text: '氏名' -%}
+              {%- render 'require_label' -%}
+            </div>
             {%- assign label  = 'contact.form.name' | t -%}
             {%- render 'input', type: 'text', name: 'contact[name]', label: label, value: customer.name, required: true, autocomplete: 'name' -%}
 
+            <div class="contact_label_wrap mt">
+              {%- render 'label', class: 'contact_label', text: 'メールアドレス' -%}
+              {%- render 'require_label' -%}
+            </div>
             {%- assign label  = 'contact.form.email' | t -%}
             {%- render 'input', type: 'email', name: 'contact[email]', label: label, value: customer.email, required: true, autocomplete: 'email' -%}
           </div>
-
+          <div class="contact_label_wrap">
+              {%- render 'label', class: 'contact_label', text: 'お問い合わせ内容' -%}
+              {%- render 'require_label' -%}
+            </div>
           {%- for block in section.blocks -%}
             {%- assign field_title = block.settings.title -%}
 
             {%- if field_title == blank -%}
               {%- capture field_title -%}Custom field {% increment custom_field %}{%- endcapture -%}
             {%- endif -%}
-
+            
             {%- capture name -%}contact[{{ field_title | escape }}]{%- endcapture -%}
 
             {%- if block.type == 'text' -%}
