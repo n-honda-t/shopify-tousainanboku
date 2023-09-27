@@ -216,6 +216,11 @@
   .mypage_order_container > div:not(:last-child) {
     border-bottom: solid 1px #E6E6E6;
 }
+
+  .mypage_order_buttons {
+    display: flex;
+   padding: 16px;
+  }
   .top-fv img {
     width: 100%;
     object-fit: cover;
