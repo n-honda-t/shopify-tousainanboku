@@ -420,6 +420,10 @@
     padding: 16PX;
     border: solid 1px #E6E6E6;
   }
+
+  .mypage_order_container {
+    border: solid 1px #E6E6E6;
+  }
   /* contact */
   .contact_wrap {
     display: flex;
