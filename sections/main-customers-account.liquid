@@ -123,7 +123,7 @@
                       -->
 
                       {%- for order in customer.orders -%}
-                        <div class="mypage_order_container" onclick="window.location.href = '{{ order.customer_url }}'">
+                        <div class="mypage_order_container">
                           <div class="mypage_order_header">
                             <p>発送日：</p>
                             <p>{{ order.created_at | date: format: 'date' }}</p>
@@ -154,7 +154,12 @@
                             <p>{{ order.total_net_amount | money }}</p>
                           </div>
                           <div class="mypage_order_buttons">
-                            <button class="mypage_order_button"></button>
+                            <button
+                              class="mypage_order_button"
+                              onclick="window.location.href = '{{ order.customer_url }}'"
+                            >
+                              注文状況ページ
+                            </button>
                           </div>
                         </div>
                       {%- endfor -%}
