@@ -292,11 +292,6 @@
 
       <cart-dot class="header__cart-dot {% unless cart.empty? %}is-visible{% endunless %} {% unless section.settings.show_icons %}md:hidden{% endunless %}"></cart-dot>
     </a>
-    {% if customer %}
-      <a>{{ customer.first_name }}さん！ログインしています。</a>
-    {% else %}
-      <a>ログインしていません。</a>
-    {% endif %}
   </nav>
 
   {%- if section.settings.enable_search -%}
@@ -310,7 +305,7 @@
   {%- endif -%}
 </x-header></height-observer><script>
 document.documentElement.style.setProperty('--header-height', `${
-  Math.round(document.getElementById('shopify-section-        {{ section.id }}').clientHeight)
+  Math.round(document.getElementById('shopify-section-         {{ section.id }}').clientHeight)
 }px`);
 </script>{% schema %}
 {
