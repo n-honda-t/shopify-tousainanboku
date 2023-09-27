@@ -185,7 +185,7 @@
     border: solid 1px #E6E6E6;
   }
   .mypage_info > a {
-    background-color: #fff;
+    background-color: #fff !important;
     color: #1F1F1F;
     border: solid 1px #1F1F1F;
     border-radius: 5px;
