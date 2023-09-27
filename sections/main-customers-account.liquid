@@ -123,7 +123,7 @@
                       -->
 
                       {%- for order in customer.orders -%}
-                        <div onclick="window.location.href = '{{ order.customer_url }}'">
+                        <div class="mypage_order_container" onclick="window.location.href = '{{ order.customer_url }}'">
                           <div>
                             <span class="no-js:hidden">{{ order.name }}</span>
                             <noscript>
