@@ -225,6 +225,10 @@
     width: 220px;
     padding: 12px 0;
     text-align: center;
+    border: solid 1px #1F1F1F;
+    border-radius: 5px;
+    color: #1F1F1F;
+    background-color: #fff;
   }
   .top-fv img {
     width: 100%;
