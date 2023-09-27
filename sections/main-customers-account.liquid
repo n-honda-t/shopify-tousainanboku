@@ -91,34 +91,36 @@
                         </div>
                       </div>
 
-                      <table class="mypage_order_table">
-                        <thead>
-                          <tr>
-                            <th>{{ 'customer.order.order' | t }}</th>
-                            <th>{{ 'customer.order.date' | t }}</th>
-                            <th>{{ 'customer.order.payment_status' | t }}</th>
-                            <th>{{ 'customer.order.fulfillment_status' | t }}</th>
-                            <th class="text-end">{{ 'customer.order.total' | t }}</th>
-                          </tr>
-                        </thead>
-
-                        <tbody>
-                          {%- for order in customer.orders -%}
-                            <tr onclick="window.location.href = '{{ order.customer_url }}'">
-                              <td>
-                                <span class="no-js:hidden">{{ order.name }}</span>
-                                <noscript>
-                                  <a href="{{ order.customer_url }}" class="link">{{ order.name }}</a>
-                                </noscript>
-                              </td>
-                              <td>{{ order.created_at | date: format: 'date' }}</td>
-                              <td>{{ order.financial_status_label }}</td>
-                              <td>{{ order.fulfillment_status_label }}</td>
-                              <td class="text-end">{{ order.total_net_amount | money }}</td>
+                      <!--
+                        <table class="mypage_order_table">
+                          <thead>
+                            <tr>
+                              <th>{{ 'customer.order.order' | t }}</th>
+                              <th>{{ 'customer.order.date' | t }}</th>
+                              <th>{{ 'customer.order.payment_status' | t }}</th>
+                              <th>{{ 'customer.order.fulfillment_status' | t }}</th>
+                              <th class="text-end">{{ 'customer.order.total' | t }}</th>
                             </tr>
-                          {%- endfor -%}
-                        </tbody>
-                      </table>
+                          </thead>
+
+                          <tbody>
+                            {%- for order in customer.orders -%}
+                              <tr onclick="window.location.href = '{{ order.customer_url }}'">
+                                <td>
+                                  <span class="no-js:hidden">{{ order.name }}</span>
+                                  <noscript>
+                                    <a href="{{ order.customer_url }}" class="link">{{ order.name }}</a>
+                                  </noscript>
+                                </td>
+                                <td>{{ order.created_at | date: format: 'date' }}</td>
+                                <td>{{ order.financial_status_label }}</td>
+                                <td>{{ order.fulfillment_status_label }}</td>
+                                <td class="text-end">{{ order.total_net_amount | money }}</td>
+                              </tr>
+                            {%- endfor -%}
+                          </tbody>
+                        </table>
+                      -->
 
                       {%- render 'pagination', paginate: paginate -%}
                     {%- endpaginate -%}
