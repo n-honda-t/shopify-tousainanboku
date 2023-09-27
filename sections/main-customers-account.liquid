@@ -153,6 +153,9 @@
                             <p>合計</p>
                             <p>{{ order.total_net_amount | money }}</p>
                           </div>
+                          <div class="mypage_order_buttons">
+                            <button class="mypage_order_button"></button>
+                          </div>
                         </div>
                       {%- endfor -%}
                       {%- render 'pagination', paginate: paginate -%}
