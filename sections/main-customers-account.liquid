@@ -122,6 +122,20 @@
                         </table>
                       -->
 
+                      {%- for order in customer.orders -%}
+                        <div onclick="window.location.href = '{{ order.customer_url }}'">
+                          <div>
+                            <span class="no-js:hidden">{{ order.name }}</span>
+                            <noscript>
+                              <a href="{{ order.customer_url }}" class="link">{{ order.name }}</a>
+                            </noscript>
+                          </div>
+                          <div>{{ order.created_at | date: format: 'date' }}</div>
+                          <div>{{ order.financial_status_label }}</div>
+                          <div>{{ order.fulfillment_status_label }}</div>
+                          <div class="text-end">{{ order.total_net_amount | money }}</div>
+                        </div>
+                      {%- endfor -%}
                       {%- render 'pagination', paginate: paginate -%}
                     {%- endpaginate -%}
                   {%- endif -%}
