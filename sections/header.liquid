@@ -95,7 +95,8 @@
 
   {%- if request.page_type == 'index' -%}
     <h1 class="header__logo">
-      <a href="{{ routes.root_url }}">{{ logo_content }}</a>
+      {% comment %} <a href="{{ routes.root_url }}">{{ logo_content }}</a> {% endcomment %}
+      <a href="{{ routes.root_url }}">俺だよ</a>
     </h1>
   {% else %}
     <a href="{{ routes.root_url }}" class="header__logo">{{ logo_content }}</a>
@@ -293,7 +294,7 @@
   {%- endif -%}
 </x-header></height-observer><script>
 document.documentElement.style.setProperty('--header-height', `${
-  Math.round(document.getElementById('shopify-section-       {{ section.id }}').clientHeight)
+  Math.round(document.getElementById('shopify-section-         {{ section.id }}').clientHeight)
 }px`);
 </script>{% schema %}
 {
