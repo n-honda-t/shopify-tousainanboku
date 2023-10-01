@@ -50,48 +50,50 @@
 
                         <div class="mypage_tab unactive">お気に入り</div>
                       </div>
-                      <div class="v-stack gap-6 md:hidden">
-                        <p class="customer-account-category h6 text-subdued">{{ 'customer.account.orders' | t }}</p>
+                      <!--
+                        <div class="v-stack gap-6 md:hidden">
+                          <p class="customer-account-category h6 text-subdued">{{ 'customer.account.orders' | t }}</p>
 
-                        <div class="v-stack gap-8">
-                          {%- for order in customer.orders -%}
-                            <div class="v-stack gap-2">
-                              <p class="bold">{{ 'customer.order.order_name' | t: name: order.name }}</p>
+                          <div class="v-stack gap-8">
+                            {%- for order in customer.orders -%}
+                              <div class="v-stack gap-2">
+                                <p class="bold">{{ 'customer.order.order_name' | t: name: order.name }}</p>
 
-                              <div class="v-stack gap-4">
-                                <div class="customer-account-order-grid">
-                                  <div>
-                                    <p class="text-subdued">{{ 'customer.order.date' | t }}</p>
-                                    <p>{{ order.created_at | date: format: 'date' }}</p>
+                                <div class="v-stack gap-4">
+                                  <div class="customer-account-order-grid">
+                                    <div>
+                                      <p class="text-subdued">{{ 'customer.order.date' | t }}</p>
+                                      <p>{{ order.created_at | date: format: 'date' }}</p>
+                                    </div>
+
+                                    <div>
+                                      <p class="text-subdued">{{ 'customer.order.fulfillment_status' | t }}</p>
+                                      <p>{{ order.financial_status_label }}</p>
+                                    </div>
+
+                                    <div>
+                                      <p class="text-subdued">{{ 'customer.order.payment_status' | t }}</p>
+                                      <p>{{ order.fulfillment_status_label }}</p>
+                                    </div>
+
+                                    <div>
+                                      <p class="text-subdued">{{ 'customer.order.total' | t }}</p>
+                                      <p>{{ order.total_net_amount | money }}</p>
+                                    </div>
                                   </div>
 
-                                  <div>
-                                    <p class="text-subdued">{{ 'customer.order.fulfillment_status' | t }}</p>
-                                    <p>{{ order.financial_status_label }}</p>
-                                  </div>
-
-                                  <div>
-                                    <p class="text-subdued">{{ 'customer.order.payment_status' | t }}</p>
-                                    <p>{{ order.fulfillment_status_label }}</p>
-                                  </div>
-
-                                  <div>
-                                    <p class="text-subdued">{{ 'customer.order.total' | t }}</p>
-                                    <p>{{ order.total_net_amount | money }}</p>
-                                  </div>
+                                  {%- capture button_label -%}{{ 'customer.order.view_details' | t }}{%- endcapture -%}
+                                  {%- render 'button',
+                                    href: order.customer_url,
+                                    content: button_label,
+                                    style: 'outline'
+                                  -%}
                                 </div>
-
-                                {%- capture button_label -%}{{ 'customer.order.view_details' | t }}{%- endcapture -%}
-                                {%- render 'button',
-                                  href: order.customer_url,
-                                  content: button_label,
-                                  style: 'outline'
-                                -%}
                               </div>
-                            </div>
-                          {%- endfor -%}
+                            {%- endfor -%}
+                          </div>
                         </div>
-                      </div>
+                      -->
 
                       {%- for order in customer.orders -%}
                         <div class="mypage_order_wrap">
