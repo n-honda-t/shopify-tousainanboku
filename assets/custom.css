@@ -533,7 +533,7 @@ i.icon-swym-wishlist:after {
    padding: 16px;
   }
   .mypage_order_button {
-    width: 220px;
+    width: 100%;
     padding: 12px 0;
     text-align: center;
     border: solid 1px #1F1F1F;
