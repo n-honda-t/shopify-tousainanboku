@@ -512,6 +512,21 @@ Supported variables
         <div class="product-info__block-item" data-block-type="{{ block.type | replace: '_', '-' }}" {% unless block.type == '@app' or block.type == 'accordion' %}{{ block.shopify_attributes }}{% endunless %}>
           {{- block_content -}}
         </div>
+        <div class="product_detail">
+          <div class="question_inner_box">
+      <input id="block-01" type="checkbox" class="toggle" />
+      <label class="Label" for="block-01">
+        <div class="title">商品説明</div>
+        <div class="question_plus_icon"><img src="./plus.png" /></div>
+        <div class="question_minus_icon"><img src="./minus.png" /></div>
+      </label>
+      <div class="content">
+        <div class="content-text">
+          説明が入ります説明が入ります説明が入ります
+        </div>
+      </div>
+    </div>
+        </div>
       {%- endif -%}
 
       {%- if inside_block_group_context and allow_block_group == false -%}
