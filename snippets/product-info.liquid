@@ -512,6 +512,9 @@ Supported variables
         <div class="product-info__block-item" data-block-type="{{ block.type | replace: '_', '-' }}" {% unless block.type == '@app' or block.type == 'accordion' %}{{ block.shopify_attributes }}{% endunless %}>
           {{- block_content -}}
         </div>
+        <div class="product_detail">
+          
+        </div>
       {%- endif -%}
 
       {%- if inside_block_group_context and allow_block_group == false -%}
