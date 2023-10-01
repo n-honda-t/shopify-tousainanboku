@@ -506,7 +506,7 @@ Supported variables
       {%- if block_content != blank -%}
         {%- if allow_block_group and inside_block_group_context == false -%}
           {%- assign inside_block_group_context = true -%}
-          <div class="product-info__block-group {{ block_group_class }}" data-group-type="{{ block_group_name }}">
+          <div class="product-info__block-group {{ block_group_class }}" data-group-type="{{ block_group_name }}"></div>
         {%- endif -%}
 
         <div class="product-info__block-item" data-block-type="{{ block.type | replace: '_', '-' }}" {% unless block.type == '@app' or block.type == 'accordion' %}{{ block.shopify_attributes }}{% endunless %}>
