@@ -16,7 +16,7 @@ i.icon-swym-wishlist+span {
 i.icon-swym-wishlist:after {
   content: '';
   font-size: 130%;
-  line-height: 18px;
+ 
   text-align: center;
   display: inline;
 }
