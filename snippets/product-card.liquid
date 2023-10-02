@@ -61,11 +61,6 @@ Supported variables
         href="{{ product.url }}"
         class="product-card__media"
         data-instant>
-        {% include 'swym-product-view', product: product %}
-        <button
-          class="swym-button swym-add-to-wishlist-view-product product_{{product.id}}"
-          data-swaction="addToWishlist"
-          data-product-id="{{product.id | json}}"></button>
 
         {%- capture sizes -%}
           {%- if stacked -%}
