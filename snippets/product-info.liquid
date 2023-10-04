@@ -259,6 +259,13 @@ be only used on the product page for the main product
                 {%- endif -%}
 
                 <div class="variant-picker__option-values h-stack gap-2.5 wrap">
+                  <button
+                    class="swym-button swym-add-to-wishlist"
+                    data-with-epi="true"
+                    data-swaction="addToWishlist"
+                    data-product-id="{{ product.id }}"
+                    data-variant-id="{{ product.variants[0].id }}"
+                    data-product-url="{{ shop.url }}{{ product.url }}"></button>
                   {%- liquid
                       for product_variation in block.settings.products
                         assign value = product_variation.metafields[metafield_namespace][metafield_key].value
