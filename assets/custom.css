@@ -137,6 +137,13 @@ i.icon-swym-wishlist:after {
     width: 100%;
     margin: 80px 20px 0 40px;
   }
+
+  .product-detail_inner {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    pading: 28px 20px;
+  }
   /* contact */
   .contact_wrap {
     width: 31.25vw;
