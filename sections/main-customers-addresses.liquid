@@ -90,7 +90,7 @@
       {%- render 'address-form', address: address -%}
     {%- endfor -%}
   </div>
-  <a href="{{ routes.account_url }}" class="text-with-icon h6 link-faded">
+  <a href="{{ routes.account_url }}" class="text-with-icon h6 link-faded" style="margin-top: 40px;">
     {%- render 'icon' with 'chevron-left', width: 10, direction_aware: true -%}
     {{- 'customer.order.back' | t: name: order.name -}}
   </a>
