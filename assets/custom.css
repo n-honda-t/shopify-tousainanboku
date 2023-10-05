@@ -134,6 +134,7 @@ i.icon-swym-wishlist:after {
 
   /* product detail */
   .product-detail_box {
+    width: 100%;
     margin: 80px 20px 0 40px;
   }
   /* contact */
