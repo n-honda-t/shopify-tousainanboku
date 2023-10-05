@@ -379,6 +379,12 @@ i.icon-swym-wishlist:after {
     border-radius: 0.390625vw 2.34375vw;
     padding: 1.40625vw 1.25vw;
   }
+
+  /* header search */
+  .header-search__form-control {
+    padding-right: 24px;
+    padding-left: 40px;
+  }
 }
 
 @media screen and (max-width: 699px) {
