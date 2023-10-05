@@ -86,7 +86,7 @@ i.icon-swym-wishlist:after {
     line-height: 140%;
     border-bottom: 1px solid black;
     padding-bottom: 0.625vw;
-    margin: 0 40px;
+    margin: 0 40px 1px;
   }
 
   /* login */
