@@ -67,6 +67,7 @@ i.icon-swym-wishlist:after {
   .common_top_image_wrap {
     height: 32.81vw;
     margin-left: 11.72vw;
+    margin-bottom: 40px;
     border-radius: 0 0 0 200px;
   }
   .common_top_title {
