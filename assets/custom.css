@@ -16,7 +16,6 @@ i.icon-swym-wishlist + span {
 i.icon-swym-wishlist:after {
   content: "";
   font-size: 130%;
-
   text-align: center;
   display: inline;
 }
@@ -540,11 +539,29 @@ i.icon-swym-wishlist:after {
     border: solid 1px #e6e6e6;
     background-color: #fff;
   }
+  .mypage_order_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .mypage_order_container {
+    border: solid 1px #e6e6e6;
+    background-color: #fff;
+  }
 
   .mypage_order_header {
     display: flex;
     align-items: center;
     padding: 16px;
+    color: #b7413c;
+    background-color: #f2f2f2 !important;
+  }
+  .mypage_order_image,
+  .mypage_order_number {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 92px;
     color: #b7413c;
     background-color: #f2f2f2 !important;
   }
@@ -585,6 +602,10 @@ i.icon-swym-wishlist:after {
   /* product detail */
   .spPadding {
     padding: 0 16px;
+    border: solid 1px #1f1f1f;
+    border-radius: 5px;
+    color: #1f1f1f;
+    background-color: #fff;
   }
   /* contact */
   .contact_wrap {
