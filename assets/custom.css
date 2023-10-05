@@ -560,6 +560,11 @@ i.icon-swym-wishlist:after {
     color: #1f1f1f;
     background-color: #fff;
   }
+
+  /* product detail */
+  .spPadding {
+    padding: 0 16px;
+  }
   /* contact */
   .contact_wrap {
     display: flex;
