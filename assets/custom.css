@@ -141,7 +141,7 @@ i.icon-swym-wishlist:after {
 
   .product-detail_inner {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
     padding: 28px 20px;
     border-bottom: solid 1px #1f1f1f;
