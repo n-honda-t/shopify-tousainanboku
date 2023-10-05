@@ -432,6 +432,16 @@ i.icon-swym-wishlist:after {
     color: #1f1f1f;
     font-size: 2.5vw;
   }
+  .category-title {
+    font-family: Zen Kaku Gothic New;
+    font-size: 4.266vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    border-bottom: 1px solid black;
+    padding-bottom: 2.133vw;
+    margin: 0 40px 40px;
+  }
   /* login */
   .button_wrap,
   .register_wrap {
