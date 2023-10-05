@@ -5,21 +5,20 @@
         <div class="prose">
           <h1 class="h4">{{ 'customer.addresses.title' | t }}</h1>
           <p>{{ 'customer.addresses.no_addresses' | t }}</p>
-          <button class="button" type="button" aria-controls="customer-address-new">{{ 'customer.addresses.add_address' | t }}</button>
+          <button class="button" type="button" aria-controls="customer-address-new">
+            {{ 'customer.addresses.add_address' | t }}
+          </button>
         </div>
       </div>
     {%- else -%}
       <div class="section-stack">
         <div class="v-stack justify-items-start gap-6">
-          <a href="{{ routes.account_url }}" class="text-with-icon h6 link-faded">
-            {%- render 'icon' with 'chevron-left', width: 10, direction_aware: true -%}
-            {{- 'customer.order.back' | t: name: order.name -}}
-          </a>
-
           <div class="section-header text-start">
             <div class="prose">
               <h1 class="h3">{{ 'customer.addresses.title' | t }}</h1>
-              <button class="button" type="button" aria-controls="customer-address-new">{{ 'customer.addresses.add_address' | t }}</button>
+              <button class="button" type="button" aria-controls="customer-address-new">
+                {{ 'customer.addresses.add_address' | t }}
+              </button>
             </div>
           </div>
         </div>
@@ -38,20 +37,33 @@
                 {%- for address in customer.addresses -%}
                   <div class="v-stack gap-6 sm:gap-8">
                     {%- if address == customer.default_address -%}
-                      <p class="customer-account-category h6 text-subdued">{{ 'customer.addresses.default_address' | t }}</p>
+                      <p class="customer-account-category h6 text-subdued">
+                        {{ 'customer.addresses.default_address' | t }}
+                      </p>
                     {%- else -%}
-                      <p class="customer-account-category h6 text-subdued">{{ 'customer.addresses.address_title' | t: position: forloop.index }}</p>
+                      <p class="customer-account-category h6 text-subdued">
+                        {{ 'customer.addresses.address_title' | t: position: forloop.index }}
+                      </p>
                     {%- endif -%}
 
                     <div class="v-stack gap-4">
                       {{- address | format_address -}}
 
                       <div class="h-stack gap-4">
-                        <button type="button" class="link" aria-controls="customer-address-{{ address.id }}">{{ 'customer.addresses.edit' | t }}</button>
+                        <button type="button" class="link" aria-controls="customer-address-{{ address.id }}">
+                          {{ 'customer.addresses.edit' | t }}
+                        </button>
 
                         <form method="post" action="{{ address.url }}">
                           <input type="hidden" name="_method" value="delete">
-                          <button type="submit" class="link" is="confirm-button" data-message="{{ 'customer.addresses.delete_confirm' | t | escape }}">{{ 'customer.addresses.delete' | t }}</button>
+                          <button
+                            type="submit"
+                            class="link"
+                            is="confirm-button"
+                            data-message="{{ 'customer.addresses.delete_confirm' | t | escape }}"
+                          >
+                            {{ 'customer.addresses.delete' | t }}
+                          </button>
                         </form>
                       </div>
                     </div>
@@ -67,9 +79,9 @@
     {%- endif -%}
 
     {%- comment -%}
-    --------------------------------------------------------------------------------------------------------------------
-    GENERATE THE FORMS
-    --------------------------------------------------------------------------------------------------------------------
+      --------------------------------------------------------------------------------------------------------------------
+      GENERATE THE FORMS
+      --------------------------------------------------------------------------------------------------------------------
     {%- endcomment -%}
 
     {%- render 'address-form', address: customer.new_address -%}
@@ -78,6 +90,10 @@
       {%- render 'address-form', address: address -%}
     {%- endfor -%}
   </div>
+  <a href="{{ routes.account_url }}" class="text-with-icon h6 link-faded">
+    {%- render 'icon' with 'chevron-left', width: 10, direction_aware: true -%}
+    {{- 'customer.order.back' | t: name: order.name -}}
+  </a>
 </div>
 
 {% schema %}
