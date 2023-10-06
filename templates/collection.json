@@ -22,7 +22,7 @@
       "settings": {
         "hide_product_information": false,
         "products_per_page": 48,
-        "products_per_row_mobile": "1",
+        "products_per_row_mobile": "2",
         "products_size_desktop": "medium",
         "show_grid_mode_selector": false,
         "horizontal_spacing_factor": 1,
@@ -31,7 +31,7 @@
         "quick_links_menu": "",
         "show_sort_by": false,
         "show_filters": false,
-        "show_results_count": true,
+        "show_results_count": false,
         "show_filter_group_name": false,
         "show_empty_filter_values": false,
         "show_filter_values_count": false,
