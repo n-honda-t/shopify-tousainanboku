@@ -44,7 +44,8 @@ Supported variables
   endif
 -%}
 
-  <product-card class="product-card"
+<product-card
+  class="product-card"
   {% if reveal %}reveal-on-scroll="true"{% endif %}
   handle="{{ product.handle | escape }}">
   {%- comment -%}
@@ -190,4 +191,13 @@ Supported variables
       {%- render 'product-rating', product: product, show_empty: settings.show_product_rating_if_empty, display_mode: settings.product_rating_mode -%}
     {%- endif -%}
   </div>
+  <!-- Swym Wishlist Plus EPI Button-->
+  <button
+    data-with-epi="true"
+    class="swym-button swym-add-to-wishlist-view-product product_{{product.id}}"
+    data-swaction="addToWishlist"
+    data-product-id="{{product.id | json}}"
+    data-variant-id="{{product.variants[0].id}}"
+    data-product-url="{{ shop.url }}{{ product.url }}"></button>
+  <!-- Swym Wishlist Plus EPI Button-->
 </product-card>
