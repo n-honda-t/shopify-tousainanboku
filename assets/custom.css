@@ -24,7 +24,7 @@ i.icon-swym-wishlist:after {
   content: "\f004";
 }
 
-.product-card__media {
+.product-card img {
   background-color: #ffffff;
 }
 
