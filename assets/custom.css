@@ -24,9 +24,9 @@ i.icon-swym-wishlist:after {
   content: "\f004";
 }
 
-/* .product-card-image {
+.product-card-image {
   background-color: #ffffff;
-} */
+}
 
 @media screen and (min-width: 700px) {
   /* スクリーンサイズが700px以上の場合に適用 */
