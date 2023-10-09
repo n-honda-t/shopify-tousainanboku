@@ -63,6 +63,18 @@ Supported variables
           class="product-card__media"
           data-instant>
 
+          <!-- Swym Wishlist Plus EPI Button-->
+          {% if customer %}
+            <button
+              data-with-epi="true"
+              class="swym-button swym-add-to-wishlist-view-product product_{{product.id}}"
+              data-swaction="addToWishlist"
+              data-product-id="{{product.id | json}}"
+              data-variant-id="{{product.variants[0].id}}"
+              data-product-url="{{ shop.url }}{{ product.url }}"></button>
+          {%- endif -%}
+          <!-- Swym Wishlist Plus EPI Button-->
+
           {%- capture sizes -%}
             {%- if stacked -%}
               (max-width: 699px) calc(100vw / {{ section.settings.products_per_row_mobile }}), (max-width: 999px) calc(100vw / {{ 3 | at_most: section.settings.products_per_row_desktop | default: 3 }} - 64px), calc((100vw - 96px) / {{ section.settings.products_per_row_desktop | default: 3 }} - (24px / {{ section.settings.products_per_row_desktop | default: 3 }} * {{ section.settings.products_per_row_desktop | default: 3 | minus: 1 }}))
