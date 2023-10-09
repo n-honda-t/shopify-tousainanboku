@@ -36,6 +36,9 @@ i.icon-swym-wishlist:after {
 }
 
 .favorite-button-wrap {
+  display: inline-flex;
+padding: 16px 16px 0px 0px;
+align-items: center;
   display: flex;
   width: 32px;
   height: 32px;
