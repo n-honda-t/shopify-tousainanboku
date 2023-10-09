@@ -28,6 +28,12 @@ i.icon-swym-wishlist:after {
   background-color: #ffffff;
 }
 
+.product-card-header {
+
+    display: flex;
+  justify-content: flex-end; /* ここで右寄せにしています */
+}
+
 .favorite-button-wrap {
   display: flex;
   justify-content: flex-end; /* ここで右寄せにしています */
