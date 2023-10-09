@@ -37,9 +37,8 @@ i.icon-swym-wishlist:after {
 
 .favorite-button-wrap {
   display: inline-flex;
-padding: 16px 16px 0px 0px;
-align-items: center;
-  display: flex;
+  padding: 16px 16px 0px 0px;
+  align-items: center;
   width: 32px;
   height: 32px;
   padding: 2.667px 0px 2.672px 0.001px;
