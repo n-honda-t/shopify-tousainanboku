@@ -28,6 +28,11 @@ i.icon-swym-wishlist:after {
   background-color: #ffffff;
 }
 
+.favarite-button-wrap {
+  display: flex;
+  justify-content: flex-end; /* ここで右寄せにしています */
+}
+
 @media screen and (min-width: 700px) {
   /* スクリーンサイズが700px以上の場合に適用 */
   /* TOP */
