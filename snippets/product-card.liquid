@@ -44,7 +44,7 @@ Supported variables
   endif
 -%}
 
-<product-card
+  <product-card
   class="product-card"
   {% if reveal %}reveal-on-scroll="true"{% endif %}
   handle="{{ product.handle | escape }}">
@@ -192,8 +192,4 @@ Supported variables
       {%- render 'product-rating', product: product, show_empty: settings.show_product_rating_if_empty, display_mode: settings.product_rating_mode -%}
     {%- endif -%}
   </div>
-  <!-- Swym Wishlist Plus EPI Button-->
-  {% if customer %}{%- endif -%}
-  <!-- Swym Wishlist Plus EPI Button-->
-
 </product-card>
