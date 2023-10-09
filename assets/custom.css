@@ -31,7 +31,7 @@ i.icon-swym-wishlist:after {
 .product-card-header {
   display: flex;
   justify-content: space-between;
-  flex-direction: column-reverse; /* 縦並び逆順 */
+  flex-direction: row-reverse; /* 縦並び逆順 */
 }
 
 .favorite-button-wrap {
