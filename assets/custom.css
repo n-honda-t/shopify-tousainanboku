@@ -387,8 +387,7 @@ i.icon-swym-wishlist:after {
 
   /* 商品カード */
   .product-card {
-    background-color: #ffffff;
-    border-radius: 0px 40px 0px 0px;
+    width: 16.25rem;
     padding: 19px;
   }
   .product-card-image {
