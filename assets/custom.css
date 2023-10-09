@@ -33,6 +33,15 @@ i.icon-swym-wishlist:after {
   justify-content: space-between;
 }
 
+.favorite-button-wrap {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  padding: 2.667px 0px 2.672px 0.001px;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (min-width: 700px) {
   /* スクリーンサイズが700px以上の場合に適用 */
   /* TOP */
