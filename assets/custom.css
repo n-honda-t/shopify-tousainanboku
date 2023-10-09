@@ -32,7 +32,6 @@ i.icon-swym-wishlist:after {
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse; /* 縦並び逆順 */
-  border-radius: 0px 40px 0px 0px;
 }
 
 .favorite-button-wrap {
