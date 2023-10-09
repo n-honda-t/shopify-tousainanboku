@@ -29,14 +29,8 @@ i.icon-swym-wishlist:after {
 }
 
 .product-card-header {
-
-    display: flex;
-  justify-content: flex-end; /* ここで右寄せにしています */
-}
-
-.favorite-button-wrap {
   display: flex;
-  justify-content: flex-end; /* ここで右寄せにしています */
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 700px) {
