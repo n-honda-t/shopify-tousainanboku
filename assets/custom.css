@@ -28,7 +28,7 @@ i.icon-swym-wishlist:after {
   background-color: #ffffff;
 }
 
-.favarite-button-wrap {
+.favorite-button-wrap {
   display: flex;
   justify-content: flex-end; /* ここで右寄せにしています */
 }
