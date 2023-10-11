@@ -145,6 +145,10 @@ i.icon-swym-wishlist:after {
     padding: 28px 20px;
     border-bottom: solid 1px #1f1f1f;
   }
+
+  .toggle {
+    display: none;
+  }
   /* contact */
   .contact_wrap {
     width: 31.25vw;
