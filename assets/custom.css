@@ -162,6 +162,9 @@ i.icon-swym-wishlist:after {
   .size_detail_content {
     display: none;
   }
+  .toggle:checked ~ .product_explanation_content {
+    display: block;
+  }
   /* .toggle:checked ~ .product_explanation_content,
   .toggle:checked ~ .size_detail_content {
     display: block;
