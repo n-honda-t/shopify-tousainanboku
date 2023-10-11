@@ -165,9 +165,9 @@ i.icon-swym-wishlist:after {
   .toggle.product_explanation_toggle:checked ~ .product_explanation_content {
     display: block;
   }
-  .toggle:checked ~ .size_detail_content {
+  /* .toggle:checked ~ .size_detail_content {
     display: block;
-  }
+  } */
   /* contact */
   .contact_wrap {
     width: 31.25vw;
