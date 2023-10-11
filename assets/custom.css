@@ -163,7 +163,7 @@ i.icon-swym-wishlist:after {
     display: none;
   }
   .toggle.product_explanation_toggle:checked ~ .product_explanation_content,
-  .toggle.size_detail_toggle:checked ~ .product_explanation_content {
+  .toggle.size_detail_toggle:checked ~ .size_detail_content {
     display: block;
   }
   /* .toggle:checked ~ .size_detail_content {
