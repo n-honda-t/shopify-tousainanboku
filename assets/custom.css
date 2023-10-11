@@ -158,10 +158,12 @@ i.icon-swym-wishlist:after {
   .question_minus_icon {
     display: none;
   }
-  .product_explanation_content {
+  .product_explanation_content,
+  .size_detail_content {
     display: none;
   }
-  .toggle:checked ~ .product_explanation_content {
+  .toggle:checked ~ .product_explanation_content,
+  .toggle:checked ~ .size_detail_content {
     display: block;
   }
   /* contact */
