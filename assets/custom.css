@@ -166,6 +166,10 @@ i.icon-swym-wishlist:after {
   .toggle.size_detail_toggle:checked ~ .size_detail_content {
     display: block;
   }
+  .product_explanation_content,
+  .size_detail_content {
+    padding: 28px 20px;
+  }
   /* .toggle:checked ~ .size_detail_content {
     display: block;
   } */
