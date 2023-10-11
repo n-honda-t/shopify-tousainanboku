@@ -155,6 +155,9 @@ i.icon-swym-wishlist:after {
   .toggle:checked + .product-detail_inner .question_minus_icon {
     display: block;
   }
+  .question_minus_icon {
+    display: none;
+  }
   /* contact */
   .contact_wrap {
     width: 31.25vw;
