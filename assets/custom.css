@@ -149,6 +149,9 @@ i.icon-swym-wishlist:after {
   .toggle {
     display: none;
   }
+  .toggle:checked + .product-detail_inner {
+    border-bottom: none;
+  }
   .toggle:checked + .product-detail_inner .question_plus_icon {
     display: none;
   }
@@ -169,6 +172,7 @@ i.icon-swym-wishlist:after {
   .product_explanation_content,
   .size_detail_content {
     padding: 28px 20px;
+    border-bottom: solid 1px #1f1f1f;
   }
   /* .toggle:checked ~ .size_detail_content {
     display: block;
