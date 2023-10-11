@@ -158,6 +158,9 @@ i.icon-swym-wishlist:after {
   .question_minus_icon {
     display: none;
   }
+  .toggle:checked ~ .content {
+    display: block;
+  }
   /* contact */
   .contact_wrap {
     width: 31.25vw;
