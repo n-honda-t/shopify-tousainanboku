@@ -607,6 +607,21 @@ i.icon-swym-wishlist:after {
     color: #1f1f1f;
     background-color: #fff;
   }
+
+  /* product detail */
+  .product-detail_box {
+    width: 100%;
+    margin: 80px 20px 0 40px;
+    border-top: solid 1px #1f1f1f;
+  }
+
+  .product-detail_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 20px;
+    border-bottom: solid 1px #1f1f1f;
+  }
   /* contact */
   .contact_wrap {
     display: flex;
