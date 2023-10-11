@@ -607,10 +607,8 @@ i.icon-swym-wishlist:after {
     background-color: #fff;
   }
 
-  /* product detail */
   .product-detail_box {
     width: 100%;
-    margin: 80px 20px 0 40px;
     border-top: solid 1px #1f1f1f;
   }
 
