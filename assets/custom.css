@@ -145,6 +145,36 @@ i.icon-swym-wishlist:after {
     padding: 28px 20px;
     border-bottom: solid 1px #1f1f1f;
   }
+
+  .toggle {
+    display: none;
+  }
+  .toggle:checked + .product-detail_inner {
+    border-bottom: none;
+  }
+  .toggle:checked + .product-detail_inner .question_plus_icon {
+    display: none;
+  }
+  .toggle:checked + .product-detail_inner .question_minus_icon {
+    display: block;
+  }
+  .question_minus_icon {
+    display: none;
+  }
+  .product_explanation_content,
+  .size_detail_content {
+    display: none;
+  }
+  .toggle.product_explanation_toggle:checked ~ .product_explanation_content,
+  .toggle.size_detail_toggle:checked ~ .size_detail_content {
+    display: block;
+  }
+  .product_explanation_content,
+  .size_detail_content {
+    padding: 28px 20px;
+    border-bottom: solid 1px #1f1f1f;
+  }
+
   /* contact */
   .contact_wrap {
     width: 31.25vw;
@@ -635,6 +665,55 @@ i.icon-swym-wishlist:after {
     border-radius: 5px;
     color: #1f1f1f;
     background-color: #fff;
+  }
+
+  /* product detail */
+  .spPadding {
+    padding: 0 16px;
+    border-radius: 5px;
+    color: #1f1f1f;
+    background-color: #fff;
+  }
+
+  .product-detail_box {
+    width: 100%;
+    border-top: solid 1px #1f1f1f;
+  }
+
+  .product-detail_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 20px;
+    border-bottom: solid 1px #1f1f1f;
+  }
+  .toggle {
+    display: none;
+  }
+  .toggle:checked + .product-detail_inner {
+    border-bottom: none;
+  }
+  .toggle:checked + .product-detail_inner .question_plus_icon {
+    display: none;
+  }
+  .toggle:checked + .product-detail_inner .question_minus_icon {
+    display: block;
+  }
+  .question_minus_icon {
+    display: none;
+  }
+  .product_explanation_content,
+  .size_detail_content {
+    display: none;
+  }
+  .toggle.product_explanation_toggle:checked ~ .product_explanation_content,
+  .toggle.size_detail_toggle:checked ~ .size_detail_content {
+    display: block;
+  }
+  .product_explanation_content,
+  .size_detail_content {
+    padding: 28px 20px;
+    border-bottom: solid 1px #1f1f1f;
   }
   /* contact */
   .contact_wrap {
