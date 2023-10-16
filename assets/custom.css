@@ -414,6 +414,35 @@ i.icon-swym-wishlist:after {
     padding-right: 24px;
     padding-left: 40px;
   }
+
+  /* 商品カード */
+  .product-card {
+    width: 16.25rem;
+    height: 16.25rem;
+  }
+  .product-card-image {
+    background-color: #ffffff;
+    border-radius: 0px 40px 0px 0px;
+    padding: 19px;
+  }
+
+  .product-card-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse; /* 縦並び逆順 */
+  }
+
+  .favorite-button-wrap {
+    display: inline-flex;
+    padding: 16px 16px 0px 0px;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    padding: 2.667px 0px 2.672px 0.001px;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
 
 @media screen and (max-width: 699px) {

@@ -44,7 +44,7 @@ Supported variables
   endif
 -%}
 
-<product-card
+  <product-card
   class="product-card"
   {% if reveal %}reveal-on-scroll="true"{% endif %}
   handle="{{ product.handle | escape }}">
@@ -57,30 +57,47 @@ Supported variables
       {%- if show_badges -%}
         {%- render 'product-badges', product: product, vertical: true -%}
       {%- endif -%}
+      <div class="product-card-image">
+        <a
+          href="{{ product.url }}"
+          class="product-card__media"
+          data-instant>
 
-      <a
-        href="{{ product.url }}"
-        class="product-card__media"
-        data-instant>
-
-        {%- capture sizes -%}
-          {%- if stacked -%}
-            (max-width: 699px) calc(100vw / {{ section.settings.products_per_row_mobile }}), (max-width: 999px) calc(100vw / {{ 3 | at_most: section.settings.products_per_row_desktop | default: 3 }} - 64px), calc((100vw - 96px) / {{ section.settings.products_per_row_desktop | default: 3 }} - (24px / {{ section.settings.products_per_row_desktop | default: 3 }} * {{ section.settings.products_per_row_desktop | default: 3 | minus: 1 }}))
-          {%- else -%}
-            (max-width: 699px) 74vw, (max-width: 999px) 38vw, calc((100vw - 96px) / {{ section.settings.products_per_row_desktop | default: 3 }} - (24px / {{ section.settings.products_per_row_desktop | default: 3 }} * {{ section.settings.products_per_row_desktop | default: 3 | minus: 1 }}))
+          <!-- Swym Wishlist Plus EPI Button-->
+          {% if customer %}
+            <div class="product-card-header">
+              <div class="favorite-button-wrap">
+                <button
+                  data-with-epi="true"
+                  class="swym-button swym-add-to-wishlist-view-product product_{{product.id}}"
+                  data-swaction="addToWishlist"
+                  data-product-id="{{product.id | json}}"
+                  data-variant-id="{{product.variants[0].id}}"
+                  data-product-url="{{ shop.url }}{{ product.url }}"></button>
+              </div>
+            </div>
           {%- endif -%}
-        {%- endcapture -%}
+          <!-- Swym Wishlist Plus EPI Button-->
 
-        {%- capture main_image_classes -%}product-card__image product-card__image--primary
-          {% if settings.product_image_aspect_ratio contains 'crop' %}object-cover{% endif %}
-          aspect-{{ settings.product_image_aspect_ratio | split: '_' | first }}{%- endcapture -%}
-        {{- product.featured_media | image_url: width: product.featured_media.width | image_tag: loading: 'lazy', sizes: sizes, widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800', class: main_image_classes -}}
+          {%- capture sizes -%}
+            {%- if stacked -%}
+              (max-width: 699px) calc(100vw / {{ section.settings.products_per_row_mobile }}), (max-width: 999px) calc(100vw / {{ 3 | at_most: section.settings.products_per_row_desktop | default: 3 }} - 64px), calc((100vw - 96px) / {{ section.settings.products_per_row_desktop | default: 3 }} - (24px / {{ section.settings.products_per_row_desktop | default: 3 }} * {{ section.settings.products_per_row_desktop | default: 3 | minus: 1 }}))
+            {%- else -%}
+              (max-width: 699px) 74vw, (max-width: 999px) 38vw, calc((100vw - 96px) / {{ section.settings.products_per_row_desktop | default: 3 }} - (24px / {{ section.settings.products_per_row_desktop | default: 3 }} * {{ section.settings.products_per_row_desktop | default: 3 | minus: 1 }}))
+            {%- endif -%}
+          {%- endcapture -%}
 
-        {%- if show_secondary_image and product.media.size > 1 -%}
-          {%- assign next_media = product.media[product.featured_media.position] | default: product.media[1] -%}
-          {{- next_media | image_url: width: next_media.width | image_tag: class: 'product-card__image product-card__image--secondary', loading: 'lazy', fetchpriority: 'low', sizes: sizes, widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800' -}}
-        {%- endif -%}
-      </a>
+          {%- capture main_image_classes -%}product-card__image product-card__image--primary
+            {% if settings.product_image_aspect_ratio contains 'crop' %}object-cover{% endif %}
+            aspect-{{ settings.product_image_aspect_ratio | split: '_' | first }}{%- endcapture -%}
+          {{- product.featured_media | image_url: width: product.featured_media.width | image_tag: loading: 'lazy', sizes: sizes, widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800', class: main_image_classes -}}
+
+          {%- if show_secondary_image and product.media.size > 1 -%}
+            {%- assign next_media = product.media[product.featured_media.position] | default: product.media[1] -%}
+            {{- next_media | image_url: width: next_media.width | image_tag: class: 'product-card__image product-card__image--secondary', loading: 'lazy', fetchpriority: 'low', sizes: sizes, widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800' -}}
+          {%- endif -%}
+        </a>
+      </div>
 
       {%- if show_quick_buy and product.available -%}
         {%- if product.variants.size == 1 and product.selling_plan_groups.size == 0 -%}
@@ -191,16 +208,4 @@ Supported variables
       {%- render 'product-rating', product: product, show_empty: settings.show_product_rating_if_empty, display_mode: settings.product_rating_mode -%}
     {%- endif -%}
   </div>
-  <!-- Swym Wishlist Plus EPI Button-->
-  {% if customer %}
-    <button
-      data-with-epi="true"
-      class="swym-button swym-add-to-wishlist-view-product product_{{product.id}}"
-      data-swaction="addToWishlist"
-      data-product-id="{{product.id | json}}"
-      data-variant-id="{{product.variants[0].id}}"
-      data-product-url="{{ shop.url }}{{ product.url }}"></button>
-  {%- endif -%}
-  <!-- Swym Wishlist Plus EPI Button-->
-
 </product-card>
