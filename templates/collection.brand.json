@@ -49,6 +49,12 @@
           "settings": {
             "collection": "brand4-1"
           }
+        },
+        "f3e59976-57cf-4f86-9893-08c96b46e204": {
+          "type": "collection",
+          "settings": {
+            "collection": "新しいブランド"
+          }
         }
       },
       "block_order": [
@@ -56,7 +62,8 @@
         "199dceb5-d1b0-4829-a997-419d1705d4b2",
         "0ecf6a33-0711-4e77-b121-490ed8870321",
         "fc317911-ed99-4e0b-8a0e-346583a7f807",
-        "4c7a079c-34d2-4e75-bf02-a013edb8f6c5"
+        "4c7a079c-34d2-4e75-bf02-a013edb8f6c5",
+        "f3e59976-57cf-4f86-9893-08c96b46e204"
       ],
       "settings": {
       }
