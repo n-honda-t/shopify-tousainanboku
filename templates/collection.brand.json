@@ -49,12 +49,6 @@
           "settings": {
             "collection": "brand4-1"
           }
-        },
-        "93da2313-32bc-4d59-ab21-5ab799795592": {
-          "type": "collection",
-          "settings": {
-            "collection": "grenroyal"
-          }
         }
       },
       "block_order": [
@@ -62,8 +56,7 @@
         "199dceb5-d1b0-4829-a997-419d1705d4b2",
         "0ecf6a33-0711-4e77-b121-490ed8870321",
         "fc317911-ed99-4e0b-8a0e-346583a7f807",
-        "4c7a079c-34d2-4e75-bf02-a013edb8f6c5",
-        "93da2313-32bc-4d59-ab21-5ab799795592"
+        "4c7a079c-34d2-4e75-bf02-a013edb8f6c5"
       ],
       "settings": {
       }

@@ -604,12 +604,6 @@
           "settings": {
             "collection": "brand4-1"
           }
-        },
-        "d521445f-0116-4c2a-a9fc-f26d5f441f6c": {
-          "type": "collection",
-          "settings": {
-            "collection": "grenroyal"
-          }
         }
       },
       "block_order": [
@@ -618,10 +612,37 @@
         "a9f1abb4-ff63-4779-90b3-95b65bd9bd68",
         "8ba831ee-4a07-4d96-8190-7b6531dd1e66",
         "b28222a5-c131-423f-8878-1787aa70bc70",
-        "d521445f-0116-4c2a-a9fc-f26d5f441f6c"
       ],
       "settings": {
         "title": "BRAND"
+      }
+    },
+    "531db40a-9e69-4b91-9a68-bf6da1a0c2f0": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--21094921666866__531db40a-9e69-4b91-9a68-bf6da1a0c2f0-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        }
+      },
+      "block_order": [
+        "template--21094921666866__531db40a-9e69-4b91-9a68-bf6da1a0c2f0-collection-1"
+      ],
+      "settings": {
+        "separate_section_with_border": false,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": ""
       }
     }
   },
@@ -644,8 +665,6 @@
     "0ecf441a-d684-4bd4-92b2-7dc8f076bd6e",
     "e0ee4aeb-b9e2-4b70-a6fe-1823a33e1738",
     "952644d5-e831-4a96-805a-29f460a91791",
-    "62a19083-c484-4f1e-b3a1-741c1c8a1b5e",
-    "385e666e-eecb-4826-8b60-46e40ff8cdb0",
-    "60b41e74-aa45-459d-a0fc-b402ce60ffa6"
+    "62a19083-c484-4f1e-b3a1-741c1c8a1b5e"
   ]
 }
