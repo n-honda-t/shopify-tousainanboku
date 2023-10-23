@@ -102,7 +102,6 @@
 
   <body class="{{ features_class }}">
     <div class="container">
-      {{ template }}
       {%- render 'shadow-dom-templates' -%}
 
       <loading-bar class="loading-bar" aria-hidden="true"></loading-bar>
@@ -125,7 +124,7 @@
         {%- sections 'footer-group' -%}
       {%- endif -%}
     </div>
-  
+
 {% include 'swymSnippet' %}
 
 </body>
