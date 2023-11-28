@@ -417,8 +417,7 @@ i.icon-swym-wishlist:after {
 
   /* 商品カード */
   .product-card {
-    width: 16.25rem;
-    height: 16.25rem;
+    /* width: 16.25rem; */
   }
   .product-card-image {
     background-color: #ffffff;
@@ -442,7 +441,6 @@ i.icon-swym-wishlist:after {
     justify-content: center;
     align-items: center;
   }
-
 }
 
 @media screen and (max-width: 699px) {
@@ -652,15 +650,6 @@ i.icon-swym-wishlist:after {
     width: 100%;
     padding: 12px 0;
     text-align: center;
-    border: solid 1px #1f1f1f;
-    border-radius: 5px;
-    color: #1f1f1f;
-    background-color: #fff;
-  }
-
-  /* product detail */
-  .spPadding {
-    padding: 0 16px;
     border: solid 1px #1f1f1f;
     border-radius: 5px;
     color: #1f1f1f;
