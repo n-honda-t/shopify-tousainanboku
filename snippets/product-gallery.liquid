@@ -31,7 +31,7 @@
   assign default_media = product.selected_or_first_available_variant.featured_media | default: product.featured_media
   assign product_gallery_carousel_id = 'product-gallery-carousel-' | append: product.id | append: '-' | append: section.id
   assign filtered_indexes = null | sort
-  assign product_description = 'general.on_boarding.product_description' | t
+  assign product_description = product.description
 
   if product.variants.size > 1
     for media in product.media
