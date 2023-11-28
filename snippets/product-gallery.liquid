@@ -31,6 +31,7 @@
   assign default_media = product.selected_or_first_available_variant.featured_media | default: product.featured_media
   assign product_gallery_carousel_id = 'product-gallery-carousel-' | append: product.id | append: '-' | append: section.id
   assign filtered_indexes = null | sort
+  assign product_description = 'general.on_boarding.product_description' | t
 
   if product.variants.size > 1
     for media in product.media
@@ -329,7 +330,9 @@
             <img src="https://cdn.shopify.com/s/files/1/0781/5492/4338/files/minus.png?v=1696509142" alt="">
           </div>
         </label>
-        <div class="product_explanation_content">商品説明テキストが入ります</div>
+        <div class="product_explanation_content">
+          {{- product_description -}}
+        </div>
         <input id="sizeDetail" type="checkbox" class="toggle size_detail_toggle">
         <label class="product-detail_inner" for="sizeDetail">
           <div>サイズ詳細</div>
