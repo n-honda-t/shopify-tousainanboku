@@ -18,48 +18,6 @@
   * max_image_zoom_level: the maximum zoom level allowed (if enabled)
 {%- endcomment -%}
 
-<style>
-  {%- if mobile_controls == 'free_scroll' -%}
-    @media screen and (max-width: 999px) {
-      #shopify-section-{{ section.id }} {
-        --product-gallery-carousel-grid: auto / auto-flow min(28rem, 75vw);
-        --product-gallery-carousel-gap: 0.125rem;
-        --product-gallery-carousel-scroll-snap-type: none;
-      }
-    }
-  {%- endif -%}
-
-  @media screen and (min-width: 1000px) {
-    #shopify-section-{{ section.id }} {
-      {%- if desktop_layout == 'carousel_thumbnails_left' or desktop_layout == 'grid' -%}
-        /* Thumbnails on the left */
-        --product-gallery-flex-direction: row-reverse;
-        --product-gallery-thumbnail-list-grid-auto-flow: row;
-
-        {%- if desktop_layout == 'carousel_thumbnails_left' -%}
-          --product-gallery-thumbnail-list-max-height: 45rem;
-        {%- endif -%}
-      {%- endif -%}
-
-      {%- if desktop_layout contains 'grid' -%}
-        --product-gallery-carousel-grid: auto-flow dense / {% if desktop_layout == 'grid' %}auto{% else %}repeat(2, minmax(0, 1fr)){% endif %};
-        --product-gallery-carousel-scroll-snap-type: none;
-        --product-gallery-carousel-gap: {{ section.settings.desktop_media_grid_gap }}px;
-      {%- endif -%}
-    }
-
-    {%- if desktop_layout == 'grid_2x_highlighted' -%}
-      #shopify-section-{{ section.id }} .product-gallery__media:not([hidden]) {
-        grid-column: span 2;
-      }
-
-      #shopify-section-{{ section.id }} .product-gallery__media:not([hidden]) ~ .product-gallery__media {
-        grid-column: span 1;
-      }
-    {%- endif -%}
-  }
-</style>
-
 {%- comment -%}
   IMPLEMENTATION NOTE: Shopify does not natively offer a way to create a set of images per variant. This is often
   pretty limited when you have a lot of colors and would like to only see the images specific to a given color. To
