@@ -206,7 +206,7 @@ be only used on the product page for the main product
           {%- endif -%}
 
           
-          {%- if product_description != blank -%}
+          <!-- {%- if product_description != blank -%}
             {%- if block.settings.collapse_content -%}
               {%- assign accordion_title = 'product.general.description' | t -%}
               {%- render 'accordion', title: accordion_title, content: product_description, prose_content: true, block: block -%}
@@ -215,7 +215,7 @@ be only used on the product page for the main product
                 {{- product_description -}}
               </div>
             {%- endif -%}
-          {%- endif -%}
+          {%- endif -%} -->
 
           {%- when 'variant_picker' -%}
           {%- if product != blank -%}
