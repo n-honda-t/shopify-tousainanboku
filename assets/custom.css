@@ -24,6 +24,13 @@ i.icon-swym-wishlist:after {
   content: "\f004";
 }
 
+.product-card-image {
+  background-color: #ffffff;
+  border-radius: 0px 40px 0px 0px;
+  padding: 19px;
+  position: relative;
+}
+
 .rank-badge {
   position: absolute;
   top: 0;
@@ -429,13 +436,6 @@ i.icon-swym-wishlist:after {
   .header-search__form-control {
     padding-right: 24px;
     padding-left: 40px;
-  }
-
-  .product-card-image {
-    background-color: #ffffff;
-    border-radius: 0px 40px 0px 0px;
-    padding: 19px;
-    position: relative;
   }
 
   .product-card-header {
