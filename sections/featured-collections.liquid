@@ -70,8 +70,6 @@
                 {% assign count = 0 %}
                 {%- for product in block.settings.collection.products limit: block.settings.products_count -%}
                   {% assign count = count | plus: 1 %}
-                  <h1>カウント{{- count -}}</h1>
-
                   {%- assign rankBadgeText = null -%}
                   {%- if isRankingCollection -%}
                     {%- assign rankBadgeText = count -%}
