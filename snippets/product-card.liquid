@@ -44,13 +44,6 @@
   endif
 -%}
 
-{%- if rankBadgeText -%}
-  <h1>
-    商品カードのランキングバッジ ランキング:
-    {{- rankBadgeText -}}
-  </h1>
-{%- endif -%}
-
 <product-card
   class="product-card"
   {% if reveal %}
@@ -69,7 +62,6 @@
         {%- render 'product-badges', product: product, vertical: true -%}
       {%- endif -%}
       <div class="product-card-image">
-        {%- comment -%} TODO: したのテキストをランキングカードのバッジに切り替える{%- endcomment -%}
         {%- if rankBadgeText -%}
           <div class="rank-badge">{{- rankBadgeText -}}</div>
         {%- endif -%}
