@@ -52,14 +52,26 @@
 
         <featured-collections-carousel id="{{ wrapper_carousel_id }}" class="featured-collections-carousel">
           {%- for block in section.blocks -%}
+            {%- if block.settings.collection.title == 'RANKING' -%}
+              {%- assign isRankingCollection = true -%}
+            {%- else -%}
+              {%- assign isRankingCollection = false -%}
+            {%- endif -%}
             <div
               class="featured-collections-carousel__item {% if forloop.first %}is-selected{% endif %}"
               {{ block.shopify_attributes }}
             >
               {%- capture product_list -%}
                 {%- assign should_reveal = false -%}
-                <h1>{{- block.settings.collection.title -}}</h1>
-                <h1>{{- block.settings.collection.id -}}</h1>
+                {% comment %} デバッグコード {% endcomment %}
+                  <h1>{{- block.settings.collection.title -}}</h1>
+                  <h1>{{- block.settings.collection.id -}}</h1>
+                  {%- if isRankingCollection -%}
+                    <h1>ランキングだよ</h1>
+                  {%- else -%}
+                    <h1>ランキングじゃねーよ</h1>
+                  {%- endif -%}
+                {% comment %} デバッグコード {% endcomment %}
                 {%- if settings.stagger_products_apparition and forloop.first -%}
                   {%- assign should_reveal = true -%}
                 {%- endif -%}
