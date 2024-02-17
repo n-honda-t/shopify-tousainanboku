@@ -429,6 +429,13 @@ i.icon-swym-wishlist:after {
       position: absolute;
       top: 0;
       left: 0;
+      background: #1F1F1F;
+      color: #FFFFFF;
+      height: 40px;
+      width: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 
