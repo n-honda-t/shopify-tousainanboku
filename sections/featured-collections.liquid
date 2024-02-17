@@ -58,7 +58,7 @@
             >
               {%- capture product_list -%}
                 {%- assign should_reveal = false -%}
-                <h1>{{- block.title -}}</h1>
+                <h1>{{- block.settings.collection.title -}}</h1>
                 {%- if settings.stagger_products_apparition and forloop.first -%}
                   {%- assign should_reveal = true -%}
                 {%- endif -%}
