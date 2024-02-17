@@ -63,7 +63,9 @@
       {%- endif -%}
       <div class="product-card-image">
         {%- if rankBadgeText -%}
-          <div class="rank-badge">{{- rankBadgeText -}}</div>
+          <a href="{{ product.url }}">
+            <div class="rank-badge">{{- rankBadgeText -}}</div>
+          </a>
         {%- endif -%}
         <a
           href="{{ product.url }}"
