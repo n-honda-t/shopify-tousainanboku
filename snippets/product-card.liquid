@@ -69,19 +69,15 @@
         {%- render 'product-badges', product: product, vertical: true -%}
       {%- endif -%}
       <div class="product-card-image">
+        {%- comment -%} TODO: したのテキストをランキングカードのバッジに切り替える{%- endcomment -%}
+        {%- if rankBadgeText -%}
+          <div class="rank-badge">{{- rankBadgeText -}}</div>
+        {%- endif -%}
         <a
           href="{{ product.url }}"
           class="product-card__media"
           data-instant
         >
-          {%- comment -%} TODO: したのテキストをランキングカードのバッジに切り替える{%- endcomment -%}
-          {%- if rankBadgeText -%}
-            <h1>
-              商品カードのランキングバッジ ランキング:
-              {{- rankBadgeText -}}
-            </h1>
-          {%- endif -%}
-
           <!-- Swym Wishlist Plus EPI Button -->
           {% if customer %}
             <div class="product-card-header">
