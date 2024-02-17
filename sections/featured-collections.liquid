@@ -31,7 +31,8 @@
             <carousel-navigation
               align-selected
               class="featured-collections-navigation scroll-area bleed"
-              aria-controls="{{ wrapper_carousel_id }}">
+              aria-controls="{{ wrapper_carousel_id }}"
+            >
               {%- for block in section.blocks -%}
                 <button class="h2" aria-current="{% if forloop.first %}true{% else %}false{% endif %}">
                   {{- block.settings.title | default: block.settings.collection.title | default: 'Collection' -}}
@@ -39,22 +40,48 @@
               {%- endfor -%}
             </carousel-navigation>
           {%- else -%}
-            <p class="h2">{{ section.blocks.first.settings.title | default: section.blocks.first.settings.collection.title | default: 'Collection' }}</p>
+            <p class="h2">
+              {{
+                section.blocks.first.settings.title
+                | default: section.blocks.first.settings.collection.title
+                | default: 'Collection'
+              }}
+            </p>
           {%- endif -%}
         </div>
 
         <featured-collections-carousel id="{{ wrapper_carousel_id }}" class="featured-collections-carousel">
           {%- for block in section.blocks -%}
-            <div class="featured-collections-carousel__item {% if forloop.first %}is-selected{% endif %}" {{ block.shopify_attributes }}>
+            {% comment %} ランキングコレクションの判定変数 {% endcomment %}
+            {%- assign isRankingCollection = false -%}
+            {%- if block.settings.collection.title == 'RANKING' -%}
+              {%- assign isRankingCollection = true -%}
+            {%- endif -%}
+            {% comment %} ランキングコレクションの判定変数 {% endcomment %}
+            <div
+              class="featured-collections-carousel__item {% if forloop.first %}is-selected{% endif %}"
+              {{ block.shopify_attributes }}
+            >
               {%- capture product_list -%}
                 {%- assign should_reveal = false -%}
-
                 {%- if settings.stagger_products_apparition and forloop.first -%}
                   {%- assign should_reveal = true -%}
                 {%- endif -%}
-
+                {% assign count = 0 %}
                 {%- for product in block.settings.collection.products limit: block.settings.products_count -%}
-                  {%- render 'product-card', product: product, reveal: should_reveal, hide_product_information: section.settings.hide_product_information, block: block -%}
+                  {% assign count = count | plus: 1 %}
+                  {%- assign rankBadgeText = null -%}
+                  {%- if isRankingCollection -%}
+                    {%- assign rankBadgeText = count -%}
+                  {%- endif -%}
+
+                  {%- render 'product-card',
+                    product: product,
+                    reveal: should_reveal,
+                    hide_product_information: section.settings.hide_product_information,
+                    block: block
+                    rankBadgeText: rankBadgeText
+                  -%}
                 {%- else -%}
                   {%- for i in (1..block.settings.products_count) -%}
                     {%- render 'product-card-placeholder', reveal: should_reveal, loop_index: forloop.index0, hide_product_information: section.settings.hide_product_information -%}
@@ -74,7 +101,8 @@
                     id="{{ product_carousel_id }}"
                     group-cells
                     allow-drag
-                    class="product-list {% if section.settings.hide_product_information %}product-list--compact{% endif %} product-list--carousel scroll-area bleed md:unbleed">
+                    class="product-list {% if section.settings.hide_product_information %}product-list--compact{% endif %} product-list--carousel scroll-area bleed md:unbleed"
+                  >
                     {{- product_list -}}
                   </scroll-carousel>
 
@@ -83,7 +111,8 @@
                     type="button"
                     class="prev-next-button prev-next-button--prev circle-button hover:animate-icon-inline"
                     aria-controls="{{ product_carousel_id }}"
-                    disabled>
+                    disabled
+                  >
                     <span class="sr-only">{{ 'general.accessibility.previous' | t }}</span>
                     {%- render 'icon' with 'arrow-left', direction_aware: true -%}
                   </button>
@@ -92,7 +121,8 @@
                     is="carousel-next-button"
                     type="button"
                     class="prev-next-button prev-next-button--next circle-button hover:animate-icon-inline"
-                    aria-controls="{{ product_carousel_id }}">
+                    aria-controls="{{ product_carousel_id }}"
+                  >
                     <span class="sr-only">{{ 'general.accessibility.next' | t }}</span>
                     {%- render 'icon' with 'arrow-right', direction_aware: true -%}
                   </button>
@@ -100,7 +130,10 @@
               {%- endif -%}
 
               {%- if block.settings.link_text != blank -%}
-                {%- assign button_link = block.settings.link_url | default: block.settings.collection.url | default: '#' -%}
+                {%- assign button_link = block.settings.link_url
+                  | default: block.settings.collection.url
+                  | default: '#'
+                -%}
 
                 <div class="justify-self-center top-view-all-button">
                   {%- render 'button', href: button_link, content: block.settings.link_text -%}
@@ -115,136 +148,136 @@
 {%- endif -%}
 
 {% schema %}
-  {
-    "name": "t:sections.featured_collections.name",
-    "class": "shopify-section--featured-collections",
-    "tag": "section",
-    "disabled_on": {
-      "templates": ["password"],
-      "groups": ["header", "custom.overlay"]
+{
+  "name": "t:sections.featured_collections.name",
+  "class": "shopify-section--featured-collections",
+  "tag": "section",
+  "disabled_on": {
+    "templates": ["password"],
+    "groups": ["header", "custom.overlay"]
+  },
+  "max_blocks": 5,
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "separate_section_with_border",
+      "label": "t:global.section.separate_section_with_border",
+      "default": true
     },
-    "max_blocks": 5,
-    "settings": [
-      {
-        "type": "checkbox",
-        "id": "separate_section_with_border",
-        "label": "t:global.section.separate_section_with_border",
-        "default": true
-      },
-      {
-        "type": "checkbox",
-        "id": "hide_product_information",
-        "label": "t:global.product_list.hide_product_information",
-        "info": "t:global.product_list.hide_product_information_info"
-      },
-      {
-        "type": "header",
-        "content": "t:global.product_list.product_list_category"
-      },
-      {
-        "type": "checkbox",
-        "id": "stack_products",
-        "label": "t:global.product_list.stack_products",
-        "default": false
-      }, {
-        "type": "select",
-        "id": "products_per_row_mobile",
-        "label": "t:global.product_list.products_per_row_mobile",
-        "options": [
-          {
-            "value": "1",
-            "label": "1"
-          }, {
-            "value": "2",
-            "label": "2"
-          }
-        ],
-        "default": "2"
-      }, {
-        "type": "range",
-        "id": "products_per_row_desktop",
-        "min": 2,
-        "max": 6,
-        "label": "t:global.product_list.products_per_row_desktop",
-        "info": "t:global.product_list.products_per_row_desktop_info",
-        "default": 4
-      }, {
-        "type": "header",
-        "content": "t:global.product_list.spacing_category",
-        "info": "t:global.product_list.spacing_category_info"
-      }, {
-        "type": "range",
-        "min": 0.2,
-        "max": 2,
-        "step": 0.1,
-        "id": "horizontal_spacing_factor",
-        "label": "Horizontal spacing factor",
-        "default": 1
-      }, {
-        "type": "range",
-        "min": 0.2,
-        "max": 2,
-        "step": 0.1,
-        "id": "vertical_spacing_factor",
-        "label": "Vertical spacing factor",
-        "default": 1
-      }, {
-        "type": "header",
-        "content": "t:global.section.header_category"
-      }, {
-        "type": "inline_richtext",
-        "id": "subheading",
-        "label": "t:global.text.subheading",
-        "default": "Featured collection"
-      }
-    ],
-    "blocks": [
-      {
-        "type": "collection",
-        "name": "t:sections.featured_collections.blocks.collection.name",
-        "settings": [
-          {
-            "type": "collection",
-            "id": "collection",
-            "label": "t:sections.featured_collections.blocks.collection.collection"
-          },
-          {
-            "type": "range",
-            "id": "products_count",
-            "min": 2,
-            "max": 50,
-            "label": "t:global.product_list.products_to_show",
-            "default": 8
-          },
-          {
-            "type": "inline_richtext",
-            "id": "title",
-            "label": "t:global.text.heading",
-            "info": "t:sections.featured_collections.blocks.collection.title_info"
-          },
-          {
-            "type": "url",
-            "id": "link_url",
-            "label": "t:global.text.link_url",
-            "info": "t:sections.featured_collections.blocks.collection.default_link_url"
-          }, {
-            "type": "text",
-            "id": "link_text",
-            "label": "t:global.text.link_text",
-            "default": "View all"
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "t:sections.featured_collections.presets.featured_collections.name",
-        "blocks": [
-          {
-            "type": "collection"
-          }
-        ]
-      }
-    ]
-  }
+    {
+      "type": "checkbox",
+      "id": "hide_product_information",
+      "label": "t:global.product_list.hide_product_information",
+      "info": "t:global.product_list.hide_product_information_info"
+    },
+    {
+      "type": "header",
+      "content": "t:global.product_list.product_list_category"
+    },
+    {
+      "type": "checkbox",
+      "id": "stack_products",
+      "label": "t:global.product_list.stack_products",
+      "default": false
+    }, {
+      "type": "select",
+      "id": "products_per_row_mobile",
+      "label": "t:global.product_list.products_per_row_mobile",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        }, {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "default": "2"
+    }, {
+      "type": "range",
+      "id": "products_per_row_desktop",
+      "min": 2,
+      "max": 6,
+      "label": "t:global.product_list.products_per_row_desktop",
+      "info": "t:global.product_list.products_per_row_desktop_info",
+      "default": 4
+    }, {
+      "type": "header",
+      "content": "t:global.product_list.spacing_category",
+      "info": "t:global.product_list.spacing_category_info"
+    }, {
+      "type": "range",
+      "min": 0.2,
+      "max": 2,
+      "step": 0.1,
+      "id": "horizontal_spacing_factor",
+      "label": "Horizontal spacing factor",
+      "default": 1
+    }, {
+      "type": "range",
+      "min": 0.2,
+      "max": 2,
+      "step": 0.1,
+      "id": "vertical_spacing_factor",
+      "label": "Vertical spacing factor",
+      "default": 1
+    }, {
+      "type": "header",
+      "content": "t:global.section.header_category"
+    }, {
+      "type": "inline_richtext",
+      "id": "subheading",
+      "label": "t:global.text.subheading",
+      "default": "Featured collection"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "t:sections.featured_collections.blocks.collection.name",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "t:sections.featured_collections.blocks.collection.collection"
+        },
+        {
+          "type": "range",
+          "id": "products_count",
+          "min": 2,
+          "max": 50,
+          "label": "t:global.product_list.products_to_show",
+          "default": 8
+        },
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "label": "t:global.text.heading",
+          "info": "t:sections.featured_collections.blocks.collection.title_info"
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "t:global.text.link_url",
+          "info": "t:sections.featured_collections.blocks.collection.default_link_url"
+        }, {
+          "type": "text",
+          "id": "link_text",
+          "label": "t:global.text.link_text",
+          "default": "View all"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.featured_collections.presets.featured_collections.name",
+      "blocks": [
+        {
+          "type": "collection"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}

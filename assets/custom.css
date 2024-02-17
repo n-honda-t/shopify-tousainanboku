@@ -24,6 +24,29 @@ i.icon-swym-wishlist:after {
   content: "\f004";
 }
 
+.product-card-image {
+  background-color: #ffffff;
+  border-radius: 0px 40px 0px 0px;
+  padding: 19px;
+  position: relative;
+}
+
+.rank-badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #1F1F1F;
+  color: #FFFFFF;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 0 0 20px 0;
+}
+
 @media screen and (min-width: 700px) {
   /* スクリーンサイズが700px以上の場合に適用 */
   /* TOP */
@@ -413,16 +436,6 @@ i.icon-swym-wishlist:after {
   .header-search__form-control {
     padding-right: 24px;
     padding-left: 40px;
-  }
-
-  /* 商品カード */
-  .product-card {
-    /* width: 16.25rem; */
-  }
-  .product-card-image {
-    background-color: #ffffff;
-    border-radius: 0px 40px 0px 0px;
-    padding: 19px;
   }
 
   .product-card-header {
