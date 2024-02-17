@@ -128,34 +128,6 @@
         "subheading": ""
       }
     },
-    "9742c52b-8846-44d7-bb1f-1a0e721efe8b": {
-      "type": "ranking-featured-collections",
-      "blocks": {
-        "template--20981713502514__9742c52b-8846-44d7-bb1f-1a0e721efe8b-collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "ranking",
-            "products_count": 8,
-            "title": "RANKING",
-            "link_url": "",
-            "link_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--20981713502514__9742c52b-8846-44d7-bb1f-1a0e721efe8b-collection-1"
-      ],
-      "settings": {
-        "separate_section_with_border": false,
-        "hide_product_information": false,
-        "stack_products": false,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 5,
-        "horizontal_spacing_factor": 1,
-        "vertical_spacing_factor": 1,
-        "subheading": ""
-      }
-    },
     "75412394-9d9f-4bb8-9b6a-af42d392708e": {
       "type": "top-collection-title",
       "settings": {
@@ -658,7 +630,6 @@
     "dcadd4b3-3d32-427d-89bf-ed4f0da6c75e",
     "0a2a7a5b-f88d-442b-8e90-99401ac7abd0",
     "8c192459-93ee-4b08-83bf-9426f11728a2",
-    "9742c52b-8846-44d7-bb1f-1a0e721efe8b",
     "75412394-9d9f-4bb8-9b6a-af42d392708e",
     "4bc993a3-d53a-470a-af59-be0f9477100e",
     "75085a56-946c-496c-a98d-d146de52ec91",
