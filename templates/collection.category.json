@@ -67,6 +67,12 @@
           "settings": {
             "collection": "その他"
           }
+        },
+        "collection_phHcjM": {
+          "type": "collection",
+          "settings": {
+            "collection": "mtg用カテゴリ"
+          }
         }
       },
       "block_order": [
@@ -77,7 +83,8 @@
         "a37e562a-1b4c-44de-8734-e084a29f2837",
         "d6394af9-0fe7-4b0b-90c0-9c85000d7081",
         "4f6263b5-965c-4e86-b097-1c1a5c0d2069",
-        "357cac09-0efb-430e-8978-63eb63cdbc30"
+        "357cac09-0efb-430e-8978-63eb63cdbc30",
+        "collection_phHcjM"
       ],
       "settings": {
       }
