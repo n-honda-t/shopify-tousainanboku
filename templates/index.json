@@ -596,6 +596,12 @@
           "settings": {
             "collection": ""
           }
+        },
+        "collection_7FXhEQ": {
+          "type": "collection",
+          "settings": {
+            "collection": "marco-masi-渋谷テスト用"
+          }
         }
       },
       "block_order": [
@@ -604,7 +610,8 @@
         "a9f1abb4-ff63-4779-90b3-95b65bd9bd68",
         "8ba831ee-4a07-4d96-8190-7b6531dd1e66",
         "b28222a5-c131-423f-8878-1787aa70bc70",
-        "4d5039ad-c564-4fcb-9239-085ef6f44ec9"
+        "4d5039ad-c564-4fcb-9239-085ef6f44ec9",
+        "collection_7FXhEQ"
       ],
       "settings": {
         "title": "BRAND"
