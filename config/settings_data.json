@@ -24,7 +24,7 @@
     "currency_code_enabled": false,
     "stagger_products_apparition": false,
     "round_color_swatches": true,
-    "color_swatch_config": "白:#ffffff\n黒:#000000\n赤:#ff0000\n青:#0174DF",
+    "color_swatch_config": "白:#ffffff\n黒:#000000\n赤:#ff0000\n青:#0174DF\nchocolate:#d2691e\nmagenta:#ff00ff\nolive:#808000",
     "product_image_aspect_ratio": "short_crop",
     "show_secondary_image": false,
     "show_vendor": false,
