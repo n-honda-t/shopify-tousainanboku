@@ -381,6 +381,12 @@
           "settings": {
             "collection": "財布-小物"
           }
+        },
+        "collection_MxeKBF": {
+          "type": "collection",
+          "settings": {
+            "collection": "mtg用カテゴリ"
+          }
         }
       },
       "block_order": [
@@ -391,7 +397,8 @@
         "9901f04c-3d8c-408b-8c5e-788c322471bd",
         "dcf6bad8-c061-4f1f-b965-2487cc7babe8",
         "f6ff3804-c113-4ee3-b646-f1213ebbed56",
-        "48d57f78-a9e9-4961-aeb6-3196d018d8cf"
+        "48d57f78-a9e9-4961-aeb6-3196d018d8cf",
+        "collection_MxeKBF"
       ],
       "settings": {
         "title": "category"
@@ -623,6 +630,34 @@
         "vertical_spacing_factor": 1,
         "subheading": ""
       }
+    },
+    "featured_collections_PhLXxi": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_tgRNAJ": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        }
+      },
+      "block_order": [
+        "collection_tgRNAJ"
+      ],
+      "settings": {
+        "separate_section_with_border": false,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": ""
+      }
     }
   },
   "order": [
@@ -646,6 +681,7 @@
     "952644d5-e831-4a96-805a-29f460a91791",
     "62a19083-c484-4f1e-b3a1-741c1c8a1b5e",
     "60b41e74-aa45-459d-a0fc-b402ce60ffa6",
-    "531db40a-9e69-4b91-9a68-bf6da1a0c2f0"
+    "531db40a-9e69-4b91-9a68-bf6da1a0c2f0",
+    "featured_collections_PhLXxi"
   ]
 }
