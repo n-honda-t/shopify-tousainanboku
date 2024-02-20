@@ -55,6 +55,12 @@
           "settings": {
             "collection": "新しいブランド"
           }
+        },
+        "collection_DeC6mi": {
+          "type": "collection",
+          "settings": {
+            "collection": "marco-masi-渋谷テスト用"
+          }
         }
       },
       "block_order": [
@@ -63,7 +69,8 @@
         "0ecf6a33-0711-4e77-b121-490ed8870321",
         "fc317911-ed99-4e0b-8a0e-346583a7f807",
         "4c7a079c-34d2-4e75-bf02-a013edb8f6c5",
-        "f3e59976-57cf-4f86-9893-08c96b46e204"
+        "f3e59976-57cf-4f86-9893-08c96b46e204",
+        "collection_DeC6mi"
       ],
       "settings": {
       }
