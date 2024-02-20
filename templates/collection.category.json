@@ -73,6 +73,12 @@
           "settings": {
             "collection": "mtg用カテゴリ"
           }
+        },
+        "collection_hFUEL6": {
+          "type": "collection",
+          "settings": {
+            "collection": "cylinder-渋谷テスト用"
+          }
         }
       },
       "block_order": [
@@ -84,7 +90,8 @@
         "d6394af9-0fe7-4b0b-90c0-9c85000d7081",
         "4f6263b5-965c-4e86-b097-1c1a5c0d2069",
         "357cac09-0efb-430e-8978-63eb63cdbc30",
-        "collection_phHcjM"
+        "collection_phHcjM",
+        "collection_hFUEL6"
       ],
       "settings": {
       }
