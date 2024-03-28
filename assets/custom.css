@@ -29,6 +29,9 @@ i.icon-swym-wishlist:after {
   border-radius: 0px 40px 0px 0px;
   padding: 19px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .rank-badge {
