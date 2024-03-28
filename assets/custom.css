@@ -84,6 +84,11 @@ i.icon-swym-wishlist:after {
     width: 20.8vw;
   }
 
+  .product-card-image {
+    width: 208px;
+    height: 208px;
+  }
+
   .product-card__media {
     max-width: 170px;
     max-height: 170px;
