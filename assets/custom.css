@@ -85,8 +85,8 @@ i.icon-swym-wishlist:after {
   }
 
   .product-card-image {
-    width: 208px;
-    height: 208px;
+    min-width: 208px;
+    min-height: 208px;
   }
 
   .product-card__media {
